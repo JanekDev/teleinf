@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="pl" class="yui3-js-enabled" lang="pl"><head><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+    <title>Arytmetyka cyfrowa: System U2</title>
+    <link rel="shortcut icon" href="https://msg.sytes.net:8085/theme/image.php/boost/theme/1504993502/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, Arytmetyka cyfrowa: System U2">
+<link rel="stylesheet" type="text/css" href="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/yui_combo.css"><script type="text/javascript" id="www-widgetapi-script" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/www-widgetapi.js" async=""></script><script src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/iframe_api"></script><script charset="utf-8" id="yui_3_17_2_1_1505769625345_8" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/yui_combo_002.php" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1505769625345_19" href="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/yui_combo_002.css"><script charset="utf-8" id="yui_3_17_2_1_1505769625345_20" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/yui_combo_003.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1505769625345_29" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/yui_combo_004.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1505769625345_152" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/yui_combo_005.php" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/all.css">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/msg.sytes.net:8085","sesskey":"mKFhef9Opr","loadingicon":"https:\/\/msg.sytes.net:8085\/theme\/image.php\/boost\/core\/1504993502\/i\/loading_small","themerev":"1504993502","slasharguments":1,"theme":"boost","jsrev":"1504993502","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?m\/1504993502\/","combine":true,"comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","ext":false,"root":"m\/1504993502\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]}}},"gallery":{"name":"gallery","base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1504993502\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/msg.sytes.net:8085\/lib\/javascript.php\/1504993502\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/msg.sytes.net:8085\/lib\/javascript.php\/1504993502\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.mathjax.org\/mathjax\/2.7-latest\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/first.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryprivate" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/jquery-private.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/jquery-3.js"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style></head>
+
+<body id="page-mod-book-view" class="format-topics  path-mod path-mod-book gecko dir-ltr lang-pl yui-skin-sam yui3-skin-sam msg-sytes-net--8085 pagelayout-incourse course-3 context-45 cmid-13 category-3 editing  jsenabled has-region-side-pre used-region-side-pre"><div style="position: absolute; display: none; z-index: 999; top: -999px; left: -999px;" id="yui_3_17_2_1_1505769625345_137" class="yui3-dd-proxy"></div><div style="top: 0px; left: 0px; position: absolute; z-index: 9999; overflow: hidden; background-color: red; display: none; height: 5px; width: 5px;" id="yui_3_17_2_1_1505769625345_104" class="yui3-dd-shim"><div id="block-region-side-pre_shim" style="height: 884px; width: 250px; background-color: yellow; opacity: 0.5; z-index: 1; overflow: hidden; top: -900px; left: -900px; position: absolute;"></div></div>
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Przejdź do głównej zawartości</a>
+</div><script type="text/javascript" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/yui_combo.php"></script><script type="text/javascript" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true">☰</span><span class="sr-only">Rozszerzać</span></button>
+            </div>
+    
+            <a href="https://msg.sytes.net:8085/" class="navbar-brand 
+                    hidden-sm-down
+                    ">
+                <span class="site-name hidden-sm-down">Zespół Szkół Elektronicznych im. Wojska Polskiego w Bydgoszczy</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <span class="dropdown">
+    <a href="#" class="dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">Grzegorz Kantowicz</span><span class="avatars"><span class="avatar current"><img src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/f2.jpg" alt="Grzegorz Kantowicz" title="Grzegorz Kantowicz" class="userpicture" role="presentation" height="35" width="35"></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+            <a href="https://msg.sytes.net:8085/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/course.svg">
+<span class="menu-action-text" id="actionmenuaction-1">Kokpit</span></a><div class="dropdown-divider"></div><a href="https://msg.sytes.net:8085/user/profile.php?id=3" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/user.svg">
+<span class="menu-action-text" id="actionmenuaction-2">Profil</span></a><a href="https://msg.sytes.net:8085/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/grades.svg">
+<span class="menu-action-text" id="actionmenuaction-3">Stopnie</span></a><a href="https://msg.sytes.net:8085/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/message.svg">
+<span class="menu-action-text" id="actionmenuaction-4">Wiadomości</span></a><a href="https://msg.sytes.net:8085/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/preferences.svg">
+<span class="menu-action-text" id="actionmenuaction-5">Ustawienia</span></a><a href="https://msg.sytes.net:8085/login/logout.php?sesskey=mKFhef9Opr" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/logout.svg">
+<span class="menu-action-text" id="actionmenuaction-6">Wyloguj</span></a><div class="dropdown-divider"></div><a href="https://msg.sytes.net:8085/course/switchrole.php?id=3&amp;switchrole=-1&amp;returnurl=%2Fmod%2Fbook%2Fview.php%3Fid%3D13%26chapterid%3D92" class="dropdown-item menu-action" role="menuitem" data-title="switchroleto,moodle" aria-labelledby="actionmenuaction-7"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/switchrole.svg">
+<span class="menu-action-text" id="actionmenuaction-7">Zmień rolę na...</span></a>
+        </div>
+</span>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages" id="nav-message-popover-container" data-userid="3" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-59c0390ea04c559c0390e400b939" aria-haspopup="true" aria-label="Show message window with no new messages" tabindex="0">
+                <img class="icon smallicon" alt=" Toggle messages menu " title=" Toggle messages menu " src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/message.svg">
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div id="popover-region-container-59c0390ea04c559c0390e400b939" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Okno powiadomiemia" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Wiadomości</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+                <a href="https://msg.sytes.net:8085/message/index.php?contactsfirst=1">Nowa wiadomość
+                </a>
+        </div>
+        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button" href="#" role="button" title="Oznacz wszystko jako przeczytane" data-action="mark-all-read">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" Oznacz wszystko jako przeczytane " title=" Oznacz wszystko jako przeczytane " src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/markasread.svg"></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/loading.gif"></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Oznacz wszystko jako przeczytane
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://msg.sytes.net:8085/message/edit.php?id=3" title="Preferencje wiadomości">
+                    <img class="icon smallicon" alt=" Preferencje wiadomości " title=" Preferencje wiadomości " src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/settings.svg">
+                </a>
+
+    <div class="hover-tooltip">
+        Preferencje wiadomości
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">Brak wiadomości</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://msg.sytes.net:8085/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Wyświetl wszystko</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="3" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-59c0390ea451a59c0390e400b940" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <img class="icon smallicon" alt=" Toggle notifications menu " title=" Toggle notifications menu " src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/notifications.svg">
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div id="popover-region-container-59c0390ea451a59c0390e400b940" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Okno powiadomiemia" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Powiadomienia</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button" href="#" title="Oznacz wszystko jako przeczytane" data-action="mark-all-read" role="button">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" Oznacz wszystko jako przeczytane " title=" Oznacz wszystko jako przeczytane " src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/markasread.svg"></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/loading.gif"></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Oznacz wszystko jako przeczytane
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://msg.sytes.net:8085/message/notificationpreferences.php?userid=3" title="Preferencje powiadomienia">
+                    <img class="icon smallicon" alt=" Preferencje powiadomienia " title=" Preferencje powiadomienia " src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/settings.svg">
+                </a>
+
+    <div class="hover-tooltip">
+        Preferencje powiadomienia
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Nie masz powiadomień</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://msg.sytes.net:8085/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Wyświetl wszystko</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- custom_menu -->
+                
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="page-context-header"><div class="page-header-headings"><h1>Urządzenia komputerowe i teletransmisyjne</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/my/">Kokpit</a></li>
+                <li class="breadcrumb-item">Moje kursy</li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/course/view.php?id=3" title="Urządzenia komputerowe i teletransmisyjne">UKiT</a></li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/course/view.php?id=3#section-2">Układy kombinacyjne</a></li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/mod/book/view.php?id=13" title="Książka">Arytmetyka cyfrowa</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button"><div class="singlebutton">
+    <form method="post" action="https://msg.sytes.net:8085/mod/book/view.php">
+            <input name="id" value="13" type="hidden">
+            <input name="chapterid" value="92" type="hidden">
+            <input name="edit" value="0" type="hidden">
+            <input name="sesskey" value="mKFhef9Opr" type="hidden">
+        <button type="submit" class="btn btn-secondary" id="single_button59c0390e400b916" title="">Wyłącz tryb edycji</button>
+    </form>
+</div></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <div id="region-main-settings-menu" class="hidden-print has-blocks">
+                    <div> <div class="action-menu moodle-actionmenu" id="action-menu-3" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-3-menubar" role="menubar">
+
+            <span class="dropdown">
+    <a href="#" class="dropdown-toggle" id="dropdown-3" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg">
+</a>
+        <div class="dropdown-menu dropdown-menu-right menu align-tr-br" id="action-menu-3-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-3" role="menu" data-align="tr-br">
+            <div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/course/modedit.php?update=13&amp;return=1" id="action_link59c0390e400b941" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/navigationitem.svg">
+Edytuj ustawienia</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/assign.php?contextid=45" id="action_link59c0390e400b942" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/navigationitem.svg">
+Role przypisane lokalnie</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/permissions.php?contextid=45" id="action_link59c0390e400b943" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/navigationitem.svg">
+Uprawnienia</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/check.php?contextid=45" id="action_link59c0390e400b944" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/navigationitem.svg">
+Sprawdź uprawnienia
+</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/filter/manage.php?contextid=45" id="action_link59c0390e400b945" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/navigationitem.svg">
+Filtry</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/report/log/index.php?chooselog=1&amp;id=3&amp;modid=13" id="action_link59c0390e400b946" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/navigationitem.svg">
+Logi</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/backup/backup.php?id=3&amp;cm=13" id="action_link59c0390e400b947" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/navigationitem.svg">
+Kopia zapasowa</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/backup/restorefile.php?contextid=45" id="action_link59c0390e400b948" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/navigationitem.svg">
+Odtwórz</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/importhtml/index.php?id=13" id="action_link59c0390e400b949" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/navigationitem.svg">
+Import rozdziałów</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/print/index.php?id=13" id="action_link59c0390e400b950" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/book.svg">
+Drukuj książkę</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/print/index.php?id=13&amp;chapterid=92" id="action_link59c0390e400b951" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/chapter.svg">
+Drukuj ten rozdział</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=92&amp;edit=0&amp;sesskey=mKFhef9Opr" id="action_link59c0390e400b952" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/navigationitem.svg">
+Wyłącz tryb edycji</a>
+
+
+</div>
+        </div>
+</span>
+
+
+        </div>
+
+</div> </div>
+                </div>
+                <section id="region-main" class="has-blocks">
+                    <div class="card card-block">
+                        <div class="region_main_settings_menu_proxy"></div>
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><h2>Arytmetyka cyfrowa</h2><div class="navtop clearfix navimages"><a title="Poprzednie: 5.2. System U1" class="bookprev" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=91"><img src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/nav_prev.svg" class="icon" alt="Poprzednie: 5.2. System U1"></a><a title="Następne: 5.4. System z nadmiarem (BIAS)" class="booknext" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=93"><img src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/nav_next.svg" class="icon" alt="Następne: 5.4. System z nadmiarem (BIAS)"></a></div><div class="box generalbox book_content p-y-1"><h3>5. Stałopozycyjna reprezentacja liczb</h3><h4>5.3. System U2</h4><div class="no-overflow"><h4>Wartość liczby U2</h4>
+<div>
+<p style="text-align: justify;">System <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=91">zapisu U1</a>
+ przedstawiony w&nbsp;poprzednim rozdziale umożliwiał w&nbsp;prosty 
+sposób kodowanie liczb ujemnych. Jednakże wykonywanie operacji 
+arytmetycznych wciąż wymagało dodatkowych założeń – przy dodawaniu do 
+wyniku należało dodać przeniesienie poza bit znaku, aby otrzymać 
+poprawny wynik.</p>
+<p style="text-align: justify;">Okazuje się, iż drobna modyfikacja systemu <span>U1</span> pozwala ominąć te wady. W&nbsp;tym celu zmieniamy wagę bitu znakowego z<nobr>&nbsp;(–2</nobr><sup><i>n</i>-1</sup>&nbsp;+&nbsp;1) na <nobr>(–2</nobr><sup><i>n</i>-1</sup><span style="font-style: normal;">)</span>, gdzie&nbsp;<i>n</i>
+ oznacza ilość bitów w&nbsp;formacie kodu – format liczby U2 jest 
+ustalony z&nbsp;góry – liczba zawiera określoną ilość bitów. Wagi stają 
+się teraz jednorodne – bit znakowy posiada wagę ujemną, lecz 
+o&nbsp;wartości bezwzględnej takiej samej jak w&nbsp;<a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=85">naturalnym kodzie dwójkowym</a>. Nowy kod nosi nazwę uzupełnień do podstawy 2 lub w&nbsp;skrócie <span>U2</span> <span class="rem">(ang. <em>2C – Two's Complement</em>)</span>.</p>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr><th colspan="8" nowrap="nowrap" bgcolor="#C0C0C0">Wartości wag pozycji w zapisie U2</th></tr>
+<tr><th bgcolor="#F0F0F0">waga</th>
+<td align="center"><b><span style="color: #ff0000;">–2</span><sup><span style="color: #ff0000;">n-1</span></sup></b></td>
+<td align="center">2<sup>n-2</sup></td>
+<td align="center">2<sup>n-3</sup></td>
+<td align="center"></td>
+<td align="center">2<sup>2</sup></td>
+<td align="center">2<sup>1</sup></td>
+<td align="center">2<sup>0</sup></td>
+</tr>
+<tr><th bgcolor="#F0F0F0">cyfra</th>
+<td align="center"><b><span style="color: #ff0000; font-size: large;" color="#ff0000">b</span><sub><span style="color: #ff0000; font-size: large;" color="#ff0000">n-1</span></sub></b></td>
+<td align="center"><span style="font-size: large;">b</span><sub><span style="font-size: large;">n-2</span></sub></td>
+<td align="center"><span style="font-size: large;">b</span><sub><span style="font-size: large;">n-3</span></sub></td>
+<td align="center"><span style="font-size: large;">...</span></td>
+<td align="center"><span style="font-size: large;">b</span><sub><span style="font-size: large;">2</span></sub></td>
+<td align="center"><span style="font-size: large;">b</span><sub><span style="font-size: large;">1</span></sub></td>
+<td align="center"><span style="font-size: large;">b</span><sub><span style="font-size: large;">0</span></sub></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Liczba jest dodatnia, gdy bit znaku ma wartość <strong>0</strong> – suma pozostałych wag tworzy zawsze liczbę dodatnią lub zero. Jeśli bit znaku przyjmie wartość <strong>1</strong>, to liczba jest ujemna.</p>
+<div align="center">
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Zapamiętaj:</span></h4>
+<p style="text-align: justify;">Wartość liczby <span>U2</span> obliczamy zgodnie z<a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=85">&nbsp;poznanymi zasadami</a>
+ – cyfry mnożymy przez wagi pozycji, na których się znajdują 
+i&nbsp;dodajemy otrzymane iloczyny. Waga bitu znakowego jest ujemna.</p>
+<p style="text-align: center;"><b><span style="color: #ff0000;">b<sub>n-1</sub></span></b>b<sub>n-2</sub>b<sub>n-3</sub>...b<sub>2</sub>b<sub>1</sub>b<sub>0 (U2)</sub><span style="font-style: normal;"> = </span><span style="color: #ff0000;"><b>b<sub>n-1</sub>(–2</b></span><b><span style="color: #ff0000;"><sup>n-1</sup>)</span></b><span style="font-style: normal;"> + </span>b<sub>n-2</sub>2<sup>n-2</sup><span style="font-style: normal;"> + </span>b<sub>n-3</sub>2<sup>n-3</sup><span style="font-style: normal;"> + ... + </span>b<sub>2</sub>2<sup>2</sup> + b<sub>1</sub>2<sup>1</sup> + b<sub><span style="font-style: normal;">0</span></sub>2<sup>0</sup></p>
+<p style="text-align: justify;">gdzie</p>
+<p style="text-align: justify;">b – bit, cyfra dwójkowa <strong>0</strong> lub <strong>1</strong><br>n – liczba bitów w&nbsp;zapisie liczby</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;"></p>
+<table style="border-collapse: collapse; float: left; margin-right: 8px; margin-bottom: 6px;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr><th colspan="3" bgcolor="#C0C0C0">4 bitowy system U2</th></tr>
+<tr><th bgcolor="#F0F0F0">Kod U2</th><th bgcolor="#F0F0F0">Przeliczenie</th><th bgcolor="#F0F0F0">Wartość</th></tr>
+<tr>
+<td align="center">0000</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0001</td>
+<td align="center">2<sup>0</sup></td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">0010</td>
+<td align="center">2<sup><span style="font-style: normal;">1</span></sup></td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">0011</td>
+<td align="center">2<sup>1</sup> + 2<sup><span style="font-style: normal;">0</span></sup></td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">0100</td>
+<td align="center">2<sup>2</sup></td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">0101</td>
+<td align="center">2<sup>2 </sup>+ 2<sup>0</sup></td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">0110</td>
+<td align="center">2<sup>2</sup> + 2<sup>1</sup></td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">0111</td>
+<td align="center">2<sup>2</sup> + 2<sup>1</sup> + 2<sup><span style="font-style: normal;">0</span></sup></td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">1000</td>
+<td align="center">(–2<sup>3</sup>)</td>
+<td align="center">(–8)</td>
+</tr>
+<tr>
+<td align="center">1001</td>
+<td align="center">(–2<sup>3</sup>) + 2<sup><span style="font-style: normal;">0</span></sup></td>
+<td align="center">(–7)</td>
+</tr>
+<tr>
+<td align="center">1010</td>
+<td align="center">(–2<sup>3</sup>) + 2<sup><span style="font-style: normal;">1</span></sup></td>
+<td align="center">(–6)</td>
+</tr>
+<tr>
+<td align="center">1011</td>
+<td align="center">(–2<sup>3</sup>) + 2<sup>1</sup> + 2<sup><span style="font-style: normal;">0</span></sup></td>
+<td align="center">(–5)</td>
+</tr>
+<tr>
+<td align="center">1100</td>
+<td align="center">(–2<sup>3</sup>) + 2<sup>2</sup></td>
+<td align="center">(–4)</td>
+</tr>
+<tr>
+<td align="center">1101</td>
+<td align="center">(–2<sup>3</sup>) + 2<sup>2</sup> + 2<sup><span style="font-style: normal;">0</span></sup></td>
+<td align="center">(–3)</td>
+</tr>
+<tr>
+<td align="center">1110</td>
+<td align="center">(–2<sup>3</sup>) + 2<sup>2</sup> + 2<sup><span style="font-style: normal;">1</span></sup></td>
+<td align="center">(–2)</td>
+</tr>
+<tr>
+<td align="center">1111</td>
+<td align="center">(–2<sup>3</sup>) + 2<sup>2</sup> + 2<sup>1</sup> + 2<sup><span style="font-style: normal;">0</span></sup></td>
+<td align="center">(–1)</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Ponieważ w&nbsp;systemach binarnych cyfry przyjmują tylko dwie wartości <strong>0</strong>&nbsp;lub <strong>1</strong>, można rachunek znacznie uprościć sumując jedynie te wagi, dla których cyfra zapisu liczby ma wartość 1.</p>
+<p style="text-align: justify;">W&nbsp;tabelce obok zebraliśmy wszystkie możliwe do utworzenia 4-bitowe liczby w&nbsp;zapisie <span>U2</span>. Zauważ, iż w&nbsp;przeciwieństwie do poprzednio opisanych systemów <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=90">ZM</a> i&nbsp;<a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=91">U1</a> w&nbsp;tym systemie wartość 0 ma tylko jedną reprezentację 0000, a&nbsp;liczb ujemnych jest o&nbsp;1 więcej niż dodatnich <span class="rem">(–8...–1, 1...7)</span>. Najstarszy bit określa znak liczby. Jeśli jest równy <strong>0</strong>, liczba jest dodatnia i&nbsp;resztę zapisu możemy potraktować jak liczbę w&nbsp;<a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=85">naturalnym kodzie dwójkowym</a>.</p>
+<p style="text-align: justify;"><b>Przykład:</b></p>
+<table style="border-collapse: collapse;" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td>
+<p style="text-align: justify;">01101011<sub>(U2)</sub> = 64 + 32 + 8 + 2 + 1 = 107<sub>(10)</sub>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Jeśli bit znaku ustawiony jest na <strong>1</strong>, to liczba ma wartość ujemną. Bit znaku ma wagę <span style="font-style: normal;"><nobr>(–2</nobr></span><sup>n<span style="font-style: normal;">–1</span></sup><span style="font-style: normal;">)</span>, gdzie n&nbsp;oznacza liczbę bitów w&nbsp;wybranym formacie <span>U2</span>.
+ Reszta bitów jest zwykłą liczbą w&nbsp;naturalnym kodzie dwójkowym. 
+Wagę bitu znakowego i&nbsp;wartość pozostałych bitów sumujemy otrzymując
+ wartość liczby <span>U2</span>:</p>
+<p style="text-align: justify;"><b>Przykład:</b></p>
+<table style="border-collapse: collapse;" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td>
+<p style="text-align: justify;">11101011<sub>(U2)</sub> = (–2<sup>7</sup>) + 64 + 32 + 8 + 2 + 1 = –128 + 107 = (–21)<sub>(10)</sub>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Zwróć uwagę, iż postać ujemna liczby <span>U2</span> nie jest już tak czytelna dla nas jak w przypadku kodów <span>ZM</span> <span class="rem">(tylko zmiana bitu znaku)</span> i&nbsp;<span>U1</span> <span class="rem">(negacja wszystkich bitów)</span>.</p>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Liczbę przeciwną do danej liczby <span>U2</span> uzyskujemy na dwa sposoby:</p>
+<div align="center">
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Zapamiętaj:</span></h4>
+<p style="text-align: justify;"><b>Sposób 1</b> – procedura wyznaczania liczby przeciwnej w&nbsp;kodzie <span>U2</span></p>
+<div><ol>
+<li>Dokonać negacji wszystkich bitów zapisu liczby <span>U2</span>.</li>
+<li>Do wyniku <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=82">dodać</a>&nbsp;1.</li>
+</ol></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Wyznaczyć liczbę przeciwną w&nbsp;kodzie <span>U2</span> do danej liczby 01101110<sub>(U2)</sub>.</p>
+<div>
+<div><ol>
+<li>Dokonujemy negacji <span class="rem">(zmianę na wartości przeciwne) </span>wszystkich bitów liczby <span>U2</span>:</li>
+</ol>
+<table style="border-collapse: collapse;" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td><span style="font-style: normal; font-weight: bold;">NOT</span><span style="font-style: normal;" lang="en"> </span></td>
+<td>01101110</td>
+</tr>
+<tr>
+<td style="border-top: 1px solid #000000;"></td>
+<td style="border-top: 1px solid #000000;">10010001</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<ol>
+<li value="2">Do wyniku negacji dodajemy&nbsp;1:</li>
+</ol>
+<table cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right">10010001</td>
+</tr>
+<tr>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;"><span style="font-style: normal;">+</span><span style="font-style: normal;" lang="en"> </span></td>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;" align="right">00000001</td>
+</tr>
+<tr>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;"></td>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right">10010010</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Liczbą przeciwną do 01101110<sub>(U2)</sub> jest 10010010<sub>(U2)</sub>.</p>
+</div>
+</div>
+<p style="text-align: justify;">Aby się o&nbsp;tym przekonać, obliczmy wartości dziesiętne obu liczb:</p>
+<p style="text-align: justify;">01101110<sub>(U2)</sub> = 64 + 32 + 8 + 4 + 2 = 110<sub>(10)</sub>.<br>10010010<sub>(U2)</sub> = (–128) + 16 + 2 = (–128) + 18 = (–110)<sub>(10)</sub>.</p>
+<p style="text-align: justify;">Zwróć uwagę, iż tym sposobem nie da się otrzymać liczby przeciwnej do najmniejszej liczby ujemnej <span class="rem">(bit znaku ustawiony na<strong>&nbsp;1</strong>, a&nbsp;wszystkie pozostałe bity równe<strong>&nbsp;0</strong>)</span>. Na przykład dla 4&nbsp;bitowego kodu <span>U2</span> otrzymujemy:</p>
+<p style="text-align: justify;">(–8)<sub>(10)</sub> = 1000<sub>(U2)</sub> ; <b>NOT</b>(1000) = 0111; 0111 + 0001 = 1000, a&nbsp;to jest ta sama liczba wyjściowa.</p>
+<p style="text-align: justify;">Oczywistym wyjaśnieniem tego faktu jest 
+to, iż najmniejsza w&nbsp;danym formacie U2 liczba ujemna nie posiada 
+w&nbsp;tym formacie swojego odpowiednika po stronie dodatniej, gdyż suma
+ wszystkich wag dodatnich jest o&nbsp;1 mniejsza od modułu wagi ujemnej 
+bitu znakowego.</p>
+<div align="center">
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Zapamiętaj:</span></h4>
+<p style="text-align: justify;"><b>Sposób 2</b> – procedura wyznaczania liczby przeciwnej w&nbsp;kodzie <span>U2</span></p>
+<div><ol>
+<li>Przejść do pierwszego od prawej strony bitu zapisu liczby.</li>
+<li>Do wyniku przepisać kolejne bity<strong>&nbsp;0</strong>, aż do napotkania bitu o&nbsp;wartości&nbsp;<strong>1</strong>, który również przepisać.</li>
+<li>Wszystkie pozostałe bity przepisać zmieniając ich wartość na przeciwną.</li>
+</ol></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Ten drugi sposób jest o wiele prostszy, 
+ponieważ nie wymaga od nas dodawania. Możemy go zastosować prawie 
+bezmyślnie do dowolnie długich liczb <span>U2</span>.</p>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Znaleźć liczbę przeciwną w&nbsp;kodzie <span>U2</span> do danej liczby 1100100010111010111010010100001000000<sub>(U2)</sub>. Bez paniki, pokażemy w&nbsp;kolejnych krokach, jak to zadanie wykonać:</p>
+<div>
+<div><ol>
+<li>Analizę liczby rozpoczynamy od ostatniej cyfry zapisu liczby. 
+Przesuwamy się w&nbsp;lewą stronę. Do wyniku przepisujemy wszystkie 
+kolejne bity o&nbsp;wartości&nbsp;<strong>0</strong>, aż do napotkania bitu <strong>1</strong>.</li>
+</ol>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr><th bgcolor="#F0F0F0">Liczba U2</th>
+<td align="right">1100100010111010111010010100001<b><span style="color: #ff0000;">000000</span></b></td>
+</tr>
+<tr><th bgcolor="#F0F0F0">Liczba przeciwna U2</th>
+<td align="right"><span style="color: #ff0000;">000000</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<ol>
+<li value="2">Napotkany bit&nbsp;1 również przepisujemy do wyniku bez zmian:</li>
+</ol>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr><th bgcolor="#F0F0F0">Liczba U2</th>
+<td align="right">110010001011101011101001010000<span style="color: #ff0000;"><span style="font-weight: bold;">1</span></span>000000</td>
+</tr>
+<tr><th bgcolor="#F0F0F0">Liczba przeciwna U2</th>
+<td align="right"><span style="color: #ff0000;"><span style="font-weight: bold;">1</span></span>000000</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<ol>
+<li value="3">Pozostałe bity przepisujemy zmieniając ich stan na przeciwny. To wszystko.</li>
+</ol>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr><th bgcolor="#F0F0F0">Liczba U2</th>
+<td align="right"><b><span style="color: #ff0000;">110010001011101011101001010000</span></b><span style="font-style: normal;">1</span>000000</td>
+</tr>
+<tr><th bgcolor="#F0F0F0">Liczba przeciwna U2</th>
+<td align="right"><span style="font-style: normal;"><b> <span style="color: #ff0000;">001101110100010100010110101111</span></b>1</span>000000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Również drugi sposób zawodzi przy wyznaczaniu liczby przeciwnej do najmniejszej liczby ujemnej w&nbsp;danym formacie <span>U2</span>. Dlatego na wartość tę należy zwrócić szczególną uwagę.</p>
+</div>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;"></p>
+<h4>Przeliczanie liczb dziesiętnych na liczby U2</h4>
+<p style="text-align: justify;"></p>
+<div>
+<p style="text-align: justify;">Dla liczb dodatnich nie ma problemu z&nbsp;przeliczaniem na kod <span>U2</span>. Wystarczy znaleźć <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=85">reprezentację dwójkową danej wartości liczbowej</a>, a&nbsp;następnie uzupełnić ją bitami<strong>&nbsp;0</strong> do długości formatu kodu <span>U2</span>.</p>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Wyznaczyć 8-mio bitowy kod <span>U2</span> dla liczby dziesiętnej 27<sub>(10)</sub>.</p>
+<div>
+<p style="text-align: justify;">27<sub>(10)</sub> = 16 + 8 + 2 + 1 = 11011<sub>(2)</sub> = 00011011<sub>(U2)</sub>.</p>
+</div>
+<p style="text-align: justify;">W przypadku wartości ujemnej mamy kilka możliwości postępowania, które opisujemy poniżej.</p>
+<div align="center">
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Zapamiętaj:</span></h4>
+<p style="text-align: justify;"><span>Sposób 1</span> – przeliczanie ujemnej liczby dziesiętnej na liczbę <span>U2</span></p>
+<p style="text-align: justify;">Liczba ujemna musi mieć ustawiony na <strong>1</strong>&nbsp;bit
+ znaku. Zatem nasze zadanie sprowadza się do znalezienia wartości 
+pozostałych bitów. Bit znaku stoi na pozycji o&nbsp;wadze <span style="font-style: normal;"><nobr>(–2</nobr></span><sup>n<span style="font-style: normal;">–1</span></sup><span style="font-style: normal;">)</span>, <nobr>n</nobr>&nbsp;–&nbsp;ilość
+ bitów w&nbsp;formacie U2. Pozostałe bity zapisu liczby tworzą naturalny
+ kod dwójkowy. Wartość tego kodu musi być taka, aby po dodaniu jej do 
+wagi pozycji znakowej otrzymać wartość kodowanej liczby. Zapiszmy to 
+w&nbsp;formie równania:</p>
+<p style="text-align: center;">kodowana liczba = waga bitu znakowego + wartość kodu pozostałych bitów</p>
+<p style="text-align: center;">kodowana liczba = (–2<sup>n-1</sup><span style="font-style: normal;">)</span> + wartość kodu pozostałych bitów</p>
+<p style="text-align: center;">stąd</p>
+<p style="text-align: center;">wartość kodu pozostałych bitów = 2<sup>n-1</sup> + kodowana liczba</p>
+<p style="text-align: justify;">Po wyznaczeniu wartości tego kodu tworzymy jego <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=85">zapis w&nbsp;systemie dwójkowym</a>, uzupełniamy w&nbsp;miarę potrzeby bitem&nbsp;<strong>0</strong> do długości formatu <span>U2</span>–1 i&nbsp;dodajemy bit znakowy<strong>&nbsp;1</strong>. Konwersja jest gotowa.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;" align="justify"><b><br> Przykład:</b></p>
+<p style="text-align: justify;">Wyznaczyć 8-mio bitowy kod <span>U2</span> dla liczby dziesiętnej (–45)<sub>(10)</sub>.</p>
+<div>
+<p style="text-align: justify;">Wyznaczamy moduł wagi pozycji znakowej. Dla n&nbsp;=&nbsp;8, 2<sup>n<span style="font-style: normal;">–1</span></sup>&nbsp;=&nbsp;2<sup>7</sup>&nbsp;=&nbsp;128 wartość kodu pozostałych bitów =&nbsp;128+(–45)&nbsp;=&nbsp;83&nbsp;=&nbsp;1010011<sub><span style="font-style: normal;">(2)</span></sub></p>
+<p style="text-align: justify;">Dodajemy bit znaku równy <strong>1</strong> i&nbsp;otrzymujemy:</p>
+</div>
+<div>
+<p style="text-align: justify;">(–45)<sub>(10)</sub>&nbsp;=&nbsp;11010011<sub>(U2)</sub>.</p>
+</div>
+<div align="center">
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Zapamiętaj:</span></h4>
+<p style="text-align: justify;"><span>Sposób 2</span> – przeliczanie ujemnej liczby dziesiętnej na liczbę <span>U2</span></p>
+<div><ol>
+<li>Wyznaczamy <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=85">zapis dwójkowy</a> liczby przeciwnej <span class="rem">(czyli dodatniej)</span>.</li>
+<li>Otrzymany kod dwójkowy uzupełniamy w&nbsp;miarę potrzeb do rozmiaru formatu <span>U2</span>.</li>
+<li>Wyznaczamy liczbę przeciwną za pomocą jednej z&nbsp;opisanych wcześniej metod</li>
+</ol></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Wyznaczyć 8-mio bitowy kod <span>U2</span> dla liczby dziesiętnej (–45)<sub>(10)</sub>.</p>
+<div>
+<p style="text-align: justify;">Wyznaczamy kod binarny liczby przeciwnej: 45<sub>(10)</sub>&nbsp;=&nbsp;101101<sub>(2)</sub></p>
+<p style="text-align: justify;">Kod uzupełniamy dwoma bitami<strong>&nbsp;0</strong> do wymaganej długości 8&nbsp;bitów: 00101101.</p>
+<p style="text-align: justify;">Wyznaczamy liczbę przeciwną wg drugiej metody: 00101101<sub>(U2)</sub> : 11010011<sub>(U2)</sub>.</p>
+<p style="text-align: justify;">Stąd (–45)<sub>(10)</sub> = 11010011<sub>(U2)</sub>.</p>
+</div>
+<div align="center">
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Zapamiętaj:</span></h4>
+<p style="text-align: justify;"><span>Sposób 3</span> – przeliczanie ujemnej liczby dziesiętnej na zapis <span>U2</span></p>
+<p style="text-align: justify;" class="bl3">Jeśli do liczby <span style="font-style: normal;">2</span><sup>n</sup> <span class="rem">(n&nbsp;–&nbsp;ilość bitów w&nbsp;formacie U2)</span> dodamy przetwarzaną liczbę dziesiętną, to w&nbsp;wyniku otrzymamy wartość kodu dwójkowego równoważnego bitowo <span class="rem">(tzn. o&nbsp;takiej samej postaci) </span>kodowi <span>U2</span> przetwarzanej liczby. Wynik dodawania wystarczy <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=85">zapisać w postaci naturalnego kodu dwójkowego</a> i&nbsp;konwersja jest zakończona.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;" align="justify"><b><br> Przykład:</b></p>
+<p style="text-align: justify;">Wyznaczyć 8-mio bitowy kod <span>U2</span> dla liczby dziesiętnej (–45)<sub>(10)</sub>.</p>
+<div>
+<p style="text-align: justify;">2<sup>8</sup>&nbsp;+&nbsp;(–45) = 256&nbsp;–&nbsp;45 = 211 = 11010011<sub>(2)</sub>.</p>
+</div>
+<p style="text-align: justify;">Stąd</p>
+<div>
+<p style="text-align: justify;">(–45)<sub>(10)</sub> = 11010011<sub>(U2)</sub>.</p>
+</div>
+</div>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;"></p>
+<h4>Zakres n&nbsp;bitowych liczb U2</h4>
+<p style="text-align: justify;"></p>
+<div>
+<p style="text-align: justify;">Największa liczba <span>U2</span> powstaje dla bitu znaku równego&nbsp;<strong>0</strong>, a&nbsp;pozostałych bitów równych&nbsp;<strong>1</strong>. Ponieważ pozostałe bity przedstawiają wartość w&nbsp;naturalnym kodzie binarnym i&nbsp;jest ich n–<span style="font-style: normal;">1</span>, to</p>
+<p style="text-align: justify;">max<sub>(U2)</sub> = 2<sup>n-1</sup>&nbsp;–&nbsp;1</p>
+<p style="text-align: justify;">Z&nbsp;kolei najmniejszą wartość liczby <span>U2</span> otrzymamy dla bitu znaku równego&nbsp;<strong>1</strong>, a&nbsp;pozostałych bitów równych&nbsp;<strong>0</strong>. W&nbsp;tym przypadku wartość liczby jest równa wadze pozycji znakowej, czyli</p>
+<p style="text-align: justify;">min<sub>(U2)</sub> = (–2<sup>n-1</sup><span style="font-style: normal;">)</span></p>
+<div align="center">
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Zapamiętaj:</span></h4>
+<p style="text-align: justify;">Zakres n&nbsp;bitowej liczby w&nbsp;kodzie <span>U2</span> wynosi</p>
+<p style="text-align: center;">Z<sub>(U2)</sub> = –2<sup>n-<span style="font-style: normal;">1</span></sup><span style="font-style: normal;">...</span>2<sup>n-1&nbsp;</sup>–&nbsp;1</p>
+<p style="text-align: justify;">W porównaniu z&nbsp;systemami <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=90">ZM</a> i&nbsp;<a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=91">U1</a>, zakres liczb <span>U2</span> jest niesymetryczny – liczb ujemnych jest o&nbsp;jedną więcej niż liczb dodatnich.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">4&nbsp;bitowe liczby <span>U2</span> posiadają zakres:</p>
+<table style="border-collapse: collapse;" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td>od<span lang="en"> </span></td>
+<td align="right">–2<sup>3</sup></td>
+<td><span style="font-style: normal;"> =</span><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right">–8</td>
+<td><span style="font-style: normal;" lang="en"> =</span> 1000<sub>(U2)</sub><span style="font-style: normal;" lang="en"> </span></td>
+</tr>
+<tr>
+<td>do<span lang="en"> </span></td>
+<td align="right">2<sup>3</sup> – 1</td>
+<td><span style="font-style: normal;" lang="en"> = </span></td>
+<td align="right">7</td>
+<td><span style="font-style: normal;" lang="en"> = </span>0111<sub>(U2)</sub></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">8&nbsp;bitowe liczby <span>U2</span> posiadają zakres:</p>
+<table style="border-collapse: collapse;" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td>od<span lang="en"> </span></td>
+<td align="right">–2<sup>7</sup></td>
+<td><span style="font-style: normal;"> =</span><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right">–128</td>
+<td><span style="font-style: normal;" lang="en"> =</span> 10000000<sub>(U2)</sub><span style="font-style: normal;" lang="en"> </span></td>
+</tr>
+<tr>
+<td>do<span lang="en"> </span></td>
+<td align="right">2<sup>7</sup> – 1</td>
+<td><span style="font-style: normal;" lang="en"> = </span></td>
+<td align="right">127</td>
+<td><span style="font-style: normal;" lang="en"> = </span>01111111<sub>(U2)</sub></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">16&nbsp;bitowe liczby <span>U2</span> posiadają zakres:</p>
+<table style="border-collapse: collapse;" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td>od<span lang="en"> </span></td>
+<td align="right">–2<sup>15</sup></td>
+<td><span style="font-style: normal;"> =</span><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right">–32768</td>
+<td><span style="font-style: normal;" lang="en"> =</span> 1000000000000000<sub>(U2)</sub><span style="font-style: normal;" lang="en"> </span></td>
+</tr>
+<tr>
+<td>do<span lang="en"> </span></td>
+<td align="right">2<sup>15</sup> – 1</td>
+<td><span style="font-style: normal;" lang="en"> = </span></td>
+<td align="right">32767</td>
+<td><span style="font-style: normal;" lang="en"> = </span>0111111111111111<sub>(U2)</sub></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;"></p>
+<h4>Stałoprzecinkowe liczby U2</h4>
+<p style="text-align: justify;"></p>
+<div>
+<p style="text-align: justify;">Zapis <span>U2</span>, podobnie jak opisane wcześniej zapisy <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=85">NBC</a>,
+ ZM i&nbsp;U1, można rozszerzyć do zapisu stałoprzecinkowego dodając 
+bity o&nbsp;wagach ułamkowych równych kolejnym, ujemnym potęgom 
+podstawy&nbsp;2. Zasada obliczania wartości liczby stałoprzecinkowej <span>U2</span> w&nbsp;niczym nie różni się od poprzednio opisanych zasad.</p>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">0110,1011<sub>(U2)</sub> = 2<sup>2</sup> + 2<sup>1</sup> + 2<sup>-1</sup> + 2<sup>-3</sup> + 2<sup>-4</sup><br>0110,1011<sub>(U2)</sub> = 4 + 2 + <sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>8</sub> + <sup>1</sup>/<sub>16</sub><br>0110,1011<sub>(U2)</sub> = 6 <sup>11</sup>/<sub>16</sub></p>
+<p style="text-align: justify;">1101,0011<sub>(U2)</sub> = (–2<sup>3</sup>) + 2<sup>2</sup> + 2<sup>0</sup> + 2<sup>-3</sup> + 2<sup>-4</sup><br>1101,0011<sub>(U2)</sub> = (–8) + 4 + 1 + <sup>1</sup>/<sub>8</sub> + <sup>1</sup>/<sub>16</sub><br>1101,0011<sub>(U2)</sub> = (–8) + 5 <sup>3</sup>/<sub>16</sub><br>1101,0011<sub>(U2)</sub> = –(2 <sup>13</sup>/<sub>16</sub>)</p>
+<p style="text-align: justify;">Jeśli chcemy wyznaczyć liczbę przeciwną do danej liczby stałoprzecinkowej w&nbsp;kodzie <span>U2</span>,
+ to stosując pierwszą z&nbsp;opisanych powyżej metod, zamiast&nbsp;1 do 
+zanegowanych bitów dodajemy liczbę stałoprzecinkową z&nbsp;ustawionym 
+na&nbsp;<strong>1</strong> bitem na najmłodszej pozycji.</p>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Obliczamy liczbę przeciwną do 1101,1001<sub>(U2)</sub>&nbsp;= (–2 <sup>7</sup>/<sub>16</sub>)</p>
+<table style="border-collapse: collapse;" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td><span style="font-style: normal; font-weight: bold;">NOT</span><span style="font-style: normal;" lang="en"> </span></td>
+<td>1101,1001</td>
+<td rowspan="4" valign="bottom">= 2 <sup>7</sup>/<sub>16</sub></td>
+</tr>
+<tr>
+<td style="border-top: 1px solid #000000;"></td>
+<td style="border-top: 1px solid #000000;">0010,0110</td>
+</tr>
+<tr>
+<td>+</td>
+<td>0000,0001</td>
+</tr>
+<tr>
+<td style="border-top: 1px solid #000000;"><sup> </sup><sub> </sub></td>
+<td style="border-top: 1px solid #000000;">0010,0111</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Druga metoda nie wymaga modyfikacji. 
+Idziemy od końca zapisu liczby i&nbsp;przepisujemy wszystkie bity 
+zerowe, aż do napotkania bitu&nbsp;<strong>1</strong>. Bit ten przepisujemy bez zmian, a&nbsp;wszystkie pozostałe przepisujemy ze stanem przeciwnym:</p>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Obliczamy liczbę przeciwną do 0001,1100<sub>(U2)</sub> = 1 <sup>3</sup>/<sub>4</sub></p>
+<table style="border-collapse: collapse;" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td align="right">0001,1100</td>
+<td rowspan="4" valign="bottom">= –1 <sup>3</sup>/<sub>4</sub></td>
+</tr>
+<tr>
+<td style="border-top: 1px solid #000000;" align="right">00</td>
+</tr>
+<tr>
+<td align="right">100</td>
+</tr>
+<tr>
+<td align="right">1110,0100</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Wartość dziesiętną przeliczamy na zapis stałoprzecinkowy <span>U2 </span>wg następujących zasad:</p>
+<div><ol>
+<li>Jeśli liczba jest dodatnia, to stosujemy dowolną z&nbsp;opisanych 
+wcześniej metod w&nbsp;celu wyznaczenia jej reprezentacji binarnej. 
+Wynik musimy jednak uzupełnić bitami <strong>0</strong> do długości wybranego formatu <span>U2</span>.</li>
+</ol>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Znaleźć zapis <span>U2</span> liczby 3,125. Zapis <span>U2</span> posiada 4&nbsp;bity całkowite i&nbsp;4&nbsp;bity ułamkowe:</p>
+<div>
+<p style="text-align: justify;">3<sub>(10)</sub> = 11<sub>(2)</sub> – część całkowita</p>
+<p style="text-align: justify;">0,125<sub>(10)</sub> = <sup>1</sup>/<sub>8</sub> = 0,001<sub>(2)</sub> – część ułamkowa</p>
+</div>
+<p style="text-align: justify;">Łączymy obie części w&nbsp;całość i&nbsp;uzupełniamy odpowiednio bitami&nbsp;<strong>0</strong> do wymagań formatu U2:</p>
+<div>
+<p style="text-align: justify;">3,125<sub>(10)</sub> = 11,001<sub>(2)</sub> = 0011,0010<sub>(U2)</sub>.</p>
+</div>
+<ol>
+<li value="2">Jeśli liczba jest ujemna, to jej zapis <span>U2</span> możemy znaleźć na kilka sposobów. Na przykład można obliczyć zapis binarny liczby przeciwnej do niej <span class="rem">(czyli dodatniej)</span>, uzupełnić bitami 0, a&nbsp;następnie zamienić otrzymany od <span>U2</span> na liczbę przeciwną. Jednakże proponuję bardzo prostą metodę, która bezpośrednio pozwala wyznaczyć kod binarny liczby <span>U2</span>. Jeśli zapis <span>U2</span> posiada n&nbsp;cyfr całkowitych, to liczbę wyjściową sumujemy z&nbsp;wartością <span style="font-style: normal;"><nobr>2</nobr></span><sup>n</sup>. W wyniku otrzymujemy wartość naturalnego kodu dwójkowego, który bitowo jest równoważny kodowi <span>U2</span> przeliczanej liczby.</li>
+</ol>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Znaleźć zapis <span>U2</span> liczby –2,125. Zapis <span>U2</span> posiada 3&nbsp;bity całkowite oraz 5&nbsp;bitów ułamkowych.</p>
+<p style="text-align: justify;">Ponieważ bitów całkowitych jest n=3, to liczbę –2,125 sumujemy z&nbsp;liczbą 2<sup>3</sup> = 8:</p>
+<div>
+<p style="text-align: justify;">8 + (–2,125) = 5,875 = 5 <sup>7</sup>/<sub>8</sub></p>
+</div>
+<p style="text-align: justify;">Otrzymaną wartość zamieniamy na liczbę w&nbsp;naturalnym kodzie binarnym, po czym uzupełniamy bitami&nbsp;<strong>0</strong> do specyfikacji formatu U2:</p>
+<div>
+<p style="text-align: justify;">5,875<sub>(10)</sub> = 101,111<sub>(2)</sub> = 101,11100</p>
+</div>
+<p style="text-align: justify;">Otrzymany kod jest stałoprzecinkowym kodem <span>U2</span> liczby wyjściowej:</p>
+<div>
+<p style="text-align: justify;">–2,125<sub>(10)</sub> = 101,11100<sub>(U2)</sub>.</p>
+</div>
+</div>
+</div>
+<h4>Arytmetyka liczb U2</h4>
+<div>
+<p style="text-align: justify;">System zapisu <span>U2</span> liczb ze znakiem jest dzisiaj powszechnie stosowany we wszystkich komputerach <span>IBM</span>,&nbsp; <span>Macintosh</span>
+ i&nbsp;innych, ponieważ jego arytmetyka jest bardzo zbliżona do 
+arytmetyki liczb w&nbsp;naturalnym kodzie binarnym. Dzięki temu 
+procesory mogą wykonywać operacje arytmetyczne na liczbach <span>NBC</span> i&nbsp;<span>U2</span>
+ za pomocą tych samych układów elektronicznych. A&nbsp;to przekłada się 
+bezpośrednio na pieniążki – niższe koszty opracowania i&nbsp;produkcji 
+procesorów.</p>
+<table style="border-collapse: collapse; background-color: #f5f5dc;" cellpadding="10" border="0">
+<tbody>
+<tr>
+<td style="text-align: justify;">System uzupełnień do podstawy wymyślił znany francuski uczony <span>Blaise Pascal.</span>
+ Otóż skonstruował on prostą maszynę arytmetyczną, która potrafiła 
+dodawać liczby dziesiętne. Aby również umożliwić wykonywanie 
+odejmowania, Pascal dodawał liczby uzupełnione do podstawy 10. Na 
+przykład załóżmy, iż Pascal chciał wykonać odejmowanie 84 – 55. W tym 
+celu tworzył uzupełnienie dziesiętne liczby 55, które dla liczb 
+dwucyfrowych jest równe <span class="rem">(dla 3 cyfrowych odejmujemy od 1000, dla n-cyfrowych odejmujemy od 10<sup>n</sup>)</span> :<br>
+<p style="text-align: center;">100 – 55 = 45</p>
+<p style="text-align: justify;"><br> Otrzymaną liczbę dodawał na swojej maszynie do liczby 84 i dostawał wynik:</p>
+<p style="text-align: center;">84 + 45 = 129</p>
+<p style="text-align: justify;">Ignorował najstarszą cyfrę, zatem pozostawało 29, a to jest wynik różnicy:</p>
+<p style="text-align: center;">84 – 55 = 29</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Sprytne, nieprawdaż? Zaletą tego systemu
+ było to, iż uzupełnienie liczby można dosyć łatwo obliczać – sprawny 
+rachmistrz może to robić nawet w&nbsp;pamięci. Na tej właśnie podstawie 
+skonstruowany jest system <span>U2</span> – uzupełnienie do podstawy&nbsp;2.</p>
+<h4>Dodawanie i&nbsp;odejmowanie</h4>
+<p style="text-align: justify;">Liczby <span>U2</span> dodajemy i&nbsp;odejmujemy wg poznanych <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=82">zasad dla naturalnego systemu dwójkowego</a>. Przeniesienia poza bit znaku ignorujemy <span class="rem">(w&nbsp;rzeczywistości
+ takie przeniesienia lub pożyczki mogą być wykorzystywane przez procesor
+ do dodawania liczb o&nbsp;wielokrotnej precyzji)</span>.</p>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<table style="border-collapse: collapse;" cellpadding="4" border="0">
+<tbody>
+<tr>
+<td align="right"><span style="color: #008000;">3 + 3</span>
+<table id="table32" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right">0011</td>
+</tr>
+<tr>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;"><span style="font-style: normal;">+</span><span style="font-style: normal;" lang="en"> </span></td>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;" align="right">0011</td>
+</tr>
+<tr>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;"></td>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right">0110</td>
+</tr>
+</tbody>
+</table>
+<span style="color: #008000;">6</span></td>
+<td align="right"><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right"><span style="color: #008000;">5 + (–4)</span>
+<table id="table34" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right">0101</td>
+</tr>
+<tr>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;"><span style="font-style: normal;">+</span><span style="font-style: normal;" lang="en"> </span></td>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;" align="right">1100</td>
+</tr>
+<tr>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right"><span style="font-style: normal;"><span style="color: #c0c0c0;">1</span></span></td>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right">0001</td>
+</tr>
+</tbody>
+</table>
+<span style="color: #008000;">1</span></td>
+<td align="right"><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right"><span style="color: #008000;">(–3) + (–2)</span>
+<table id="table36" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td width="13"><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right">1101</td>
+</tr>
+<tr>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;" width="13"><span style="font-style: normal;">+</span><span style="font-style: normal;" lang="en"> </span></td>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;" align="right">1110</td>
+</tr>
+<tr>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right" width="13"><span style="font-style: normal;"><span style="color: #c0c0c0;">1</span></span></td>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right">1011</td>
+</tr>
+</tbody>
+</table>
+<span style="color: #008000;">(–5)</span></td>
+<td align="right"><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right"><span style="color: #008000;">5 – 4</span>
+<table id="table37" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right">0101</td>
+</tr>
+<tr>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;"><span style="font-style: normal;">-</span><span style="font-style: normal;" lang="en"> </span></td>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;" align="right">0100</td>
+</tr>
+<tr>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;"></td>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right">0001</td>
+</tr>
+</tbody>
+</table>
+<span style="font-style: normal;"><span style="color: #008000;">1</span></span></td>
+<td align="right"><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right"><span style="color: #008000;">(–2) – 3</span>
+<table id="table38" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right">1110</td>
+</tr>
+<tr>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;"><span style="font-style: normal;">-</span><span style="font-style: normal;" lang="en"> </span></td>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;" align="right">0011</td>
+</tr>
+<tr>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;"></td>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right">1011</td>
+</tr>
+</tbody>
+</table>
+<span style="font-style: normal;"><span style="color: #008000;">(–5)</span></span></td>
+<td align="right"><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right"><span style="color: #008000;">(–7) – (–6)</span>
+<table id="table39" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td><span style="font-style: normal;" lang="en"> </span></td>
+<td align="right">1001</td>
+</tr>
+<tr>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;"><span style="font-style: normal;">-</span><span style="font-style: normal;" lang="en"> </span></td>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;" align="right">1010</td>
+</tr>
+<tr>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right"><span style="font-style: normal;"><span style="color: #c0c0c0;">1</span></span></td>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right">1111</td>
+</tr>
+</tbody>
+</table>
+<span style="font-style: normal;"><span style="color: #008000;">(–1)</span></span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<h4>Mnożenie</h4>
+<p style="text-align: justify;">Mnożenie liczb w kodzie <span>U2</span> różni się nieco od <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=82">standardowego mnożenia liczb binarnych</a>. Przed wykonaniem tej operacji arytmetycznej musimy rozszerzyć znakowo obie mnożone liczby tak, aby ich długość <span class="rem">(liczba bitów)</span> wzrosła dwukrotnie <span class="rem">(jeśli są różnej długości, to rozszerzamy znakowo względem dłuższej liczby)</span>. Rozszerzenie znakowe polega na powielaniu bitu znaku na wszystkie dodane bity. Np.:</p>
+<p style="text-align: justify;"><b><span style="color: #ff0000;">0</span></b>111<sub>(U2)</sub> = <span style="color: #ff0000;"><b>0000 0</b></span>111<sub><span style="font-style: normal;">(U2)</span></sub> – rozszerzyliśmy znakowo liczbę 4&nbsp;bitową do 8&nbsp;bitowej<br><b> <span style="color: #ff0000;">1</span></b>011<sub>(U2)</sub> = <span style="color: #ff0000;"><b>1111 1</b></span>011<sub><span style="font-style: normal;">(U2)</span></sub> – to samo dla liczby ujemnej.</p>
+<p style="text-align: justify;">Rozszerzenie znakowe nie zmienia wartości liczby w&nbsp;kodzie <span>U2</span>. Po wykonaniu rozszerzenia znakowego liczby mnożymy standardowo.</p>
+<p style="text-align: justify;" align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Pomnóżmy (–2) × 3:</p>
+<div>
+<p style="text-align: justify;">–2 = 1110<sub>(U2)</sub> = 1111 1110<sub>(U2)<br> </sub>3 = 0011<sub>(U2)</sub> = 0000 0011<sub>(U2)</sub></p>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td style="text-align: right;"><span style="color: #008000;">(–2) × 3<br></span>11111110<br> x<span style="font-style: normal;"> 00000011</span></td>
+</tr>
+<tr>
+<td style="border-top: 1px solid; text-align: right;"><span style="color: #c0c0c0;">0</span>11111110<br>+ <span style="color: #c0c0c0;">1</span>11111100</td>
+</tr>
+<tr>
+<td style="border-top: 1px solid; text-align: right;"><span style="color: #c0c0c0;">10</span>11111010<br> <span style="color: #008000;">–6</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+</div>
+<p style="text-align: justify;">Wynik mnożenia może być liczbą 
+o&nbsp;długości równej sumie długości mnożonych liczb. Dlatego bity 
+wykraczające w&nbsp;naszym przykładzie poza 8&nbsp;bitów ignorujemy. 
+Pozostałe 8&nbsp;bitów określa w&nbsp;kodzie <span>U2</span> liczbę –6. Zatem rachunek zgadza się.</p>
+<h4>Dzielenie</h4>
+<p style="text-align: justify;">Najprostszym rozwiązaniem jest zapamiętanie znaków dzielonych liczb, zamiana ich na liczby dodatnie, dokonanie <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=82">dzielenia dla liczb naturalnych</a>, a&nbsp;następnie zmiana znaku wyniku, jeśli znaki dzielnej i&nbsp;dzielnika różnią się.</p>
+<p style="text-align: justify;">Podzielmy 6 przez –3:</p>
+<p style="text-align: justify;">6 = 0110<sub>(U2)<br></sub>–3 = 1101<sub>(U2)</sub> – zmieniamy na 3 = 0011<sub>(U2)</sub></p>
+<p style="text-align: justify;">Dzielimy liczbę <span style="color: #000000;"><span style="font-style: normal;">0110</span></span> przez <span style="color: #000000;"><span style="font-style: normal;">0011<br> </span></span></p>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="border-top: 1px solid; text-align: right;">0110</td>
+<td style="text-align: right;">: 0011</td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #000000;">– </span></td>
+<td style="text-align: right;">0110</td>
+<td></td>
+</tr>
+<tr>
+<td style="border-top: 1px solid; text-align: right;"></td>
+<td style="border-top: 1px solid; text-align: right;">0000</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Otrzymaliśmy wynik 0010 <span class="rem">(liczba 2)</span>.
+ Ponieważ znaki dzielnej i&nbsp;dzielnika są różne, zmieniamy wartość na
+ przeciwną: 1110 i&nbsp;ostatecznie otrzymujemy wynik 1110<sub>(U2)</sub> = (–2).</p>
+<p style="text-align: justify;">Jeśli w trakcie dzielenia otrzymamy 
+resztę, to musi ona mieć ten sam znak, co dzielna. Zbierzmy i podsumujmy
+ reguły określania znaków wyniku i reszty z dzielenia w poniższej 
+tabelce. Zawiera ona stan bitów znakowych.</p>
+<table style="border-collapse: collapse;" cellpadding="4" border="1">
+<tbody>
+<tr><th style="text-align: center;" colspan="4" bgcolor="#C0C0C0">Reguły znaków przy dzieleniu <br>liczb całkowitych</th></tr>
+<tr><th bgcolor="#F0F0F0">Dzielna</th><th bgcolor="#F0F0F0">Dzielnik</th><th bgcolor="#F0F0F0">Wynik</th><th bgcolor="#F0F0F0">Reszta</th></tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;"></p>
+<h5>Nadmiar i&nbsp;niedomiar w kodzie U2</h5>
+<div>
+<p style="text-align: justify;">W&nbsp;trakcie wykonywania działań 
+arytmetycznych wynik operacji może przekroczyć dozwolony zakres liczb 
+zarówno powyżej górnej granicy <span class="rem">(nadmiar)</span> jak i&nbsp;poniżej dolnej <span class="rem">(niedomiar)</span>.
+ Cechą charakterystyczną nadmiaru/niedomiaru jest zmiana znaku wyniku 
+w&nbsp;sytuacji, gdy nie powinna ona nastąpić. Załóżmy, iż operujemy na 
+4&nbsp;bitowych liczbach w&nbsp;kodzie <span>U2</span> i&nbsp;chcemy wykonać proste dodawanie:</p>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td style="text-align: right;">0 111<br>+ 0 001</td>
+<td><span style="color: #000000;"> </span></td>
+<td style="text-align: right;">7<br>+ 1</td>
+</tr>
+<tr>
+<td style="border-top: 1px solid; text-align: right;">1 000</td>
+<td><span style="color: #000000;"> </span></td>
+<td style="border-top: 1px solid; text-align: right;">–8</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Otrzymany wynik jest niepoprawny 
+w&nbsp;tym kodzie. Spowodowane to jest tym, iż liczba 8&nbsp;będąca sumą
+ 7&nbsp;i&nbsp;1 wykracza poza górny zakres wartości 4&nbsp;bitowego 
+kodu <span>U2</span> <span class="rem">(równy&nbsp;7)</span> i&nbsp;nie można jej poprawnie przedstawić – musielibyśmy przeznaczyć na zapis liczby więcej bitów.</p>
+<p style="text-align: justify;">Podobną sytuację zastaniemy przy próbie dodania dwóch liczb ujemnych, np. –6 i –3:</p>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td style="text-align: right;">1 010<br>+ 1 101</td>
+<td><span style="color: #000000;"> </span></td>
+<td style="text-align: right;">–6<br>+ –3</td>
+</tr>
+<tr>
+<td style="border-top: 1px solid; text-align: right;">10 111</td>
+<td><span style="color: #000000;"> </span></td>
+<td style="border-top: 1px solid; text-align: right;">7</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Liczba –9 jest mniejsza od dolnego krańca 4&nbsp;bitowych liczb w&nbsp;kodzie <span>U2</span> <span class="rem">(równego –8)</span> i&nbsp;z&nbsp;tego powodu nie może być poprawnie przedstawiona w&nbsp;tym kodzie.</p>
+<div align="center">
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Zapamiętaj:</span></h4>
+<p style="text-align: justify;">Wystąpienie nadmiaru lub niedomiaru jest
+ wskazówką dla programisty, iż źle dobrał typ danych dla przetwarzanej 
+informacji – liczby są reprezentowane zbyt małą ilością bitów i&nbsp;nie
+ można poprawnie zapisywać wyniku operacji. Najprostszym rozwiązaniem 
+będzie zwiększenie długości formatu <span>U2</span> <span class="rem">(np. z&nbsp;16 bitów na 32 bity)</span>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">W&nbsp;poniższej tabelce zebraliśmy 
+reguły powstawania nadmiaru i&nbsp;niedomiaru przy różnych operacjach 
+arytmetycznych na liczbach w&nbsp;kodzie U2. Zawiera ona stany bitów 
+znakowych.</p>
+<table style="border-collapse: collapse;" cellpadding="4" border="1">
+<tbody>
+<tr><th style="text-align: center;" colspan="4" bgcolor="#C0C0C0">Reguły powstawania<br>nadmiaru/niedomiaru w kodzie U2</th></tr>
+<tr><th bgcolor="#F0F0F0">Operacja</th><th bgcolor="#F0F0F0">Pierwszy<br>argument</th><th bgcolor="#F0F0F0">Drugi<br>argument</th><th bgcolor="#F0F0F0">Wynik</th></tr>
+<tr><th style="text-align: center;" rowspan="2" bgcolor="#F0F0F0"><span style="font-weight: 400;">DODAWANIE</span></th>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr><th style="text-align: center;" rowspan="2" bgcolor="#F0F0F0"><span style="font-weight: 400;">ODEJMOWANIE</span></th>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr><th style="text-align: center;" rowspan="4" bgcolor="#F0F0F0"><span style="font-weight: 400;">MNOŻENIE<br>DZIELENIE</span></th>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;"></p></div></div><div class="navbottom clearfix navimages"><a title="Poprzednie: 5.2. System U1" class="bookprev" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=91"><img src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/nav_prev.svg" class="icon" alt="Poprzednie: 5.2. System U1"></a><a title="Następne: 5.4. System z nadmiarem (BIAS)" class="booknext" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=93"><img src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/nav_next.svg" class="icon" alt="Następne: 5.4. System z nadmiarem (BIAS)"></a></div></div>
+                    
+                    </div>
+                </section>
+                <section data-region="blocks-column" class="hidden-print">
+                    <aside id="block-region-side-pre" class="block-region yui3-dd-drop" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Pomiń Spis treści</a>
+
+<aside id="block-59c0390e68e53" class="block block__fake  card m-b-1 yui3-dd-drop" role="complementary" data-block="_fake" aria-labelledby="instance-0-header">
+
+    <div class="card-block">
+
+
+            <h3 id="instance-0-header" class="card-title">Spis treści</h3>
+
+        <div class="card-text content">
+            <div class="book_toc_numbered clearfix"><ul><li class="clearfix"><a title="Wprowadzenie do układów cyfrowych" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=80">1. Wprowadzenie do układów cyfrowych</a><div class="action-list"><a title="Przenieś rozdział w dół &quot;Wprowadzenie do układów cyfrowych&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=80&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;1. Wprowadzenie do układów cyfrowych&quot;" title="Przenieś rozdział w dół &quot;1. Wprowadzenie do układów cyfrowych&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Wprowadzenie do układów cyfrowych&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=80"><img class="icon smallicon" alt="Edytuj rozdział &quot;1. Wprowadzenie do układów cyfrowych&quot;" title="Edytuj rozdział &quot;1. Wprowadzenie do układów cyfrowych&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=80&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b91" class="action-icon" title="Usuń rozdział &quot;Wprowadzenie do układów cyfrowych&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;1. Wprowadzenie do układów cyfrowych&quot;" title="Usuń rozdział &quot;1. Wprowadzenie do układów cyfrowych&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Wprowadzenie do układów cyfrowych&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=80&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;1. Wprowadzenie do układów cyfrowych&quot;" title="Ukryj rozdział &quot;1. Wprowadzenie do układów cyfrowych&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=1&amp;subchapter=0"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li><li class="clearfix"><a title="Systemy pozycyjne" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=81">2. Systemy pozycyjne</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Systemy pozycyjne&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=81&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;2. Systemy pozycyjne&quot;" title="Przenieś rozdział w górę &quot;2. Systemy pozycyjne&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;Systemy pozycyjne&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=81&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;2. Systemy pozycyjne&quot;" title="Przenieś rozdział w dół &quot;2. Systemy pozycyjne&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Systemy pozycyjne&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=81"><img class="icon smallicon" alt="Edytuj rozdział &quot;2. Systemy pozycyjne&quot;" title="Edytuj rozdział &quot;2. Systemy pozycyjne&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=81&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b92" class="action-icon" title="Usuń rozdział &quot;Systemy pozycyjne&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;2. Systemy pozycyjne&quot;" title="Usuń rozdział &quot;2. Systemy pozycyjne&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Systemy pozycyjne&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=81&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;2. Systemy pozycyjne&quot;" title="Ukryj rozdział &quot;2. Systemy pozycyjne&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=2&amp;subchapter=0"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div><ul><li class="clearfix"><a title="Dwójkowy" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=85">2.1. Dwójkowy</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Dwójkowy&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=85&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;2.1. Dwójkowy&quot;" title="Przenieś rozdział w górę &quot;2.1. Dwójkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;Dwójkowy&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=85&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;2.1. Dwójkowy&quot;" title="Przenieś rozdział w dół &quot;2.1. Dwójkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Dwójkowy&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=85"><img class="icon smallicon" alt="Edytuj rozdział &quot;2.1. Dwójkowy&quot;" title="Edytuj rozdział &quot;2.1. Dwójkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=85&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b93" class="action-icon" title="Usuń rozdział &quot;Dwójkowy&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;2.1. Dwójkowy&quot;" title="Usuń rozdział &quot;2.1. Dwójkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Dwójkowy&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=85&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;2.1. Dwójkowy&quot;" title="Ukryj rozdział &quot;2.1. Dwójkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=3&amp;subchapter=1"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li><li class="clearfix"><a title="Ósemkowy i szesnastkowy" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=84">2.2. Ósemkowy i szesnastkowy</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Ósemkowy i szesnastkowy&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=84&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;2.2. Ósemkowy i szesnastkowy&quot;" title="Przenieś rozdział w górę &quot;2.2. Ósemkowy i szesnastkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;Ósemkowy i szesnastkowy&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=84&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;2.2. Ósemkowy i szesnastkowy&quot;" title="Przenieś rozdział w dół &quot;2.2. Ósemkowy i szesnastkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Ósemkowy i szesnastkowy&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=84"><img class="icon smallicon" alt="Edytuj rozdział &quot;2.2. Ósemkowy i szesnastkowy&quot;" title="Edytuj rozdział &quot;2.2. Ósemkowy i szesnastkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=84&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b94" class="action-icon" title="Usuń rozdział &quot;Ósemkowy i szesnastkowy&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;2.2. Ósemkowy i szesnastkowy&quot;" title="Usuń rozdział &quot;2.2. Ósemkowy i szesnastkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Ósemkowy i szesnastkowy&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=84&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;2.2. Ósemkowy i szesnastkowy&quot;" title="Ukryj rozdział &quot;2.2. Ósemkowy i szesnastkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=4&amp;subchapter=1"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li></ul></li><li class="clearfix"><a title="Działania algebraiczne na liczbach dwójkowych" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=82">3. Działania algebraiczne na liczbach dwójkowych</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Działania algebraiczne na liczbach dwójkowych&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=82&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;3. Działania algebraiczne na liczbach dwójkowych&quot;" title="Przenieś rozdział w górę &quot;3. Działania algebraiczne na liczbach dwójkowych&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;Działania algebraiczne na liczbach dwójkowych&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=82&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;3. Działania algebraiczne na liczbach dwójkowych&quot;" title="Przenieś rozdział w dół &quot;3. Działania algebraiczne na liczbach dwójkowych&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Działania algebraiczne na liczbach dwójkowych&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=82"><img class="icon smallicon" alt="Edytuj rozdział &quot;3. Działania algebraiczne na liczbach dwójkowych&quot;" title="Edytuj rozdział &quot;3. Działania algebraiczne na liczbach dwójkowych&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=82&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b95" class="action-icon" title="Usuń rozdział &quot;Działania algebraiczne na liczbach dwójkowych&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;3. Działania algebraiczne na liczbach dwójkowych&quot;" title="Usuń rozdział &quot;3. Działania algebraiczne na liczbach dwójkowych&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Działania algebraiczne na liczbach dwójkowych&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=82&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;3. Działania algebraiczne na liczbach dwójkowych&quot;" title="Ukryj rozdział &quot;3. Działania algebraiczne na liczbach dwójkowych&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=5&amp;subchapter=0"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li><li class="clearfix"><a title="Kody liczbowe" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=87">4. Kody liczbowe</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Kody liczbowe&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=87&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;4. Kody liczbowe&quot;" title="Przenieś rozdział w górę &quot;4. Kody liczbowe&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;Kody liczbowe&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=87&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;4. Kody liczbowe&quot;" title="Przenieś rozdział w dół &quot;4. Kody liczbowe&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Kody liczbowe&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=87"><img class="icon smallicon" alt="Edytuj rozdział &quot;4. Kody liczbowe&quot;" title="Edytuj rozdział &quot;4. Kody liczbowe&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=87&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b96" class="action-icon" title="Usuń rozdział &quot;Kody liczbowe&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;4. Kody liczbowe&quot;" title="Usuń rozdział &quot;4. Kody liczbowe&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Kody liczbowe&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=87&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;4. Kody liczbowe&quot;" title="Ukryj rozdział &quot;4. Kody liczbowe&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=6&amp;subchapter=0"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li><li class="clearfix"><a title="Stałopozycyjna reprezentacja liczb" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=88">5. Stałopozycyjna reprezentacja liczb</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Stałopozycyjna reprezentacja liczb&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=88&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;5. Stałopozycyjna reprezentacja liczb&quot;" title="Przenieś rozdział w górę &quot;5. Stałopozycyjna reprezentacja liczb&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;Stałopozycyjna reprezentacja liczb&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=88&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;5. Stałopozycyjna reprezentacja liczb&quot;" title="Przenieś rozdział w dół &quot;5. Stałopozycyjna reprezentacja liczb&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Stałopozycyjna reprezentacja liczb&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=88"><img class="icon smallicon" alt="Edytuj rozdział &quot;5. Stałopozycyjna reprezentacja liczb&quot;" title="Edytuj rozdział &quot;5. Stałopozycyjna reprezentacja liczb&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=88&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b97" class="action-icon" title="Usuń rozdział &quot;Stałopozycyjna reprezentacja liczb&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;5. Stałopozycyjna reprezentacja liczb&quot;" title="Usuń rozdział &quot;5. Stałopozycyjna reprezentacja liczb&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Stałopozycyjna reprezentacja liczb&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=88&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;5. Stałopozycyjna reprezentacja liczb&quot;" title="Ukryj rozdział &quot;5. Stałopozycyjna reprezentacja liczb&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=7&amp;subchapter=0"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div><ul><li class="clearfix"><a title="Zapis ZM" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=90">5.1. Zapis ZM</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Zapis ZM&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=90&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;5.1. Zapis ZM&quot;" title="Przenieś rozdział w górę &quot;5.1. Zapis ZM&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;Zapis ZM&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=90&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;5.1. Zapis ZM&quot;" title="Przenieś rozdział w dół &quot;5.1. Zapis ZM&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Zapis ZM&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=90"><img class="icon smallicon" alt="Edytuj rozdział &quot;5.1. Zapis ZM&quot;" title="Edytuj rozdział &quot;5.1. Zapis ZM&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=90&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b98" class="action-icon" title="Usuń rozdział &quot;Zapis ZM&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;5.1. Zapis ZM&quot;" title="Usuń rozdział &quot;5.1. Zapis ZM&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Zapis ZM&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=90&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;5.1. Zapis ZM&quot;" title="Ukryj rozdział &quot;5.1. Zapis ZM&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=8&amp;subchapter=1"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li><li class="clearfix"><a title="System U1" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=91">5.2. System U1</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;System U1&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=91&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;5.2. System U1&quot;" title="Przenieś rozdział w górę &quot;5.2. System U1&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;System U1&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=91&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;5.2. System U1&quot;" title="Przenieś rozdział w dół &quot;5.2. System U1&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;System U1&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=91"><img class="icon smallicon" alt="Edytuj rozdział &quot;5.2. System U1&quot;" title="Edytuj rozdział &quot;5.2. System U1&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=91&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b99" class="action-icon" title="Usuń rozdział &quot;System U1&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;5.2. System U1&quot;" title="Usuń rozdział &quot;5.2. System U1&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;System U1&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=91&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;5.2. System U1&quot;" title="Ukryj rozdział &quot;5.2. System U1&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=9&amp;subchapter=1"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li><li class="clearfix"><strong>5.3. System U2</strong><div class="action-list"><a title="Przenieś rozdział w górę &quot;System U2&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=92&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;5.3. System U2&quot;" title="Przenieś rozdział w górę &quot;5.3. System U2&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;System U2&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=92&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;5.3. System U2&quot;" title="Przenieś rozdział w dół &quot;5.3. System U2&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;System U2&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=92"><img class="icon smallicon" alt="Edytuj rozdział &quot;5.3. System U2&quot;" title="Edytuj rozdział &quot;5.3. System U2&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=92&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b910" class="action-icon" title="Usuń rozdział &quot;System U2&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;5.3. System U2&quot;" title="Usuń rozdział &quot;5.3. System U2&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;System U2&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=92&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;5.3. System U2&quot;" title="Ukryj rozdział &quot;5.3. System U2&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=10&amp;subchapter=1"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li><li class="clearfix"><a title="System z nadmiarem (BIAS)" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=93">5.4. System z nadmiarem (BIAS)</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;System z nadmiarem (BIAS)&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=93&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;5.4. System z nadmiarem (BIAS)&quot;" title="Przenieś rozdział w górę &quot;5.4. System z nadmiarem (BIAS)&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;System z nadmiarem (BIAS)&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=93&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;5.4. System z nadmiarem (BIAS)&quot;" title="Przenieś rozdział w dół &quot;5.4. System z nadmiarem (BIAS)&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;System z nadmiarem (BIAS)&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=93"><img class="icon smallicon" alt="Edytuj rozdział &quot;5.4. System z nadmiarem (BIAS)&quot;" title="Edytuj rozdział &quot;5.4. System z nadmiarem (BIAS)&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=93&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b911" class="action-icon" title="Usuń rozdział &quot;System z nadmiarem (BIAS)&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;5.4. System z nadmiarem (BIAS)&quot;" title="Usuń rozdział &quot;5.4. System z nadmiarem (BIAS)&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;System z nadmiarem (BIAS)&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=93&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;5.4. System z nadmiarem (BIAS)&quot;" title="Ukryj rozdział &quot;5.4. System z nadmiarem (BIAS)&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=11&amp;subchapter=1"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li><li class="clearfix"><a title="Podsumowanie" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=94">5.5. Podsumowanie</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Podsumowanie&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=94&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;5.5. Podsumowanie&quot;" title="Przenieś rozdział w górę &quot;5.5. Podsumowanie&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;Podsumowanie&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=94&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;5.5. Podsumowanie&quot;" title="Przenieś rozdział w dół &quot;5.5. Podsumowanie&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Podsumowanie&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=94"><img class="icon smallicon" alt="Edytuj rozdział &quot;5.5. Podsumowanie&quot;" title="Edytuj rozdział &quot;5.5. Podsumowanie&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=94&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b912" class="action-icon" title="Usuń rozdział &quot;Podsumowanie&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;5.5. Podsumowanie&quot;" title="Usuń rozdział &quot;5.5. Podsumowanie&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Podsumowanie&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=94&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;5.5. Podsumowanie&quot;" title="Ukryj rozdział &quot;5.5. Podsumowanie&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=12&amp;subchapter=1"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li></ul></li><li class="clearfix"><a title="Zmiennopozycyjna reprezentacja liczb" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=89">6. Zmiennopozycyjna reprezentacja liczb</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Zmiennopozycyjna reprezentacja liczb&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=89&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;6. Zmiennopozycyjna reprezentacja liczb&quot;" title="Przenieś rozdział w górę &quot;6. Zmiennopozycyjna reprezentacja liczb&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;Zmiennopozycyjna reprezentacja liczb&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=89&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;6. Zmiennopozycyjna reprezentacja liczb&quot;" title="Przenieś rozdział w dół &quot;6. Zmiennopozycyjna reprezentacja liczb&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Zmiennopozycyjna reprezentacja liczb&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=89"><img class="icon smallicon" alt="Edytuj rozdział &quot;6. Zmiennopozycyjna reprezentacja liczb&quot;" title="Edytuj rozdział &quot;6. Zmiennopozycyjna reprezentacja liczb&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=89&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b913" class="action-icon" title="Usuń rozdział &quot;Zmiennopozycyjna reprezentacja liczb&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;6. Zmiennopozycyjna reprezentacja liczb&quot;" title="Usuń rozdział &quot;6. Zmiennopozycyjna reprezentacja liczb&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Zmiennopozycyjna reprezentacja liczb&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=89&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;6. Zmiennopozycyjna reprezentacja liczb&quot;" title="Ukryj rozdział &quot;6. Zmiennopozycyjna reprezentacja liczb&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=13&amp;subchapter=0"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div><ul><li class="clearfix"><a title="Przykładowy system zmiennoprzecinkowy" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=95">6.1. Przykładowy system zmiennoprzecinkowy</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Przykładowy system zmiennoprzecinkowy&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=95&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;6.1. Przykładowy system zmiennoprzecinkowy&quot;" title="Przenieś rozdział w górę &quot;6.1. Przykładowy system zmiennoprzecinkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Przenieś rozdział w dół &quot;Przykładowy system zmiennoprzecinkowy&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=95&amp;up=0&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w dół &quot;6.1. Przykładowy system zmiennoprzecinkowy&quot;" title="Przenieś rozdział w dół &quot;6.1. Przykładowy system zmiennoprzecinkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/down.svg"></a><a title="Edytuj rozdział &quot;Przykładowy system zmiennoprzecinkowy&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=95"><img class="icon smallicon" alt="Edytuj rozdział &quot;6.1. Przykładowy system zmiennoprzecinkowy&quot;" title="Edytuj rozdział &quot;6.1. Przykładowy system zmiennoprzecinkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=95&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b914" class="action-icon" title="Usuń rozdział &quot;Przykładowy system zmiennoprzecinkowy&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;6.1. Przykładowy system zmiennoprzecinkowy&quot;" title="Usuń rozdział &quot;6.1. Przykładowy system zmiennoprzecinkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Przykładowy system zmiennoprzecinkowy&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=95&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;6.1. Przykładowy system zmiennoprzecinkowy&quot;" title="Ukryj rozdział &quot;6.1. Przykładowy system zmiennoprzecinkowy&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=14&amp;subchapter=1"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li></ul></li><li class="clearfix"><a title="Prawa i twierdzenia algebry Boole`a" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=86">7. Prawa i twierdzenia algebry Boole`a</a><div class="action-list"><a title="Przenieś rozdział w górę &quot;Prawa i twierdzenia algebry Boole`a&quot;" href="https://msg.sytes.net:8085/mod/book/move.php?id=13&amp;chapterid=86&amp;up=1&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Przenieś rozdział w górę &quot;7. Prawa i twierdzenia algebry Boole`a&quot;" title="Przenieś rozdział w górę &quot;7. Prawa i twierdzenia algebry Boole`a&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/up.svg"></a><a title="Edytuj rozdział &quot;Prawa i twierdzenia algebry Boole`a&quot;" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;id=86"><img class="icon smallicon" alt="Edytuj rozdział &quot;7. Prawa i twierdzenia algebry Boole`a&quot;" title="Edytuj rozdział &quot;7. Prawa i twierdzenia algebry Boole`a&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/edit.svg"></a><a href="https://msg.sytes.net:8085/mod/book/delete.php?id=13&amp;chapterid=86&amp;sesskey=mKFhef9Opr&amp;confirm=1" id="action_link59c0390e400b915" class="action-icon" title="Usuń rozdział &quot;Prawa i twierdzenia algebry Boole`a&quot;"><img class="icon smallicon" alt="Usuń rozdział &quot;7. Prawa i twierdzenia algebry Boole`a&quot;" title="Usuń rozdział &quot;7. Prawa i twierdzenia algebry Boole`a&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/delete.svg"></a><a title="Ukryj rozdział &quot;Prawa i twierdzenia algebry Boole`a&quot;" href="https://msg.sytes.net:8085/mod/book/show.php?id=13&amp;chapterid=86&amp;sesskey=mKFhef9Opr"><img class="icon smallicon" alt="Ukryj rozdział &quot;7. Prawa i twierdzenia algebry Boole`a&quot;" title="Ukryj rozdział &quot;7. Prawa i twierdzenia algebry Boole`a&quot;" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/hide.svg"></a><a title="Dodaj nowy rozdział" href="https://msg.sytes.net:8085/mod/book/edit.php?cmid=13&amp;pagenum=15&amp;subchapter=0"><img class="icon smallicon" alt="Dodaj nowy rozdział" title="Dodaj nowy rozdział" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/add.svg"></a></div></li></ul></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3" data-key="coursehome">
+                <div class="m-l-0">
+                        UKiT
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/user/index.php?id=3" data-key="participants">
+                <div class="m-l-0">
+                        Uczestnicy
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/badges/view.php?type=2&amp;id=3" data-key="badgesview">
+                <div class="m-l-0">
+                        Odznaki
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/admin/tool/lp/coursecompetencies.php?courseid=3" data-key="2">
+                <div class="m-l-0">
+                        Kompetencje
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/grade/report/index.php?id=3" data-key="grades">
+                <div class="m-l-0">
+                        Oceny
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-0" data-key="8">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Główne składowe</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-1" data-key="9">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Program nauczania i zasady oceniania</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action font-weight-bold" href="https://msg.sytes.net:8085/course/view.php?id=3#section-2" data-key="10">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Układy kombinacyjne</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-3" data-key="11">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Temat 3</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-4" data-key="12">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Temat 4</span>
+                        </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/my/" data-key="myhome">
+                <div class="m-l-0">
+                        Kokpit
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/?redirect=0" data-key="home">
+                <div class="m-l-0">
+                        Strona główna
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/calendar/view.php?view=month" data-key="calendar">
+                <div class="m-l-0">
+                        Kalendarz
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/user/files.php" data-key="5">
+                <div class="m-l-0">
+                        Prywatne pliki
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses">
+                <div class="m-l-0">
+                    Moje kursy
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3" data-key="3">
+                <div class="m-l-1">
+                        UKiT
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=2" data-key="2">
+                <div class="m-l-1">
+                        UTt
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=92&amp;bui_addblock&amp;sesskey=mKFhef9Opr" data-key="addblock">
+                <div class="m-l-0">
+                        Dodaj blok
+                </div>
+            </a>
+        </nav>
+    </div>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+
+            <p class="helplink"><a href="http://docs.moodle.org/32/pl/mod/book/view"><img class="icon iconhelp icon-pre" role="presentation" alt="" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/docs.svg">Dokumentacja Moodle dla tej strony</a></p>
+
+        <div class="logininfo">Jesteś zalogowany(a) jako <a href="https://msg.sytes.net:8085/user/profile.php?id=3" title="Zobacz profil">Grzegorz Kantowicz</a> (<a href="https://msg.sytes.net:8085/login/logout.php?sesskey=mKFhef9Opr">Wyloguj</a>)</div>
+        <div class="homelink"><a href="https://msg.sytes.net:8085/course/view.php?id=3">UKiT</a></div>
+        <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                </ul>
+        </nav>
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://msg.sytes.net:8085/lib/requirejs.php/1504993502/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://msg.sytes.net:8085/lib/javascript.php/1504993502/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'https://msg.sytes.net:8085/lib/javascript.php/1504993502/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://msg.sytes.net:8085/lib/javascript.php/1504993502/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="Arytmetyka%20cyfrowa%20%20System%20U2_pliki/require.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/video"], function(videojs) {
+videojs.options.flash.swf = "https://msg.sytes.net:8085/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("pl",{
+ "Play": "Odtwarzaj",
+ "Pause": "Pauza",
+ "Current Time": "Aktualny czas",
+ "Duration Time": "Czas trwania",
+ "Remaining Time": "Pozostały czas",
+ "Stream Type": "Typ strumienia",
+ "LIVE": "NA ŻYWO",
+ "Loaded": "Załadowany",
+ "Progress": "Status",
+ "Fullscreen": "Pełny ekran",
+ "Non-Fullscreen": "Pełny ekran niedostępny",
+ "Mute": "Wyłącz dźwięk",
+ "Unmute": "Włącz dźwięk",
+ "Playback Rate": "Szybkość odtwarzania",
+ "Subtitles": "Napisy",
+ "subtitles off": "Napisy wyłączone",
+ "Captions": "Transkrypcja",
+ "captions off": "Transkrypcja wyłączona",
+ "Chapters": "Rozdziały",
+ "You aborted the media playback": "Odtwarzanie zostało przerwane",
+ "A network error caused the media download to fail part-way.": "Problemy z siecią spowodowały błąd przy pobieraniu materiału wideo.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "Materiał wideo nie może być załadowany, ponieważ wystąpił problem z siecią lub format nie jest obsługiwany",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "Odtwarzanie materiału wideo zostało przerwane z powodu uszkodzonego pliku wideo lub z powodu błędu funkcji, które nie są wspierane przez przeglądarkę.",
+ "No compatible source was found for this media.": "Dla tego materiału wideo nie znaleziono kompatybilnego źródła.",
+ "Play video": "Odtwarzaj wideo",
+ "Close": "Zamknij",
+ "Modal Window": "Okno Modala",
+ "This is a modal window": "To jest okno modala",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "Ten modal możesz zamknąć naciskając przycisk Escape albo wybierając przycisk Zamknij.",
+ ", opens captions settings dialog": ", otwiera okno dialogowe ustawień transkrypcji",
+ ", opens subtitles settings dialog": ", otwiera okno dialogowe napisów",
+ ", selected": ", zaznaczone"
+});
+
+});;
+require(["media_videojs/Youtube"]);
+require(["media_videojs/loader"], function(amd) { amd.setUp(); });;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b91', null, {"message":"Usu\u0144 rozdzia\u0142 \"Wprowadzenie do uk\u0142ad\u00f3w cyfrowych\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b92', null, {"message":"Usu\u0144 rozdzia\u0142 \"Systemy pozycyjne\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b93', null, {"message":"Usu\u0144 rozdzia\u0142 \"Dw\u00f3jkowy\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b94', null, {"message":"Usu\u0144 rozdzia\u0142 \"\u00d3semkowy i szesnastkowy\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b95', null, {"message":"Usu\u0144 rozdzia\u0142 \"Dzia\u0142ania algebraiczne na liczbach dw\u00f3jkowych\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b96', null, {"message":"Usu\u0144 rozdzia\u0142 \"Kody liczbowe\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b97', null, {"message":"Usu\u0144 rozdzia\u0142 \"Sta\u0142opozycyjna reprezentacja liczb\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b98', null, {"message":"Usu\u0144 rozdzia\u0142 \"Zapis ZM\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b99', null, {"message":"Usu\u0144 rozdzia\u0142 \"System U1\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b910', null, {"message":"Usu\u0144 rozdzia\u0142 \"System U2\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b911', null, {"message":"Usu\u0144 rozdzia\u0142 \"System z nadmiarem (BIAS)\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b912', null, {"message":"Usu\u0144 rozdzia\u0142 \"Podsumowanie\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b913', null, {"message":"Usu\u0144 rozdzia\u0142 \"Zmiennopozycyjna reprezentacja liczb\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b914', null, {"message":"Usu\u0144 rozdzia\u0142 \"Przyk\u0142adowy system zmiennoprzecinkowy\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', M.util.show_confirm_dialog, '#action_link59c0390e400b915', null, {"message":"Usu\u0144 rozdzia\u0142 \"Prawa i twierdzenia algebry Boole`a\"","continuelabel":null,"cancellabel":null});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link59c0390e400b926', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=13","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link59c0390e400b927', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=13&chapterid=92","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+require(["core/addblockmodal"], function(amd) { amd.init({"blocks":["settings","html","recent_activity","rss_client","comments","blog_menu","private_files","navigation","participants","blog_recent","mentees","activity_results","tags","blog_tags","myprofile"],"url":"?id=13&chapterid=92&bui_addblock&sesskey=mKFhef9Opr"}); });;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link59c0390e400b950', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=13","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link59c0390e400b951', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=13&chapterid=92","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(45, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Ostatnia modyfikacja","name":"Nazwa","error":"B\u0142\u0105d","info":"Informacja","yes":"Tak","no":"Nie","morehelp":"Wi\u0119cej pomocy","loadinghelp":"\u0141adowanie ...","cancel":"Anuluj","movecontent":"Przenie\u015b {$a}","tocontent":"Do pozycji \"{$a}\"","emptydragdropregion":"pusty obszar","confirm":"Potwierd\u017a","areyousure":"Czy jeste\u015b pewny?","closebuttontitle":"Zamknij","unknownerror":"Nieznany b\u0142\u0105d"},"repository":{"type":"Typ","size":"Rozmiar","invalidjson":"Nieprawid\u0142owy ci\u0105g jSON","nofilesattached":"Nie za\u0142\u0105czono plik\u00f3w","filepicker":"Wyb\u00f3r plik\u00f3w","logout":"Wyloguj si\u0119","nofilesavailable":"Brak dost\u0119pnych plik\u00f3w","norepositoriesavailable":"Niestety, \u017cadne z istniej\u0105cych repozytori\u00f3w nie mo\u017ce zawiera\u0107 plik\u00f3w w wymaganym formacie.","fileexistsdialogheader":"Plik istnieje","fileexistsdialog_editor":"Plik o wybranej nazwie zosta\u0142 ju\u017c za\u0142\u0105czony do tekstu, kt\u00f3ry edytujesz.","fileexistsdialog_filemanager":"Plik o wybranej nazwie ju\u017c zosta\u0142 do\u0142\u0105czony","renameto":"Zmie\u0144 nazw\u0119 na","referencesexist":"Istnieje {$a} skr\u00f3t\u00f3w, kt\u00f3re wykorzystuj\u0105 ten plik jako \u017ar\u00f3d\u0142o.","select":"Wybierz"},"admin":{"confirmdeletecomments":"Zamierzasz usun\u0105\u0107 komentarze, czy jeste\u015b pewien(a)?","confirmation":"Potwierdzenie"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {setTimeout("fix_column_widths()", 20);
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"pl"});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+Y.on('domready', function() { Y.use("moodle-core-blocks",function() {M.core_blocks.init_dragdrop({"courseid":"3","pagetype":"mod-book-view","pagelayout":"incourse","subpage":"","regions":["side-pre"],"contextid":45,"cmid":"13"});
+}); });
+ M.util.js_pending('random59c0390e400b953'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random59c0390e400b953'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+
+</body></html>

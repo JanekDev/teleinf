@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="pl" class="yui3-js-enabled" lang="pl"><head><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+    <title>Sieci komutacyjne: Elementy komutacyjne</title>
+    <link rel="shortcut icon" href="https://msg.sytes.net:8085/theme/image.php/boost/theme/1529268670/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, Sieci komutacyjne: Elementy komutacyjne">
+<link rel="stylesheet" type="text/css" href="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/yui_combo.css"><script type="text/javascript" id="www-widgetapi-script" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/www-widgetapi.js" async=""></script><script src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/iframe_api"></script><script charset="utf-8" id="yui_3_17_2_1_1548341402032_8" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/yui_combo_003.php" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1548341402032_18" href="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/yui_combo_002.css"><script charset="utf-8" id="yui_3_17_2_1_1548341402032_19" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/yui_combo_004.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1548341402032_28" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/yui_combo_002.php" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/all.css">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/msg.sytes.net:8085","sesskey":"Kf6CICTMsF","loadingicon":"https:\/\/msg.sytes.net:8085\/theme\/image.php\/boost\/core\/1529268670\/i\/loading_small","themerev":"1529268670","slasharguments":1,"theme":"boost","jsrev":"1529268669","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?m\/1529268669\/","combine":true,"comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","ext":false,"root":"m\/1529268669\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]}}},"gallery":{"name":"gallery","base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1529268669\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/msg.sytes.net:8085\/lib\/javascript.php\/1529268669\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/msg.sytes.net:8085\/lib\/javascript.php\/1529268669\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.mathjax.org\/mathjax\/2.7-latest\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/first.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryprivate" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/jquery-private.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/jquery-3.js"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style></head>
+
+<body id="page-mod-book-view" class="format-topics  path-mod path-mod-book gecko dir-ltr lang-pl yui-skin-sam yui3-skin-sam msg-sytes-net--8085 pagelayout-incourse course-4 context-62 cmid-29 category-3  jsenabled">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Przejdź do głównej zawartości</a>
+</div><script type="text/javascript" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/yui_combo.php"></script><script type="text/javascript" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true">☰</span><span class="sr-only">Rozszerzać</span></button>
+            </div>
+    
+            <a href="https://msg.sytes.net:8085/" class="navbar-brand 
+                    hidden-sm-down
+                    ">
+                <span class="site-name hidden-sm-down">Zespół Szkół Elektronicznych im. Wojska Polskiego w Bydgoszczy</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <span class="dropdown">
+    <a href="#" class="dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">Grzegorz Kantowicz</span><span class="avatars"><span class="avatar current"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/f2.jpg" alt="Grzegorz Kantowicz" title="Grzegorz Kantowicz" class="userpicture" role="presentation" width="35" height="35"></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+            <a href="https://msg.sytes.net:8085/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/course.svg">
+<span class="menu-action-text" id="actionmenuaction-1">Kokpit</span></a><div class="dropdown-divider"></div><a href="https://msg.sytes.net:8085/user/profile.php?id=3" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/user.svg">
+<span class="menu-action-text" id="actionmenuaction-2">Profil</span></a><a href="https://msg.sytes.net:8085/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/grades.svg">
+<span class="menu-action-text" id="actionmenuaction-3">Stopnie</span></a><a href="https://msg.sytes.net:8085/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/message.svg">
+<span class="menu-action-text" id="actionmenuaction-4">Wiadomości</span></a><a href="https://msg.sytes.net:8085/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/preferences.svg">
+<span class="menu-action-text" id="actionmenuaction-5">Ustawienia</span></a><a href="https://msg.sytes.net:8085/login/logout.php?sesskey=Kf6CICTMsF" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/logout.svg">
+<span class="menu-action-text" id="actionmenuaction-6">Wyloguj</span></a><div class="dropdown-divider"></div><a href="https://msg.sytes.net:8085/course/switchrole.php?id=4&amp;switchrole=-1&amp;returnurl=%2Fmod%2Fbook%2Fview.php%3Fid%3D29%26chapterid%3D232" class="dropdown-item menu-action" role="menuitem" data-title="switchroleto,moodle" aria-labelledby="actionmenuaction-7"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/switchrole.svg">
+<span class="menu-action-text" id="actionmenuaction-7">Zmień rolę na...</span></a>
+        </div>
+</span>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages" id="nav-message-popover-container" data-userid="3" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-5c49d1902d4485c49d19013fca24" aria-haspopup="true" aria-label="Show message window with no new messages" tabindex="0">
+                <img class="icon smallicon" alt=" Toggle messages menu " title=" Toggle messages menu " src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/message.svg">
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div id="popover-region-container-5c49d1902d4485c49d19013fca24" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Okno powiadomiemia" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Wiadomości</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+                <a href="https://msg.sytes.net:8085/message/index.php?contactsfirst=1">Nowa wiadomość
+                </a>
+        </div>
+        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button" href="#" role="button" title="Oznacz wszystko jako przeczytane" data-action="mark-all-read">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" Oznacz wszystko jako przeczytane " title=" Oznacz wszystko jako przeczytane " src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/markasread.svg"></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/loading.gif"></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Oznacz wszystko jako przeczytane
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://msg.sytes.net:8085/message/edit.php?id=3" title="Preferencje wiadomości">
+                    <img class="icon smallicon" alt=" Preferencje wiadomości " title=" Preferencje wiadomości " src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/settings.svg">
+                </a>
+
+    <div class="hover-tooltip">
+        Preferencje wiadomości
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">Brak wiadomości</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://msg.sytes.net:8085/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Wyświetl wszystko</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="3" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-5c49d190311ea5c49d19013fca25" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <img class="icon smallicon" alt=" Toggle notifications menu " title=" Toggle notifications menu " src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/notifications.svg">
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div id="popover-region-container-5c49d190311ea5c49d19013fca25" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Okno powiadomiemia" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Powiadomienia</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button" href="#" title="Oznacz wszystko jako przeczytane" data-action="mark-all-read" role="button">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" Oznacz wszystko jako przeczytane " title=" Oznacz wszystko jako przeczytane " src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/markasread.svg"></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/loading.gif"></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Oznacz wszystko jako przeczytane
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://msg.sytes.net:8085/message/notificationpreferences.php?userid=3" title="Preferencje powiadomienia">
+                    <img class="icon smallicon" alt=" Preferencje powiadomienia " title=" Preferencje powiadomienia " src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/settings.svg">
+                </a>
+
+    <div class="hover-tooltip">
+        Preferencje powiadomienia
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Nie masz powiadomień</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://msg.sytes.net:8085/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Wyświetl wszystko</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- custom_menu -->
+                
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="page-context-header"><div class="page-header-headings"><h1>Systemy komutacyjne</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/my/">Kokpit</a></li>
+                <li class="breadcrumb-item">Moje kursy</li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/course/view.php?id=4" title="Systemy komutacyjne">Systemy komutacyjne</a></li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/course/view.php?id=4#section-2">Systemy komutacyjne</a></li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/mod/book/view.php?id=29" title="Książka">Sieci komutacyjne</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button"><div class="singlebutton">
+    <form method="post" action="https://msg.sytes.net:8085/mod/book/view.php">
+            <input type="hidden" name="id" value="29">
+            <input type="hidden" name="chapterid" value="232">
+            <input type="hidden" name="edit" value="1">
+            <input type="hidden" name="sesskey" value="Kf6CICTMsF">
+        <button type="submit" class="btn btn-secondary" id="single_button5c49d19013fca1" title="">Włącz tryb edycji</button>
+    </form>
+</div></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <div id="region-main-settings-menu" class="hidden-print has-blocks">
+                    <div> <div class="action-menu moodle-actionmenu" id="action-menu-3" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-3-menubar" role="menubar">
+
+            <span class="dropdown">
+    <a href="#" class="dropdown-toggle" id="dropdown-3" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/edit.svg">
+</a>
+        <div class="dropdown-menu dropdown-menu-right menu align-tr-br" id="action-menu-3-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-3" role="menu" data-align="tr-br">
+            <div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/course/modedit.php?update=29&amp;return=1" id="action_link5c49d19013fca26" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/navigationitem.svg">
+Edytuj ustawienia</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/assign.php?contextid=62" id="action_link5c49d19013fca27" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/navigationitem.svg">
+Role przypisane lokalnie</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/permissions.php?contextid=62" id="action_link5c49d19013fca28" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/navigationitem.svg">
+Uprawnienia</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/check.php?contextid=62" id="action_link5c49d19013fca29" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/navigationitem.svg">
+Sprawdź uprawnienia
+</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/filter/manage.php?contextid=62" id="action_link5c49d19013fca30" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/navigationitem.svg">
+Filtry</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/report/log/index.php?chooselog=1&amp;id=4&amp;modid=29" id="action_link5c49d19013fca31" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/navigationitem.svg">
+Logi</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/backup/backup.php?id=4&amp;cm=29" id="action_link5c49d19013fca32" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/navigationitem.svg">
+Kopia zapasowa</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/backup/restorefile.php?contextid=62" id="action_link5c49d19013fca33" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/navigationitem.svg">
+Odtwórz</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/importhtml/index.php?id=29" id="action_link5c49d19013fca34" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/navigationitem.svg">
+Import rozdziałów</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/print/index.php?id=29" id="action_link5c49d19013fca35" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/book.svg">
+Drukuj książkę</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/print/index.php?id=29&amp;chapterid=232" id="action_link5c49d19013fca36" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/chapter.svg">
+Drukuj ten rozdział</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=232&amp;edit=1&amp;sesskey=Kf6CICTMsF" id="action_link5c49d19013fca37" class="" role="menuitem"><img class="icon " alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/navigationitem.svg">
+Włącz tryb edycji</a>
+
+
+</div>
+        </div>
+</span>
+
+
+        </div>
+
+</div> </div>
+                </div>
+                <section id="region-main" class="has-blocks">
+                    <div class="card card-block">
+                        <div class="region_main_settings_menu_proxy"></div>
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><h2>Sieci komutacyjne</h2><div class="navtop clearfix navimages"><a title="Poprzednie: 5.3. Systemy z komutacją ścieżek" class="bookprev" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=231"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/nav_prev.svg" class="icon" alt="Poprzednie: 5.3. Systemy z komutacją ścieżek"></a><a title="Następne: 5.5. Pola komutacyjne" class="booknext" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=233"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/nav_next.svg" class="icon" alt="Następne: 5.5. Pola komutacyjne"></a></div><div class="box generalbox book_content p-y-1"><h3>5. Systemy komutacji optycznej</h3><h4>5.4. Elementy komutacyjne</h4><div class="no-overflow"><p style="text-align: justify;">Do
+ budowy optycznych elementów komutacyjnych stosuje się różne 
+technologie, które wykorzystują różne efekty optyczne 
+w&nbsp;materiałach. Najogólniej technologie te możemy podzielić na dwie 
+grupy:</p>
+<ul>
+<li style="text-align: justify;">elementy komutacyjne wykorzystujące światłowody (falowody),</li>
+<li style="text-align: justify;">elementy z&nbsp;komutacją fal w&nbsp;wolnej przestrzeni.</li>
+</ul>
+<p style="text-align: justify;">Każda z&nbsp;tych grup może być dalej 
+podzielona na różne klasy, w&nbsp;zależności od zjawisk fizycznych 
+wykorzystywanych do przełączania fal optycznych pomiędzy wejściami 
+i&nbsp;wyjściami. Są to m.in. klasy opisane poniżej.</p>
+<h4>Elektrooptyczne elementy komutacyjne</h4>
+<p style="text-align: justify;">Wykorzystują efekt elektrooptyczny 
+w&nbsp;materiałach, polegający na zmianie współczynnika załamania się 
+światła pod wpływem przyłożonego pola elektrycznego. Przykładem takiego 
+komutatora jest sprzęgacz kierunkowy.</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Sprzgacz%252520kierunkowy%252520wykorzystujcy%252520efekt%252520elek.png" alt="Sprzęgacz kierunkowy wykorzystujący efekt elektrooptyczny" width="337" height="172"></p>
+<p style="text-align: center;">Rys.&nbsp;111. Sprzęgacz kierunkowy wykorzystujący efekt elektrooptyczny</p>
+<p style="text-align: justify;">Najczęściej stosowana jest technologia Ti:LiNbO<sub>3</sub>
+ (rys.&nbsp;111). Polega ona na dyfundowaniu w&nbsp;wysokiej 
+temperaturze i&nbsp;pod wysokim ciśnieniem atomów tytanu do kryształu 
+z&nbsp;niobianu litu. Obszar domieszkowany tytanem ma inny współczynnik 
+załamania światła i&nbsp;tworzy falowód. W&nbsp;krysztale tworzone są 
+dwa takie falowody, przy czym w&nbsp;obszarze sprzęgania, w&nbsp;którym 
+falowody umieszczone są dostatecznie blisko siebie, zachodzi przenikanie
+ energii z&nbsp;jednego falowodu do drugiego i&nbsp;w&nbsp;efekcie 
+następuje przełączenie sygnału z&nbsp;jednego falowodu do drugiego. Nad 
+obszarem sprzęgania umieszczone są elektrody umożliwiające podanie pola 
+elektrycznego. Pod wpływem tego pola zmienia się współczynnik załamania 
+i&nbsp;przenoszenie energii z&nbsp;jednego falowodu do drugiego nie 
+następuje. Sprzęgacz kierunkowy może znajdować się w&nbsp;jednym 
+z&nbsp;dwóch stanów: na wprost lub na krzyż (rys.&nbsp;61).</p>
+<p style="text-align: justify;">Komutatory elektrooptyczne są elementami
+ bardzo szybkimi. Osiągane w&nbsp;nich czasy przełączania są krótsze niż
+ nanosekunda, dlatego są one jedną z&nbsp;technik rozważanych do 
+stosowania w&nbsp;systemach optycznej komutacji pakietów. Są także 
+niezawodne. Ich wadą są jednak tłumienie przesyłanego przez falowody 
+sygnału oraz duży przenik. Są także elementami drogimi. Technologia ta 
+umożliwia także realizowanie komutatorów o&nbsp;większej pojemności. 
+Wykonuje się to przez umieszczanie większej liczby sprzęgaczy na jednym 
+podłożu niobianu litu.</p>
+<h4>Akustooptyczne elementy komutacyjne</h4>
+<p style="text-align: justify;">Wykorzystują efekt akustooptyczny 
+w&nbsp;materiałach, polegający na zmianie współczynnika załamania się 
+światła pod wpływem fal akustycznych. Fala akustyczna przechodząc przez 
+medium powoduje okresowe zniekształcenia w&nbsp;postaci naprzemiennych 
+zagęszczeń i&nbsp;rozrzedzeń (okresowych naprężeń w&nbsp;medium). 
+Drgania cząsteczek spowodowane tymi naprężeniami zmieniają właściwości 
+polaryzacyjne materiału, a&nbsp;w&nbsp;konsekwencji jego współczynnik 
+odbicia. Fale akustyczne mogą być generowane:</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="text-align: justify;">za pomocą efektu piezoelektrycznego w&nbsp;samym materiale</li>
+<li style="text-align: justify;">lub na jego powierzchni przez podanie pola elektromagnetycznego o&nbsp;częstotliwościach radiowych.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;">Modulacja współczynnika załamania 
+światła wywołana efektem akustooptycznym powoduje powstanie dynamicznej 
+siatki dyfrakcyjnej, która może załamywać fale świetlne.</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Odbijanie%2520wiata.png" alt="Odbijanie światła" width="566" height="242"></p>
+<p style="text-align: center;">Rys.&nbsp;112. Odbijanie światła w&nbsp;materiale izotropowym przez siatkę dyfrakcyjną Bragga</p>
+<p style="text-align: justify;">Przykład odbijania fali w&nbsp;wyniku 
+działania efektu akustooptycznego pokazano na rys.&nbsp;112. Promień 
+przechodzący przez materiał jest przesyłany bez obicia w&nbsp;normalnym 
+stanie. Jeżeli w&nbsp;materiale (lub na jego powierzchni) pojawi się 
+fala akustyczna, promień jest odbijany, przy czym kąt <em><span style="font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;">Θ</span></em><sub>B</sub>, zwany kątem Bragga, zależy od</p>
+<ul>
+<li style="text-align: justify;">długości fali optycznej λ,</li>
+<li style="text-align: justify;">długości fali akustycznej&nbsp;Λ</li>
+<li style="text-align: justify;">oraz współczynnika załamania światła n</li>
+</ul>
+<p style="text-align: justify;">w&nbsp;następujący sposób:</p>
+<p style="text-align: center;"><img src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Awrs%3D%22http%3A%2F%2Fwww.wiris.com%2Fxml%2Fcvs-extension%22%20height%3D%2241%22%20width%3D%22150%22%20wrs%3Abaseline%3D%2226%22%3E%3C!--MathML%3A%20%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmsub%3E%3Cmi%3E%26%23x3B8%3B%3C%2Fmi%3E%3Cmi%20mathvariant%3D%22normal%22%3EB%3C%2Fmi%3E%3C%2Fmsub%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmi%3Earcsin%3C%2Fmi%3E%3Cmfenced%20close%3D%22%5D%22%20open%3D%22%5B%22%3E%3Cmrow%3E%3Cmfrac%3E%3Cmn%3E1%3C%2Fmn%3E%3Cmrow%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmi%20mathvariant%3D%22normal%22%3En%3C%2Fmi%3E%3C%2Fmrow%3E%3C%2Fmfrac%3E%3Cmfenced%3E%3Cmfrac%3E%3Cmi%20mathvariant%3D%22normal%22%3E%26%23x3BB%3B%3C%2Fmi%3E%3Cmi%20mathvariant%3D%22normal%22%3E%26%23x39B%3B%3C%2Fmi%3E%3C%2Fmfrac%3E%3C%2Fmfenced%3E%3C%2Fmrow%3E%3C%2Fmfenced%3E%3C%2Fmath%3E--%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%40font-face%7Bfont-family%3A'math17f39f8317fbdb1988ef4c628eb'%3Bsrc%3Aurl(data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7iBBMAAADMAAAATmNtYXDEvmKUAAABHAAAADRjdnQgDVUNBwAAAVAAAAA6Z2x5ZoPi2VsAAAGMAAAAsmhlYWQQC2qxAAACQAAAADZoaGVhCGsXSAAAAngAAAAkaG10eE2rRkcAAAKcAAAACGxvY2EAHTwYAAACpAAAAAxtYXhwBT0FPgAAArAAAAAgbmFtZaBxlY4AAALQAAABn3Bvc3QB9wD6AAAEcAAAACBwcmVwa1uragAABJAAAAAUAAADSwGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg1UADev96AAAD6ACWAAAAAAACAAEAAQAAABQAAwABAAAAFAAEACAAAAAEAAQAAQAAAD3%2F%2FwAAAD3%2F%2F%2F%2FEAAEAAAAAAAABVAMsAIABAABWACoCWAIeAQ4BLAIsAFoBgAKAAKAA1ACAAAAAAAAAACsAVQCAAKsA1QEAASsABwAAAAIAVQAAAwADqwADAAcAADMRIRElIREhVQKr%2FasCAP4AA6v8VVUDAAACAIAA6wLVAhUAAwAHAGUYAbAIELAG1LAGELAF1LAIELAB1LABELAA1LAGELAHPLAFELAEPLABELACPLAAELADPACwCBCwBtSwBhCwB9SwBxCwAdSwARCwAtSwBhCwBTywBxCwBDywARCwADywAhCwAzwxMBMhNSEdASE1gAJV%2FasCVQHAVdVVVQAAAAEAAAABAADVeM5BXw889QADBAD%2F%2F%2F%2F%2F1joTc%2F%2F%2F%2F%2F%2FWOhNzAAD%2FIASAA6sAAAAKAAIAAQAAAAAAAQAAA%2Bj%2FagAAF3AAAP%2B2BIAAAQAAAAAAAAAAAAAAAAAAAAIDUgBVA1YAgAAAAAAAAAAoAAAAsgABAAAAAgBeAAUAAAAAAAIAgAQAAAAAAAQAAN4AAAAAAAAAFQECAAAAAAAAAAEAEgAAAAAAAAAAAAIADgASAAAAAAAAAAMAMAAgAAAAAAAAAAQAEgBQAAAAAAAAAAUAFgBiAAAAAAAAAAYACQB4AAAAAAAAAAgAHACBAAEAAAAAAAEAEgAAAAEAAAAAAAIADgASAAEAAAAAAAMAMAAgAAEAAAAAAAQAEgBQAAEAAAAAAAUAFgBiAAEAAAAAAAYACQB4AAEAAAAAAAgAHACBAAMAAQQJAAEAEgAAAAMAAQQJAAIADgASAAMAAQQJAAMAMAAgAAMAAQQJAAQAEgBQAAMAAQQJAAUAFgBiAAMAAQQJAAYACQB4AAMAAQQJAAgAHACBAE0AYQB0AGgAIABGAG8AbgB0AFIAZQBnAHUAbABhAHIATQBhAHQAaABzACAARgBvAHIAIABNAG8AcgBlACAATQBhAHQAaAAgAEYAbwBuAHQATQBhAHQAaAAgAEYAbwBuAHQAVgBlAHIAcwBpAG8AbgAgADEALgAwTWF0aF9Gb250AE0AYQB0AGgAcwAgAEYAbwByACAATQBvAHIAZQAAAwAAAAAAAAH0APoAAAAAAAAAAAAAAAAAAAAAAAAAALkHEQAAjYUYALIAAAAVFBOxAAE%2F)format('truetype')%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%40font-face%7Bfont-family%3A'brack_sme7112986b8ab9304894f510'%3Bsrc%3Aurl(data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7PH4UAAADMAAAATmNtYXA3kjw6AAABHAAAAGxjdnQgAQYDiAAAAYgAAAASZ2x5ZkyYQ7YAAAGcAAACGmhlYWQLyR8fAAADuAAAADZoaGVhAq0XCAAAA%2FAAAAAkaG10eDEjA%2FUAAAQUAAAAJGxvY2EAAEKZAAAEOAAAAChtYXhwBJsEcQAABGAAAAAgbmFtZW7QvZAAAASAAAAB5XBvc3QArQBVAAAGaAAAACBwcmVwu5WEAAAABogAAAAHAAACDAGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg9AMD%2FP%2F8AAABVAABAAAAAAACAAEAAQAAABQAAwABAAAAFAAEAFgAAAASABAAAwACI5wjnyOhI6IjoyOkI6Ujpv%2F%2FAAAjnCOfI6EjoiOjI6QjpSOm%2F%2F%2FcZdxj3GLcYtxi3GLcYtxiAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAFUAFQBAAArAIwAgACoAAcAAAACAAAAAADVAQEAAwAHAAAxMxEjFyM1M9XVq4CAAQHWqwABAAAAAABVAVgAAwAfGAGwAy%2BwADyxAgL1sAE8ALEDAD%2BwAjx8sQAG9bABPBEzESNVVQFY%2FqgAAQDXAAABLAFUAAMAIBgBsAUvsAE8sAI8sQAC9bADPACwAy%2BwAjyxAAH1sAE8EzMRI9dVVQFU%2FqwAAQAAAAABAAFUAAUAKRgBsAYQsADUsAAQsAXUsAUQsAPUALAGELAA1LAAELAD1LADELAB1DAxMREhFSMVAQCrAVRV%2FwABAAAAAABVAVQAAwAhGAGwAS%2BxBwI8PLEDAvWwADwAsQMAP7ACPHyxAAb1sAE8ETMRI1VVAVT%2BrAABAAAAAAEAAVQABQApGAGwBhCwANSwABCwBdSwBRCwA9QAsAYQsADUsAAQsAPUsAMQsAHUMDEZASE1IzUBAKsBVP6sVf8AAQAAAAABAAFUAAUAKRgBsAYQsAHUsAEQsADUsAAQsATUALAGELAB1LABELAE1LAEELAC1DAxOwERIRUzq1X%2FAKsBVFUAAQCqAAABAAFUAAMAIRgBsAEvsQcCPDyxAwL1sAA8ALEDAD%2BwAjx8sQAG9bABPBMzESOqVlYBVP6sAAEAAAAAAQABVAAFACkYAbAGELAB1LABELAA1LAAELAE1ACwBhCwAdSwARCwBNSwBBCwAtQwMRMzESE1M6tV%2FwCrAVT%2BrFUAAAABAAAAAQAAix6x7F8PPPUAAwQA%2F%2F%2F%2F%2F9Wt7mT%2F%2F%2F%2F%2F1a3uZP%2BA%2F%2F8B1gFYAAAACgACAAEAAAAAAAEAAAFU%2F%2F8AABdw%2F4D%2FgAHWAAEAAAAAAAAAAAAAAAAAAAAJANUAAAEsAAABLADXAQAAAAEAAAABAAAAAQAAAAEAAKoBAAAAAAAAAAAAACEAAABYAAAAkQAAANUAAAEOAAABVAAAAZkAAAHTAAACGgABAAAACQAKAAIAAAAAAAIAgAQAAAAAAAQAAGUAAAAAAAAAFQECAAAAAAAAAAEAJgAAAAAAAAAAAAIADgAmAAAAAAAAAAMARAA0AAAAAAAAAAQAJgB4AAAAAAAAAAUAFgCeAAAAAAAAAAYAEwC0AAAAAAAAAAgAHADHAAEAAAAAAAEAJgAAAAEAAAAAAAIADgAmAAEAAAAAAAMARAA0AAEAAAAAAAQAJgB4AAEAAAAAAAUAFgCeAAEAAAAAAAYAEwC0AAEAAAAAAAgAHADHAAMAAQQJAAEAJgAAAAMAAQQJAAIADgAmAAMAAQQJAAMARAA0AAMAAQQJAAQAJgB4AAMAAQQJAAUAFgCeAAMAAQQJAAYAEwC0AAMAAQQJAAgAHADHAEIAcgBhAGMAawBlAHQAcwAgAHMAbQBhAGwAbAAgAHMAaQB6AGUAUgBlAGcAdQBsAGEAcgBNAGEAdABoAHMAIABGAG8AcgAgAE0AbwByAGUAIABCAHIAYQBjAGsAZQB0AHMAIABzAG0AYQBsAGwAIABzAGkAegBlAEIAcgBhAGMAawBlAHQAcwAgAHMAbQBhAGwAbAAgAHMAaQB6AGUAVgBlAHIAcwBpAG8AbgAgADIALgAwQnJhY2tldHNfc21hbGxfc2l6ZQBNAGEAdABoAHMAIABGAG8AcgAgAE0AbwByAGUAAAAAAwAAAAAAAACqAFUAAAAAAAAAAAAAAAAAAAAAAAAAALkH%2FwACjYUA)format('truetype')%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%40font-face%7Bfont-family%3A'bracketse552f5417ff4680c6b50499'%3Bsrc%3Aurl(data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7RIisAAADMAAAATmNtYXBi7uzYAAABHAAAAExjdnQgBAkDLgAAAWgAAAASZ2x5Zo64f%2BkAAAF8AAABSWhlYWQLniGcAAACyAAAADZoaGVhBK4XLAAAAwAAAAAkaG10eCWq%2F90AAAMkAAAAFGxvY2EAABknAAADOAAAABhtYXhwBJIESAAAA1AAAAAgbmFtZRAA8I4AAANwAAAB3nBvc3QBwwDgAAAFUAAAACBwcmVwupWEAAAABXAAAAAHAAACggGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg9AMEAAAAAAADgAAAAAAAAAACAAEAAQAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACI5sjnSOeI6D%2F%2FwAAI5sjnSOeI6D%2F%2F9xm3GXcZdxkAAEAAAAAAAAAAAAAAAABVABWAQAALACoA4AAMgAHAAAAAgAAACoA1QNVAAMABwAANTMRIxMjETPV1auAgCoDK%2F0AAtUAAQAAAAABgAOAAAUAJBgBsAAvsAPFsQEC%2FbADELEEBP0AsQAAP7ABPLEEBj%2BwAzwwMTEzEAEjAFUBKyv%2BqwH8AYT%2BqgABAAAAAAGAA4AABQAmGAGwAC6wA8WxBQL9sAMQsQIE%2FQB8sQAGPxiwBTyxAwb2sAI8MDEREgEzABMBAVQr%2FtMCA4D91v6qAYQB%2FAAB%2F6wAAAEsA4AABQAnGAGwAC%2BwBzywA8WxAQL9sAMQsQQE%2FQCxAAA%2FsAE8sQQGP7ADPDAxISMSATMAASxVAf7UKwFVAfwBhP6rAAH%2FrAAAASwDgAAFACkYAbABL7AHPLAExbEAAv2wBBCxAwT9AHyxAQY%2FsAA8GLEEAD%2BwAzwwMRMzEAEjANdV%2FqsrASsDgP3V%2FqsBhgAAAAABAAAAAQAAeuTcpl8PPPUAAwQA%2F%2F%2F%2F%2F9Wt7o7%2F%2F%2F%2F%2F1a3ujv%2BsAAABgAOAAAAACgACAAEAAAAAAAEAAAOAAAAAABdw%2F6z%2FrAGAAAEAAAAAAAAAAAAAAAAAAAAFANUAAAEsAAABLAAAASz%2FrAEs%2F6wAAAAAAAAAJAAAAGgAAACzAAAA%2FQAAAUkAAQAAAAUACAACAAAAAAACAIAEAAAAAAAEAAA%2BAAAAAAAAABUBAgAAAAAAAAABACQAAAAAAAAAAAACAA4AJAAAAAAAAAADAEIAMgAAAAAAAAAEACQAdAAAAAAAAAAFABYAmAAAAAAAAAAGABIArgAAAAAAAAAIABwAwAABAAAAAAABACQAAAABAAAAAAACAA4AJAABAAAAAAADAEIAMgABAAAAAAAEACQAdAABAAAAAAAFABYAmAABAAAAAAAGABIArgABAAAAAAAIABwAwAADAAEECQABACQAAAADAAEECQACAA4AJAADAAEECQADAEIAMgADAAEECQAEACQAdAADAAEECQAFABYAmAADAAEECQAGABIArgADAAEECQAIABwAwABCAHIAYQBjAGsAZQB0AHMAIABmAHUAbABsACAAcwBpAHoAZQBSAGUAZwB1AGwAYQByAE0AYQB0AGgAcwAgAEYAbwByACAATQBvAHIAZQAgAEIAcgBhAGMAawBlAHQAcwAgAGYAdQBsAGwAIABzAGkAegBlAEIAcgBhAGMAawBlAHQAcwAgAGYAdQBsAGwAIABzAGkAegBlAFYAZQByAHMAaQBvAG4AIAAyAC4AMEJyYWNrZXRzX2Z1bGxfc2l6ZQBNAGEAdABoAHMAIABGAG8AcgAgAE0AbwByAGUAAAADAAAAAAAAAcAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAuQf%2FAAGNhQA%3D)format('truetype')%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%224.5%22%20y%3D%2226%22%3E%26%23x3B8%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2214.5%22%20y%3D%2231%22%3EB%3C%2Ftext%3E%3Ctext%20font-family%3D%22math17f39f8317fbdb1988ef4c628eb%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2226.5%22%20y%3D%2226%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2256.5%22%20y%3D%2226%22%3Earcsin%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2279.5%22%20y%3D%225%22%3E%26%23x23A1%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2279.5%22%20y%3D%2210%22%3E%26%23x23A2%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2279.5%22%20y%3D%2215%22%3E%26%23x23A2%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2279.5%22%20y%3D%2220%22%3E%26%23x23A2%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2279.5%22%20y%3D%2225%22%3E%26%23x23A2%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2279.5%22%20y%3D%2230%22%3E%26%23x23A2%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2279.5%22%20y%3D%2235%22%3E%26%23x23A2%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2279.5%22%20y%3D%2240%22%3E%26%23x23A3%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22144.5%22%20y%3D%225%22%3E%26%23x23A4%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22144.5%22%20y%3D%2210%22%3E%26%23x23A5%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22144.5%22%20y%3D%2215%22%3E%26%23x23A5%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22144.5%22%20y%3D%2220%22%3E%26%23x23A5%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22144.5%22%20y%3D%2225%22%3E%26%23x23A5%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22144.5%22%20y%3D%2230%22%3E%26%23x23A5%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22144.5%22%20y%3D%2235%22%3E%26%23x23A5%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22144.5%22%20y%3D%2240%22%3E%26%23x23A6%3B%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%2286.5%22%20x2%3D%22107.5%22%20y1%3D%2220.5%22%20y2%3D%2220.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2297.5%22%20y%3D%2215%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2292.5%22%20y%3D%2237%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22101.5%22%20y%3D%2237%22%3En%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22111.5%22%20y%3D%2215%22%3E%26%23x239B%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22111.5%22%20y%3D%2220%22%3E%26%23x239C%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22111.5%22%20y%3D%2225%22%3E%26%23x239C%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22111.5%22%20y%3D%2239%22%3E%26%23x239D%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22137.5%22%20y%3D%2215%22%3E%26%23x239E%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22137.5%22%20y%3D%2220%22%3E%26%23x239F%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sme7112986b8ab9304894f510%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22137.5%22%20y%3D%2225%22%3E%26%23x239F%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22137.5%22%20y%3D%2239%22%3E%26%23x23A0%3B%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%22119.5%22%20x2%3D%22133.5%22%20y1%3D%2220.5%22%20y2%3D%2220.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22127.5%22%20y%3D%2215%22%3E%26%23x3BB%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22126.5%22%20y%3D%2237%22%3E%26%23x39B%3B%3C%2Ftext%3E%3C%2Fsvg%3E" class="Wirisformula" alt="theta subscript straight B equals arcsin open square brackets fraction numerator 1 over denominator 2 straight n end fraction open parentheses straight lambda over straight capital lambda close parentheses close square brackets" style="vertical-align:-15px" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#952;«/mi»«mi mathvariant=¨normal¨»B«/mi»«/msub»«mo»=«/mo»«mi»arcsin«/mi»«mfenced open=¨[¨ close=¨]¨»«mrow»«mfrac»«mn»1«/mn»«mrow»«mn»2«/mn»«mi mathvariant=¨normal¨»n«/mi»«/mrow»«/mfrac»«mfenced»«mfrac»«mi mathvariant=¨normal¨»§#955;«/mi»«mi mathvariant=¨normal¨»§#923;«/mi»«/mfrac»«/mfenced»«/mrow»«/mfenced»«/math»" width="150" height="41">.</p>
+<p><img src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Awrs%3D%22http%3A%2F%2Fwww.wiris.com%2Fxml%2Fcvs-extension%22%20height%3D%2224%22%20width%3D%22108%22%20wrs%3Abaseline%3D%2219%22%3E%3C!--MathML%3A%20%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmo%3E(%3C%2Fmo%3E%3Cmi%3Earcsin%3C%2Fmi%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmsup%3E%3Cmi%3Esin%3C%2Fmi%3E%3Cmrow%3E%3Cmo%3E-%3C%2Fmo%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmrow%3E%3C%2Fmsup%3E%3Cmo%3E)%3C%2Fmo%3E%3C%2Fmath%3E--%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%40font-face%7Bfont-family%3A'math143f4d31b04031e49f5eb18baba'%3Bsrc%3Aurl(data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7iBBMAAADMAAAATmNtYXDEvmKUAAABHAAAADxjdnQgDVUNBwAAAVgAAAA6Z2x5ZoPi2VsAAAGUAAAA%2FGhlYWQQC2qxAAACkAAAADZoaGVhCGsXSAAAAsgAAAAkaG10eE2rRkcAAALsAAAADGxvY2EAHTwYAAAC%2BAAAABBtYXhwBT0FPgAAAwgAAAAgbmFtZaBxlY4AAAMoAAABn3Bvc3QB9wD6AAAEyAAAACBwcmVwa1uragAABOgAAAAUAAADSwGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg1UADev96AAAD6ACWAAAAAAACAAEAAQAAABQAAwABAAAAFAAEACgAAAAGAAQAAQACAD0iEv%2F%2FAAAAPSIS%2F%2F%2F%2FxN3wAAEAAAAAAAAAAAFUAywAgAEAAFYAKgJYAh4BDgEsAiwAWgGAAoAAoADUAIAAAAAAAAAAKwBVAIAAqwDVAQABKwAHAAAAAgBVAAADAAOrAAMABwAAMxEhESUhESFVAqv9qwIA%2FgADq%2FxVVQMAAAIAgADrAtUCFQADAAcAZRgBsAgQsAbUsAYQsAXUsAgQsAHUsAEQsADUsAYQsAc8sAUQsAQ8sAEQsAI8sAAQsAM8ALAIELAG1LAGELAH1LAHELAB1LABELAC1LAGELAFPLAHELAEPLABELAAPLACELADPDEwEyE1IR0BITWAAlX9qwJVAcBV1VVVAAEAgAFVAtUBqwADADAYAbAEELEAA%2FawAzyxAgf1sAE8sQUD5gCxAAATELEABuWxAAETELABPLEDBfWwAjwTIRUhgAJV%2FasBq1YAAQAAAAEAANV4zkFfDzz1AAMEAP%2F%2F%2F%2F%2FWOhNz%2F%2F%2F%2F%2F9Y6E3MAAP8gBIADqwAAAAoAAgABAAAAAAABAAAD6P9qAAAXcAAA%2F7YEgAABAAAAAAAAAAAAAAAAAAAAAwNSAFUDVgCAA1YAgAAAAAAAAAAoAAAAsgAAAPwAAQAAAAMAXgAFAAAAAAACAIAEAAAAAAAEAADeAAAAAAAAABUBAgAAAAAAAAABABIAAAAAAAAAAAACAA4AEgAAAAAAAAADADAAIAAAAAAAAAAEABIAUAAAAAAAAAAFABYAYgAAAAAAAAAGAAkAeAAAAAAAAAAIABwAgQABAAAAAAABABIAAAABAAAAAAACAA4AEgABAAAAAAADADAAIAABAAAAAAAEABIAUAABAAAAAAAFABYAYgABAAAAAAAGAAkAeAABAAAAAAAIABwAgQADAAEECQABABIAAAADAAEECQACAA4AEgADAAEECQADADAAIAADAAEECQAEABIAUAADAAEECQAFABYAYgADAAEECQAGAAkAeAADAAEECQAIABwAgQBNAGEAdABoACAARgBvAG4AdABSAGUAZwB1AGwAYQByAE0AYQB0AGgAcwAgAEYAbwByACAATQBvAHIAZQAgAE0AYQB0AGgAIABGAG8AbgB0AE0AYQB0AGgAIABGAG8AbgB0AFYAZQByAHMAaQBvAG4AIAAxAC4AME1hdGhfRm9udABNAGEAdABoAHMAIABGAG8AcgAgAE0AbwByAGUAAAMAAAAAAAAB9AD6AAAAAAAAAAAAAAAAAAAAAAAAAAC5BxEAAI2FGACyAAAAFRQTsQABPw%3D%3D)format('truetype')%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%40font-face%7Bfont-family%3A'round_brackets18549f92a457f2409'%3Bsrc%3Aurl(data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMjwHLFQAAADMAAAATmNtYXDf7xCrAAABHAAAADxjdnQgBAkDLgAAAVgAAAASZ2x5ZmAOz2cAAAFsAAABJGhlYWQOKih8AAACkAAAADZoaGVhCvgVwgAAAsgAAAAkaG10eCA6AAIAAALsAAAADGxvY2EAAARLAAAC%2BAAAABBtYXhwBIgEWQAAAwgAAAAgbmFtZXHR30MAAAMoAAACOXBvc3QDogHPAAAFZAAAACBwcmVwupWEAAAABYQAAAAHAAAGcgGQAAUAAAgACAAAAAAACAAIAAAAAAAAAQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAo8AMGe%2F57AAAHPgGyAAAAAAACAAEAAQAAABQAAwABAAAAFAAEACgAAAAGAAQAAQACACgAKf%2F%2FAAAAKAAp%2F%2F%2F%2F2f%2FZAAEAAAAAAAAAAAFUAFYBAAAsAKgDgAAyAAcAAAACAAAAKgDVA1UAAwAHAAA1MxEjEyMRM9XVq4CAKgMr%2FQAC1QABAAD%2B0AIgBtAACQBNGAGwChCwA9SwAxCwAtSwChCwBdSwBRCwANSwAxCwBzywAhCwCDwAsAoQsAPUsAMQsAfUsAoQsAXUsAoQsADUsAMQsAI8sAcQsAg8MTAREAEzABEQASMAAZCQ%2FnABkJD%2BcALQ%2FZD%2BcAGQAnACcAGQ%2FnAAAQAA%2FtACIAbQAAkATRgBsAoQsAPUsAMQsALUsAoQsAXUsAUQsADUsAMQsAc8sAIQsAg8ALAKELAD1LADELAH1LAKELAF1LAKELAA1LADELACPLAHELAIPDEwARABIwAREAEzAAIg%2FnCQAZD%2BcJABkALQ%2FZD%2BcAGQAnACcAGQ%2FnAAAQAAAAEAAPW2NYFfDzz1AAMIAP%2F%2F%2F%2F%2FVre7u%2F%2F%2F%2F%2F9Wt7u4AAP7QA7cG0AAAAAoAAgABAAAAAAABAAAHPv5OAAAXcAAA%2F%2F4DtwABAAAAAAAAAAAAAAAAAAAAAwDVAAACIAAAAiAAAAAAAAAAAAAkAAAAowAAASQAAQAAAAMACgACAAAAAAACAIAEAAAAAAAEAABNAAAAAAAAABUBAgAAAAAAAAABAD4AAAAAAAAAAAACAA4APgAAAAAAAAADAFwATAAAAAAAAAAEAD4AqAAAAAAAAAAFABYA5gAAAAAAAAAGAB8A%2FAAAAAAAAAAIABwBGwABAAAAAAABAD4AAAABAAAAAAACAA4APgABAAAAAAADAFwATAABAAAAAAAEAD4AqAABAAAAAAAFABYA5gABAAAAAAAGAB8A%2FAABAAAAAAAIABwBGwADAAEECQABAD4AAAADAAEECQACAA4APgADAAEECQADAFwATAADAAEECQAEAD4AqAADAAEECQAFABYA5gADAAEECQAGAB8A%2FAADAAEECQAIABwBGwBSAG8AdQBuAGQAIABiAHIAYQBjAGsAZQB0AHMAIAB3AGkAdABoACAAYQBzAGMAZQBuAHQAIAAxADgANQA0AFIAZQBnAHUAbABhAHIATQBhAHQAaABzACAARgBvAHIAIABNAG8AcgBlACAAUgBvAHUAbgBkACAAYgByAGEAYwBrAGUAdABzACAAdwBpAHQAaAAgAGEAcwBjAGUAbgB0ACAAMQA4ADUANABSAG8AdQBuAGQAIABiAHIAYQBjAGsAZQB0AHMAIAB3AGkAdABoACAAYQBzAGMAZQBuAHQAIAAxADgANQA0AFYAZQByAHMAaQBvAG4AIAAyAC4AMFJvdW5kX2JyYWNrZXRzX3dpdGhfYXNjZW50XzE4NTQATQBhAHQAaABzACAARgBvAHIAIABNAG8AcgBlAAAAAAMAAAAAAAADnwHPAAAAAAAAAAAAAAAAAAAAAAAAAAC5B%2F8AAY2FAA%3D%3D)format('truetype')%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctext%20font-family%3D%22round_brackets18549f92a457f2409%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%223.5%22%20y%3D%2219%22%3E(%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2226.5%22%20y%3D%2219%22%3Earcsin%3C%2Ftext%3E%3Ctext%20font-family%3D%22math143f4d31b04031e49f5eb18baba%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2256.5%22%20y%3D%2219%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2275.5%22%20y%3D%2219%22%3Esin%3C%2Ftext%3E%3Ctext%20font-family%3D%22math143f4d31b04031e49f5eb18baba%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2290.5%22%20y%3D%2212%22%3E%26%23x2212%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2298.5%22%20y%3D%2212%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22round_brackets18549f92a457f2409%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22104.5%22%20y%3D%2219%22%3E)%3C%2Ftext%3E%3C%2Fsvg%3E" class="Wirisformula" alt="left parenthesis arcsin equals sin to the power of negative 1 end exponent right parenthesis" style="vertical-align:-5px" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»(«/mo»«mi»arcsin«/mi»«mo»=«/mo»«msup»«mi»sin«/mi»«mrow»«mo»-«/mo»«mn»1«/mn»«/mrow»«/msup»«mo»)«/mo»«/math»" width="108" height="24"></p>
+<p style="text-align: justify;">Wykorzystanie tego efektu 
+w&nbsp;komutatorze optycznym o&nbsp;pojemności 2×2 pokazano na 
+rys.&nbsp;113. W&nbsp;stanie na wprost promień z&nbsp;wejścia&nbsp;1 
+(wejścia&nbsp;2) jest odbijany przez siatkę Bragga, powstałą po podaniu 
+sygnału akustycznego do wyjścia&nbsp;1 (wyjścia&nbsp;2). Po wyłączeniu 
+fali akustycznej siatka Bragga zanika i&nbsp;sygnał 
+z&nbsp;wejścia&nbsp;1 (wejścia&nbsp;2) nie jest odbijany i&nbsp;pojawia 
+się na wyjściu&nbsp;2 (wyjściu&nbsp;1). Komutator przełącza się wtedy do
+ stanu na krzyż.</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Komutator%2520optyczny%2520akustooptyczny.png" alt="Komutator optyczny akustooptyczny" width="646" height="209"></p>
+<p style="text-align: center;">Rys.&nbsp;113. Komutator optyczny 2×2 wykorzystujący efekt akustooptyczny</p>
+<h4>Termooptyczne elementy komutacyjne</h4>
+<p style="text-align: justify;">Wykorzystują efekt termooptyczny 
+w&nbsp;materiałach, polegający na zmianie współczynnika załamania się 
+światła pod wpływem temperatury. Jednym z&nbsp;przykładów takiego 
+elementu jest przełącznik interferometryczny (ang. <em>interferometric switch</em>),
+ który składa się z&nbsp;dwóch pasywnych sprzęgaczy połączonych 
+falowodami o&nbsp;takiej samej długości (rys.&nbsp;114). 
+W&nbsp;pierwszym sprzęgaczu sygnał jest dzielony po równo dla obu 
+ramion. Po drugiej stronie ramion sygnały z&nbsp;obu ramion są łączone 
+i&nbsp;tak połączony sygnał jest ponownie dzielony pomiędzy dwa wyjścia.
+ Podgrzanie jednego z&nbsp;ramion powoduje zmianę współczynnika 
+załamania, a&nbsp;to powoduje zmianę drogi optycznej sygnału. Poprzez tę
+ zmianę sygnały na wejściach drugiego sprzęgacza mogą być w&nbsp;fazie 
+lub w&nbsp;przeciw fazie i&nbsp;w&nbsp;wyniku interferencji takich 
+sygnałów jest wybierany port wyjściowy.</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Termooptyczny%2520komutator%25201.png" alt="Termooptyczny komutator1" width="482" height="321"></p>
+<p style="text-align: center;">Rys.&nbsp;114. Termooptyczny komutator interferometryczny o&nbsp;pojemności 2×2</p>
+<p style="text-align: justify;">Innym przykładem elementu sterowanego temperaturą są komutatory pęcherzykowe (ang. <em>bubble switches</em>).
+ Komutatory te wykorzystują technologię opartą na zasadach pracy 
+drukarek atramentowych. Budowę takiego komutatora pokazano na 
+rys.&nbsp;115. W&nbsp;komutatorze tym falowody przecinają się pod 
+określonym kątem, a&nbsp;w&nbsp;miejscu ich przecięcia znajduje się 
+rowek wypełniony płynem o&nbsp;takim samym współczynniku załamania 
+światła jak falowody. Sygnał jest przesyłany bez zmian przez falowody. 
+Pod przecięciami falowodów są umieszczone elementy podgrzewające. W 
+przypadku ich włączenia, w&nbsp;podgrzanym fragmencie wytwarza się 
+pęcherzyk, następuje zmiana współczynnika załamania i&nbsp;sygnał 
+odbijany jest do innego falowodu.</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Komutator%2520pcherzykowy.png" alt="Komutator pęcherzykowy" width="378" height="201"></p>
+<p style="text-align: center;">Rys.&nbsp;115. Komutator pęcherzykowy o&nbsp;pojemności 2×2</p>
+<p style="text-align: justify;">Czas przełączania komutatorów 
+termooptycznych jest rzędu milisekund. Są więc one znacznie wolniejsze 
+niż komutatory elektrooptyczne.</p>
+<h4>Elementy komutacyjne MEMS</h4>
+<p style="text-align: justify;">Wykorzystują systemy mikroelektromechaniczne MEMS (ang. <em>Micro-Electro-Mechanical Systems</em>) do przemieszczania lub poruszania światłowodów, mikrozwierciadeł, lub pryzmatów.</p>
+<p style="text-align: justify;">Występuje kilka rozwiązań tego typu układów.</p>
+<p style="text-align: justify;">W&nbsp;najprostszym rozwiązaniu 
+(rys.&nbsp;116) pomiędzy światłowodem wejściowym a&nbsp;wyjściowym jest 
+umieszczona ruchoma przeszkoda, która w&nbsp;zależności od swojego 
+położenia może blokować lub nie przesyłanie fali świetlnej ze 
+światłowodu wejściowego do światłowodu wyjściowego.</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Komutator%2520MEMS%2520z%2520ruchom%2520przeszkod.png" alt="Komutator MEMS z ruchomą przeszkodą" width="224" height="83"></p>
+<p style="text-align: center;">Rys.&nbsp;116. Komutator MEMS z&nbsp;ruchomą przeszkodą</p>
+<p style="text-align: justify;">Inny element, który wykorzystuje ruchome
+ zwierciadło, pokazano na rys.&nbsp;117. Ma on dwa światłowody wejściowe
+ i&nbsp;dwa światłowody wyjściowe oraz ruchome zwierciadło 
+z&nbsp;powierzchnią odbijającą światło po obu stronach. Gdy zwierciadło 
+jest wysunięte, fale świetlne przechodzą na wprost ze światłowodów 
+wejściowych do światłowodów wyjściowych. Gdy pomiędzy światłowody 
+wsunięte zostanie lusterko, fale świetlne są od niego odbijane 
+i&nbsp;następuje zmiana kierowania fali świetlnej.</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Komutator%2520MEMS%2520z%2520ruchomym%2520zwierciadem.png" alt="Komutator MEMS z ruchomym zwierciadłem" width="231" height="236"></p>
+<p style="text-align: center;">Rys.&nbsp;117. Komutator MEMS z&nbsp;ruchomym zwierciadłem</p>
+<p style="text-align: justify;">Trzecie rozwiązanie polega na 
+przekierowaniu sygnału z&nbsp;jednego światłowodu wejściowego do jednego
+ ze światłowodów wyjściowych (1×<em>N</em>). Wybór światłowodu 
+wyjściowego może być realizowany techniką 2D, czyli przez odpowiednie 
+przesunięcie światłowodu wejściowego, przez przemieszczenie układu 
+soczewek lub przez zmianę położenia zwierciadła (rys.&nbsp;118).</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Komutator%252520MEMS%252520zrealizowany%252520w%252520technice%252_002.png" alt="Komutator MEMS zrealizowany w technice 2D" width="428" height="372"></p>
+<p style="text-align: center;">Rys.&nbsp;118. Komutator MEMS zrealizowany w&nbsp;technice 2D</p>
+<p style="text-align: justify;">W&nbsp;czwartym rozwiązaniu 2D <em>N</em>×<em>N</em>, stosowanym w&nbsp;elementach o&nbsp;większej pojemności (ogólnie <em>N</em>&nbsp;światłowodów wejściowych i&nbsp;<em>N</em>&nbsp;światłowodów
+ wyjściowych – rys.&nbsp;119) zmiana kierowania promienia świetlnego 
+może odbywać się na przykład za pomocą zwierciadeł, które mogą znajdować
+ się w&nbsp;jednej z&nbsp;dwóch pozycji: leżącej – wtedy fala świetlna 
+przechodzi nad zwierciadłem i&nbsp;nie ma zmiany kierunku lub stojącej –
+ wtedy zwierciadło znajduje się na drodze promienia świetlnego 
+i&nbsp;odbija go do wybranego światłowodu wyjściowego.</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Komutator%252520MEMS%252520zrealizowany%252520w%252520technice%2525202.png" alt="Komutator MEMS zrealizowany w technice 2D N×N" width="232" height="225"></p>
+<p style="text-align: center;">Rys.&nbsp;119. Komutator MEMS zrealizowany w&nbsp;technice 2D <em>N</em>×<em>N</em></p>
+<p style="text-align: justify;">Ostatnim rozwiązaniem są komutatory 3D wykorzystujące przestrzenne zestawy luster – rys.&nbsp;120.</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Komutatory%252520MEMS%252520zrealizowane%252520w%252520technice%252520.png" alt="Komutatory MEMS zrealizowane w technice 3D" width="283" height="268"></p>
+<p style="text-align: center;">Rys.&nbsp;120. Komutatory MEMS zrealizowane w&nbsp;technice 3D<em></em><em></em></p>
+<p style="text-align: justify;">Należy pamiętać, że komutatory są bardzo
+ wrażliwe na warunki zewnętrzne (wilgoć, różnice temperatur 
+i&nbsp;ciśnienia). Z&nbsp;tych powodów zamyka się je hermetycznych 
+obudowach. Sterowanie lustrami powoduje ich uchylanie o&nbsp;kąt 
+mniejszy niż 10º. Nachylanie następuje na skutek działania siły 
+elektrostatycznej. Dzięki temu do sterowania lustrami zasadniczo nie 
+zużywa się energii.</p>
+<h4>Ciekłokrystaliczne elementy komutacyjne</h4>
+<p style="text-align: justify;">Wykorzystują własności materiałów 
+ciekłokrystalicznych, w&nbsp;których współczynnik załamania się światła 
+jest określony przez ułożenie molekuł ciekłego kryształu sterowane polem
+ elektrycznym.</p>
+<h4>Elementy komutacyjne wykorzystujące optyczne wzmacniacze półprzewodnikowe</h4>
+<p style="text-align: justify;">W&nbsp;przykładzie na rysunku 121 
+rozgałęźnik dzieli sygnał na dwa sygnały podstawowe podawane na wejścia 
+dwóch wzmacniaczy półprzewodnikowych. W&nbsp;zależności od potrzeby 
+jeden wzmacnia otrzymany sygnał a&nbsp;drugi go tłumi.</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Rozganik%2520ze%2520wzmacniaczami%2520pprzewodnikowymi.png" alt="Rozgałęźnik ze wzmacniaczami półprzewodnikowymi" width="318" height="170"></p>
+<p style="text-align: center;">Rys.&nbsp;121. Rozgałęźnik ze wzmacniaczami półprzewodnikowymi</p>
+<p style="text-align: center;"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/Przykad%2520komutatora%252022.png" alt="Przykład komutatora 2×2" width="311" height="284"></p>
+<p style="text-align: center;">Rys.&nbsp;122. Przykład komutatora 2×2</p>
+<p style="text-align: justify;">Jeżeli aktywne są wzmacniacze&nbsp;a, mamy transmisję na wprost, jeśli wzmacniacze&nbsp;b – transmisję na krzyż.</p></div></div><div class="navbottom clearfix navimages"><a title="Poprzednie: 5.3. Systemy z komutacją ścieżek" class="bookprev" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=231"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/nav_prev.svg" class="icon" alt="Poprzednie: 5.3. Systemy z komutacją ścieżek"></a><a title="Następne: 5.5. Pola komutacyjne" class="booknext" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=233"><img src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/nav_next.svg" class="icon" alt="Następne: 5.5. Pola komutacyjne"></a></div></div>
+                    
+                    </div>
+                </section>
+                <section data-region="blocks-column" class="hidden-print">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Pomiń Spis treści</a>
+
+<aside id="block-5c49d190066c1" class=" block block__fake  card m-b-1" role="complementary" data-block="_fake" aria-labelledby="instance-0-header">
+
+    <div class="card-block">
+
+
+            <h3 id="instance-0-header" class="card-title">Spis treści</h3>
+
+        <div class="card-text content">
+            <div class="book_toc_numbered clearfix"><ul><li class="clearfix"><a title="Węzeł komutacyjny" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=208">1. Węzeł komutacyjny</a></li><li class="clearfix"><a title="Pola komutacyjne" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=210">2. Pola komutacyjne</a><ul><li class="clearfix"><a title="Klasyfikacja" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=212">2.1. Klasyfikacja</a></li><li class="clearfix"><a title="Rodzaje połączeń" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=213">2.2. Rodzaje połączeń</a></li><li class="clearfix"><a title="Algorytmy sterowania" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=214">2.3. Algorytmy sterowania</a></li></ul></li><li class="clearfix"><a title="Centrale telefoniczne" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=209">3. Centrale telefoniczne</a><ul><li class="clearfix"><a title="Podstawowe funkcje" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=215">3.1. Podstawowe funkcje</a></li><li class="clearfix"><a title="Budowa" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=216">3.2. Budowa</a></li><li class="clearfix"><a title="Pola komutacyjne" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=217">3.3. Pola komutacyjne</a></li><li class="clearfix"><a title="Sterowanie" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=218">3.4. Sterowanie</a></li><li class="clearfix"><a title="Oprogramowanie" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=219">3.5. Oprogramowanie</a></li><li class="clearfix"><a title="PBX" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=220">3.6. PBX</a></li></ul></li><li class="clearfix"><a title="Przełączniki ATM" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=222">4. Przełączniki ATM</a><ul><li class="clearfix"><a title="Funkcje" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=225">4.1. Funkcje</a></li><li class="clearfix"><a title="Komutacja" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=227">4.2. Komutacja</a></li><li class="clearfix"><a title="Zarządzanie" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=228">4.3. Zarządzanie</a></li></ul></li><li class="clearfix"><a title="Systemy komutacji optycznej" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=224">5. Systemy komutacji optycznej</a><ul><li class="clearfix"><a title="Rodzaje" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=229">5.1. Rodzaje</a></li><li class="clearfix"><a title="Parametry" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=230">5.2. Parametry</a></li><li class="clearfix"><a title="Systemy z komutacją ścieżek" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=231">5.3. Systemy z komutacją ścieżek</a></li><li class="clearfix"><strong>5.4. Elementy komutacyjne</strong></li><li class="clearfix"><a title="Pola komutacyjne" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=233">5.5. Pola komutacyjne</a></li><li class="clearfix"><a title="Komutacja pakietów" href="https://msg.sytes.net:8085/mod/book/view.php?id=29&amp;chapterid=234">5.6. Komutacja pakietów</a></li></ul></li></ul></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=4" data-key="coursehome">
+                <div class="m-l-0">
+                        Systemy komutacyjne
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/user/index.php?id=4" data-key="participants">
+                <div class="m-l-0">
+                        Uczestnicy
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/admin/tool/lp/coursecompetencies.php?courseid=4" data-key="1">
+                <div class="m-l-0">
+                        Kompetencje
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/grade/report/index.php?id=4" data-key="grades">
+                <div class="m-l-0">
+                        Oceny
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=4#section-0" data-key="11">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Główne składowe</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=4#section-1" data-key="16">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Program nauczania i zasady oceniania</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action font-weight-bold" href="https://msg.sytes.net:8085/course/view.php?id=4#section-2" data-key="12">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Systemy komutacyjne</span>
+                        </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/my/" data-key="myhome">
+                <div class="m-l-0">
+                        Kokpit
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/?redirect=0" data-key="home">
+                <div class="m-l-0">
+                        Strona główna
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/calendar/view.php?view=month" data-key="calendar">
+                <div class="m-l-0">
+                        Kalendarz
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/user/files.php" data-key="4">
+                <div class="m-l-0">
+                        Prywatne pliki
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses">
+                <div class="m-l-0">
+                    Moje kursy
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=4" data-key="4">
+                <div class="m-l-1">
+                        Systemy komutacyjne
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3" data-key="3">
+                <div class="m-l-1">
+                        UKiT
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=2" data-key="2">
+                <div class="m-l-1">
+                        UTt
+                </div>
+            </a>
+        </nav>
+    </div>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+
+            <p class="helplink"><a href="http://docs.moodle.org/32/pl/mod/book/view"><img class="icon iconhelp icon-pre" role="presentation" alt="" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/docs.svg">Dokumentacja Moodle dla tej strony</a></p>
+
+        <div class="logininfo">Jesteś zalogowany(a) jako <a href="https://msg.sytes.net:8085/user/profile.php?id=3" title="Zobacz profil">Grzegorz Kantowicz</a> (<a href="https://msg.sytes.net:8085/login/logout.php?sesskey=Kf6CICTMsF">Wyloguj</a>)</div>
+        <div class="homelink"><a href="https://msg.sytes.net:8085/course/view.php?id=4">Systemy komutacyjne</a></div>
+        <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                </ul>
+        </nav>
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://msg.sytes.net:8085/lib/requirejs.php/1529268669/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://msg.sytes.net:8085/lib/javascript.php/1529268669/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'https://msg.sytes.net:8085/lib/javascript.php/1529268669/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://msg.sytes.net:8085/lib/javascript.php/1529268669/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="Sieci%20komutacyjne%20%20Elementy%20komutacyjne_pliki/require.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/video"], function(videojs) {
+videojs.options.flash.swf = "https://msg.sytes.net:8085/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("pl",{
+ "Play": "Odtwarzaj",
+ "Pause": "Pauza",
+ "Current Time": "Aktualny czas",
+ "Duration Time": "Czas trwania",
+ "Remaining Time": "Pozostały czas",
+ "Stream Type": "Typ strumienia",
+ "LIVE": "NA ŻYWO",
+ "Loaded": "Załadowany",
+ "Progress": "Status",
+ "Fullscreen": "Pełny ekran",
+ "Non-Fullscreen": "Pełny ekran niedostępny",
+ "Mute": "Wyłącz dźwięk",
+ "Unmute": "Włącz dźwięk",
+ "Playback Rate": "Szybkość odtwarzania",
+ "Subtitles": "Napisy",
+ "subtitles off": "Napisy wyłączone",
+ "Captions": "Transkrypcja",
+ "captions off": "Transkrypcja wyłączona",
+ "Chapters": "Rozdziały",
+ "You aborted the media playback": "Odtwarzanie zostało przerwane",
+ "A network error caused the media download to fail part-way.": "Problemy z siecią spowodowały błąd przy pobieraniu materiału wideo.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "Materiał wideo nie może być załadowany, ponieważ wystąpił problem z siecią lub format nie jest obsługiwany",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "Odtwarzanie materiału wideo zostało przerwane z powodu uszkodzonego pliku wideo lub z powodu błędu funkcji, które nie są wspierane przez przeglądarkę.",
+ "No compatible source was found for this media.": "Dla tego materiału wideo nie znaleziono kompatybilnego źródła.",
+ "Play video": "Odtwarzaj wideo",
+ "Close": "Zamknij",
+ "Modal Window": "Okno Modala",
+ "This is a modal window": "To jest okno modala",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "Ten modal możesz zamknąć naciskając przycisk Escape albo wybierając przycisk Zamknij.",
+ ", opens captions settings dialog": ", otwiera okno dialogowe ustawień transkrypcji",
+ ", opens subtitles settings dialog": ", otwiera okno dialogowe napisów",
+ ", selected": ", zaznaczone"
+});
+
+});;
+require(["media_videojs/Youtube"]);
+require(["media_videojs/loader"], function(amd) { amd.setUp(); });;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link5c49d19013fca11', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=29","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link5c49d19013fca12', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=29&chapterid=232","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link5c49d19013fca35', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=29","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link5c49d19013fca36', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=29&chapterid=232","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(62, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Ostatnia modyfikacja","name":"Nazwa","error":"B\u0142\u0105d","info":"Informacja","yes":"Tak","no":"Nie","morehelp":"Wi\u0119cej pomocy","loadinghelp":"\u0141adowanie ...","cancel":"Anuluj","confirm":"Potwierd\u017a","areyousure":"Czy jeste\u015b pewny?","closebuttontitle":"Zamknij","unknownerror":"Nieznany b\u0142\u0105d"},"repository":{"type":"Typ","size":"Rozmiar","invalidjson":"Nieprawid\u0142owy ci\u0105g jSON","nofilesattached":"Nie za\u0142\u0105czono plik\u00f3w","filepicker":"Wyb\u00f3r plik\u00f3w","logout":"Wyloguj si\u0119","nofilesavailable":"Brak dost\u0119pnych plik\u00f3w","norepositoriesavailable":"Niestety, \u017cadne z istniej\u0105cych repozytori\u00f3w nie mo\u017ce zawiera\u0107 plik\u00f3w w wymaganym formacie.","fileexistsdialogheader":"Plik istnieje","fileexistsdialog_editor":"Plik o wybranej nazwie zosta\u0142 ju\u017c za\u0142\u0105czony do tekstu, kt\u00f3ry edytujesz.","fileexistsdialog_filemanager":"Plik o wybranej nazwie ju\u017c zosta\u0142 do\u0142\u0105czony","renameto":"Zmie\u0144 nazw\u0119 na","referencesexist":"Istnieje {$a} skr\u00f3t\u00f3w, kt\u00f3re wykorzystuj\u0105 ten plik jako \u017ar\u00f3d\u0142o.","select":"Wybierz"},"admin":{"confirmdeletecomments":"Zamierzasz usun\u0105\u0107 komentarze, czy jeste\u015b pewien(a)?","confirmation":"Potwierdzenie"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {setTimeout("fix_column_widths()", 20);
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"pl"});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random5c49d19013fca38'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5c49d19013fca38'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+
+</body></html>

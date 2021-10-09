@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="pl" class="yui3-js-enabled" lang="pl"><head><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+    <title>Układy kombinacyjne - realizacje techniczne funktorów logicznych:  Technologia CMOS</title>
+    <link rel="shortcut icon" href="https://msg.sytes.net:8085/theme/image.php/boost/theme/1504993502/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, Układy kombinacyjne - realizacje techniczne funktorów logicznych:  Technologia CMOS">
+<link rel="stylesheet" type="text/css" href="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/yui_combo.css"><script type="text/javascript" id="www-widgetapi-script" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/www-widgetapi.js" async=""></script><script src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/iframe_api"></script><script charset="utf-8" id="yui_3_17_2_1_1510174291615_8" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/yui_combo_003.php" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1510174291615_18" href="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/yui_combo_002.css"><script charset="utf-8" id="yui_3_17_2_1_1510174291615_19" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/yui_combo_004.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1510174291615_28" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/yui_combo_002.php" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/all.css">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/msg.sytes.net:8085","sesskey":"KAJGhPt8hO","loadingicon":"https:\/\/msg.sytes.net:8085\/theme\/image.php\/boost\/core\/1504993502\/i\/loading_small","themerev":"1504993502","slasharguments":1,"theme":"boost","jsrev":"1504993502","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?m\/1504993502\/","combine":true,"comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","ext":false,"root":"m\/1504993502\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]}}},"gallery":{"name":"gallery","base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1504993502\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/msg.sytes.net:8085\/lib\/javascript.php\/1504993502\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/msg.sytes.net:8085\/lib\/javascript.php\/1504993502\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.mathjax.org\/mathjax\/2.7-latest\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/first.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryprivate" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/jquery-private.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/jquery-3.js"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style></head>
+
+<body id="page-mod-book-view" class="format-topics  path-mod path-mod-book gecko dir-ltr lang-pl yui-skin-sam yui3-skin-sam msg-sytes-net--8085 pagelayout-incourse course-3 context-47 cmid-15 category-3  jsenabled">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Przejdź do głównej zawartości</a>
+</div><script type="text/javascript" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/yui_combo.php"></script><script type="text/javascript" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true">☰</span><span class="sr-only">Rozszerzać</span></button>
+            </div>
+    
+            <a href="https://msg.sytes.net:8085/" class="navbar-brand 
+                    hidden-sm-down
+                    ">
+                <span class="site-name hidden-sm-down">Zespół Szkół Elektronicznych im. Wojska Polskiego w Bydgoszczy</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <span class="dropdown">
+    <a href="#" class="dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">Grzegorz Kantowicz</span><span class="avatars"><span class="avatar current"><img src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/f2.jpg" alt="Grzegorz Kantowicz" title="Grzegorz Kantowicz" class="userpicture" role="presentation" height="35" width="35"></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+            <a href="https://msg.sytes.net:8085/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/course.svg">
+<span class="menu-action-text" id="actionmenuaction-1">Kokpit</span></a><div class="dropdown-divider"></div><a href="https://msg.sytes.net:8085/user/profile.php?id=3" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/user.svg">
+<span class="menu-action-text" id="actionmenuaction-2">Profil</span></a><a href="https://msg.sytes.net:8085/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/grades.svg">
+<span class="menu-action-text" id="actionmenuaction-3">Stopnie</span></a><a href="https://msg.sytes.net:8085/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/message.svg">
+<span class="menu-action-text" id="actionmenuaction-4">Wiadomości</span></a><a href="https://msg.sytes.net:8085/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/preferences.svg">
+<span class="menu-action-text" id="actionmenuaction-5">Ustawienia</span></a><a href="https://msg.sytes.net:8085/login/logout.php?sesskey=KAJGhPt8hO" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/logout.svg">
+<span class="menu-action-text" id="actionmenuaction-6">Wyloguj</span></a><div class="dropdown-divider"></div><a href="https://msg.sytes.net:8085/course/switchrole.php?id=3&amp;switchrole=-1&amp;returnurl=%2Fmod%2Fbook%2Fview.php%3Fid%3D15%26chapterid%3D112" class="dropdown-item menu-action" role="menuitem" data-title="switchroleto,moodle" aria-labelledby="actionmenuaction-7"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/switchrole.svg">
+<span class="menu-action-text" id="actionmenuaction-7">Zmień rolę na...</span></a>
+        </div>
+</span>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages" id="nav-message-popover-container" data-userid="3" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-5a036ef059d885a036ef0403dc24" aria-haspopup="true" aria-label="Show message window with no new messages" tabindex="0">
+                <img class="icon smallicon" alt=" Toggle messages menu " title=" Toggle messages menu " src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/message.svg">
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div id="popover-region-container-5a036ef059d885a036ef0403dc24" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Okno powiadomiemia" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Wiadomości</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+                <a href="https://msg.sytes.net:8085/message/index.php?contactsfirst=1">Nowa wiadomość
+                </a>
+        </div>
+        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button" href="#" role="button" title="Oznacz wszystko jako przeczytane" data-action="mark-all-read">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" Oznacz wszystko jako przeczytane " title=" Oznacz wszystko jako przeczytane " src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/markasread.svg"></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/loading.gif"></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Oznacz wszystko jako przeczytane
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://msg.sytes.net:8085/message/edit.php?id=3" title="Preferencje wiadomości">
+                    <img class="icon smallicon" alt=" Preferencje wiadomości " title=" Preferencje wiadomości " src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/settings.svg">
+                </a>
+
+    <div class="hover-tooltip">
+        Preferencje wiadomości
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">Brak wiadomości</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://msg.sytes.net:8085/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Wyświetl wszystko</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="3" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-5a036ef05dcda5a036ef0403dc25" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <img class="icon smallicon" alt=" Toggle notifications menu " title=" Toggle notifications menu " src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/notifications.svg">
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div id="popover-region-container-5a036ef05dcda5a036ef0403dc25" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Okno powiadomiemia" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Powiadomienia</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button" href="#" title="Oznacz wszystko jako przeczytane" data-action="mark-all-read" role="button">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" Oznacz wszystko jako przeczytane " title=" Oznacz wszystko jako przeczytane " src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/markasread.svg"></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/loading.gif"></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Oznacz wszystko jako przeczytane
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://msg.sytes.net:8085/message/notificationpreferences.php?userid=3" title="Preferencje powiadomienia">
+                    <img class="icon smallicon" alt=" Preferencje powiadomienia " title=" Preferencje powiadomienia " src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/settings.svg">
+                </a>
+
+    <div class="hover-tooltip">
+        Preferencje powiadomienia
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Nie masz powiadomień</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://msg.sytes.net:8085/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Wyświetl wszystko</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- custom_menu -->
+                
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="page-context-header"><div class="page-header-headings"><h1>Urządzenia komputerowe i teletransmisyjne</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/my/">Kokpit</a></li>
+                <li class="breadcrumb-item">Moje kursy</li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/course/view.php?id=3" title="Urządzenia komputerowe i teletransmisyjne">UKiT</a></li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/course/view.php?id=3#section-2">Układy cyfrowe</a></li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/mod/book/view.php?id=15" title="Książka">Układy kombinacyjne - realizacje techniczne funktorów logicznych</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button"><div class="singlebutton">
+    <form method="post" action="https://msg.sytes.net:8085/mod/book/view.php">
+            <input name="id" value="15" type="hidden">
+            <input name="chapterid" value="112" type="hidden">
+            <input name="edit" value="1" type="hidden">
+            <input name="sesskey" value="KAJGhPt8hO" type="hidden">
+        <button type="submit" class="btn btn-secondary" id="single_button5a036ef0403dc1" title="">Włącz tryb edycji</button>
+    </form>
+</div></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <div id="region-main-settings-menu" class="hidden-print has-blocks">
+                    <div> <div class="action-menu moodle-actionmenu" id="action-menu-3" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-3-menubar" role="menubar">
+
+            <span class="dropdown">
+    <a href="#" class="dropdown-toggle" id="dropdown-3" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/edit.svg">
+</a>
+        <div class="dropdown-menu dropdown-menu-right menu align-tr-br" id="action-menu-3-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-3" role="menu" data-align="tr-br">
+            <div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/course/modedit.php?update=15&amp;return=1" id="action_link5a036ef0403dc26" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/navigationitem.svg">
+Edytuj ustawienia</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/assign.php?contextid=47" id="action_link5a036ef0403dc27" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/navigationitem.svg">
+Role przypisane lokalnie</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/permissions.php?contextid=47" id="action_link5a036ef0403dc28" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/navigationitem.svg">
+Uprawnienia</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/check.php?contextid=47" id="action_link5a036ef0403dc29" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/navigationitem.svg">
+Sprawdź uprawnienia
+</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/filter/manage.php?contextid=47" id="action_link5a036ef0403dc30" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/navigationitem.svg">
+Filtry</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/report/log/index.php?chooselog=1&amp;id=3&amp;modid=15" id="action_link5a036ef0403dc31" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/navigationitem.svg">
+Logi</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/backup/backup.php?id=3&amp;cm=15" id="action_link5a036ef0403dc32" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/navigationitem.svg">
+Kopia zapasowa</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/backup/restorefile.php?contextid=47" id="action_link5a036ef0403dc33" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/navigationitem.svg">
+Odtwórz</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/importhtml/index.php?id=15" id="action_link5a036ef0403dc34" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/navigationitem.svg">
+Import rozdziałów</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/print/index.php?id=15" id="action_link5a036ef0403dc35" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/book.svg">
+Drukuj książkę</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/print/index.php?id=15&amp;chapterid=112" id="action_link5a036ef0403dc36" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/chapter.svg">
+Drukuj ten rozdział</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=112&amp;edit=1&amp;sesskey=KAJGhPt8hO" id="action_link5a036ef0403dc37" class="" role="menuitem"><img class="icon " alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/navigationitem.svg">
+Włącz tryb edycji</a>
+
+
+</div>
+        </div>
+</span>
+
+
+        </div>
+
+</div> </div>
+                </div>
+                <section id="region-main" class="has-blocks">
+                    <div class="card card-block">
+                        <div class="region_main_settings_menu_proxy"></div>
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><h2>Układy kombinacyjne - realizacje techniczne funktorów logicznych</h2><div class="navtop clearfix navimages"><a title="Poprzednie: 3. Technologia TTL" class="bookprev" href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=105"><img src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/nav_prev.svg" class="icon" alt="Poprzednie: 3. Technologia TTL"></a><a title="Następne: 5. Technologia ECL" class="booknext" href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=113"><img src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/nav_next.svg" class="icon" alt="Następne: 5. Technologia ECL"></a></div><div class="box generalbox book_content p-y-1"><h3>4. Technologia CMOS</h3><div class="no-overflow"><p style="text-align: justify;">Układy
+ CMOS (ang. Complementary MOS) zawierają w&nbsp;swej strukturze 
+tranzystory MOSFET (zwane w&nbsp;skrócie tranzystorami MOS) zarówno 
+z&nbsp;kanałem typu&nbsp;N, jak i&nbsp;typu&nbsp;P. Tranzystory te 
+tworzą tak zwane pary komplementarne.</p>
+<p style="text-align: justify;">Każda taka para zawiera tranzystor MOS 
+o&nbsp;przewodnictwie&nbsp;N i&nbsp;tranzystor MOS 
+o&nbsp;przewodnictwie&nbsp;P. Obecnie wytwarzany asortyment układów CMOS
+ jest podobny do asortymentu układów bipolarnych TTL. Są produkowane 
+serie układów CMOS, będące funkcjonalnymi zamiennikami odpowiednich 
+układów TTL. Topografia wyprowadzeń tych układów jest taka sama (jak 
+w&nbsp;układach TTL), co pozwala stosować je zamiennie. Przykładem 
+takiej serii jest seria 74HC. Seria 74HCT jest całkowicie kompatybilna 
+(zgodna) z&nbsp;serią układów bipolamych TTL-LS. Tak więc jest możliwa 
+zamiana układów TTL-LS na układy 74HCT – w&nbsp;celu redukcji poboru 
+mocy bez zmniejszenia szybkości działania. Krajowa seria MCY74/64 nie 
+daje takich możliwości ze względu na inną konfigurację wyprowadzeń.</p>
+<p style="text-align: justify;">Technologia CMOS jest obecnie 
+dynamicznie rozwijającą się techniką scalania układów cyfrowych 
+(a&nbsp;także i&nbsp;analogowych). Powstało w ostatnich latach wiele 
+odmian tych układów. Mają one coraz lepsze parametry dynamiczne. Dzięki 
+nowym technologiom wytwarzania, umożliwiającym większe upakowanie 
+elementów, są produkowane układy CMOS wielkiego (LSI) i&nbsp;bardzo 
+wielkiego (VLSI) stopnia scalenia.</p>
+<p style="text-align: justify;">Produkowane obecnie serie układów CMOS:</p>
+<ul>
+<li style="text-align: justify;"><span class="new">BiCMOS</span> – seria CMOS z&nbsp;poziomami na wejściach odpowiadającymi układom bipolarnym:
+<ul>
+<li style="text-align: justify;">BCT – BiCMOS</li>
+<li style="text-align: justify;">ABT – Advanced BiCMOS</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>CMOS:
+<ul>
+<li style="text-align: justify;">C – jak podstawowa <span class="new">seria 4000</span></li>
+<li style="text-align: justify;">HC – High speed CMOS, szybkość i&nbsp;obciążalność wyjść zbliżona do serii LS</li>
+<li style="text-align: justify;"><span class="new">HCT</span> – wersja CMOS kompatybilna z&nbsp;układami TTL serii LS</li>
+<li style="text-align: justify;">AC – Advanced CMOS, z&nbsp;parametrami między S&nbsp;a&nbsp;F</li>
+<li style="text-align: justify;">AHC – Advanced High-Speed CMOS, trzykrotnie szybsza od HC</li>
+<li style="text-align: justify;">ALVC – niskonapięciowe, zasilany z&nbsp;zakresu od 1,65&nbsp;V do 3,3&nbsp;V, czas propagacji (TPD) 2&nbsp;ns</li>
+<li style="text-align: justify;">AUC – bardzo niskonapięciowe, zasilany z&nbsp;zakresu od 0,8&nbsp;V do 2,7&nbsp;V, czas propagacji (TPD) &lt; 1,9 ns@1,8&nbsp;V</li>
+<li style="text-align: justify;">FC – Fast CMOS, podobna do&nbsp;F</li>
+<li style="text-align: justify;">G – bardzo szybkie, pracujące przy częstotliwości do 1,125&nbsp;GHz, napięcie zasilania 1,6–3,6&nbsp;V</li>
+<li style="text-align: justify;">LCX – CMOS o&nbsp;napięciu zasilania 3&nbsp;V, toleruje wyższe poziomy napięcia sygnałów do 5&nbsp;V</li>
+<li style="text-align: justify;">LVC – niskonapięciowe – zasilany 
+z&nbsp;zakresu od 1,65&nbsp;V do 3,3&nbsp;V, toleruje wyższe poziomy 
+napięcia sygnałów do 5&nbsp;V</li>
+<li style="text-align: justify;">LVQ – niskonapięciowe – 3,3&nbsp;V</li>
+<li style="text-align: justify;">LVX – niskonapięciowe – 3,3&nbsp;V, toleruje wyższe poziomy napięcia sygnałów do 5&nbsp;V</li>
+<li style="text-align: justify;">VHC – Very High Speed CMOS.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;">Dla porównania zestawiono w&nbsp;tablicy
+ poniżej parametry najbardziej obecnie rozpowszechnionych rodzin układów
+ CMOS. W&nbsp;ostatniej kolumnie tablicy przypomniano parametry układów 
+TTL serii 74LS.</p>
+<p style="text-align: center;"><strong>Przykładowe parametry techniczne różnych serii układów CMOS</strong></p>
+<table cellpadding="5" border="1" align="center">
+<tbody>
+<tr>
+<td colspan="3" style="text-align: right;"><strong>Technologia</strong></td>
+<td style="text-align: center;" rowspan="2"><strong>4000B</strong><br><strong>(MCY74)</strong></td>
+<td style="text-align: center;" rowspan="2"><strong>HC</strong><br><strong>HCT</strong></td>
+<td style="text-align: center;" rowspan="2"><strong>AC</strong><br><strong>ACT</strong></td>
+<td style="text-align: center;" rowspan="2"><strong>TTL-LS</strong></td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: left;"><strong>Parametr</strong></td>
+</tr>
+<tr>
+<td colspan="2">Napięcie zasilania</td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">3÷18</td>
+<td style="text-align: center;">2÷6 HC<br>5±10% HCT</td>
+<td style="text-align: center;">3÷5,5 AC<br>5±10% ACT</td>
+<td style="text-align: center;">5±5%</td>
+</tr>
+<tr>
+<td colspan="2">Prąd wejściowy</td>
+<td style="text-align: center;">mA</td>
+<td style="text-align: center;">0,001</td>
+<td style="text-align: center;">0,001</td>
+<td style="text-align: center;">0,001</td>
+<td style="text-align: center;">0,4</td>
+</tr>
+<tr>
+<td colspan="2">Moc statyczna</td>
+<td style="text-align: center;">nW</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">2,5</td>
+<td style="text-align: center;">2,5</td>
+<td style="text-align: center;">2 000 000</td>
+</tr>
+<tr>
+<td colspan="2">Współczynnik dobroci<br>przy ƒ<sub>CL</sub> = 100 kHz</td>
+<td style="text-align: center;">pJ</td>
+<td style="text-align: center;">0,2</td>
+<td style="text-align: center;">0,02</td>
+<td style="text-align: center;">0,01</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr>
+<td colspan="2">Czas propagacji<br>przy <em>C</em><sub>L</sub> = 15 pF (poj. obc.)</td>
+<td style="text-align: center;">ns</td>
+<td style="text-align: center;">90</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr>
+<td colspan="2">Maksymalna częstotliwość pracy</td>
+<td style="text-align: center;">MHz</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">125</td>
+<td style="text-align: center;">40</td>
+</tr>
+<tr>
+<td colspan="2">Obciążalność<br>(liczba wejść bramek TTL-LS)</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr>
+<td rowspan="2">Margines zakłóceń</td>
+<td style="text-align: center;">Δ<em>U</em><sub>L</sub></td>
+<td rowspan="2" style="text-align: center;">%<em>U</em><sub>Z</sub></td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">28 HC<br>14 HCT</td>
+<td style="text-align: center;">28 AC<br>14 ACT</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td style="text-align: center;">Δ<em>U</em><sub>H</sub></td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">28 HC<br>58 HCT</td>
+<td style="text-align: center;">28 AC <br>58 ACT</td>
+<td style="text-align: center;">14</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p style="text-align: justify;">Układy MOS są wrażliwe na przebicia 
+ładunkiem elektrostatycznym. Wynika to ze względnie dużych pojemności 
+występujących na wejściach układów. Izolowana bramka wraz z&nbsp;kanałem
+ stanowi kondensator o&nbsp;dość dużej pojemności ze względu na bardzo 
+małą odległość „okładek” kondensatora. Warstwa tlenku, izolująca bramkę,
+ ma grubość ok. 120&nbsp;nm. Napięcie wywoływane przez ładunek Q 
+zgromadzony w&nbsp;takim kondensatorze może osiągnąć wartość 
+wystarczającą do przebicia warstwy tlenku i&nbsp;doprowadzić do 
+zniszczenia układu. Stawia to określone wymagania odnośnie do zasad 
+przechowywania i&nbsp;obchodzenia się z&nbsp;układami MOS. Nie należy 
+dotykać ich wyprowadzeń. Powinno się je przechowywać z&nbsp;połączonymi 
+ze sobą końcówkami (np. owinięte w&nbsp;folię aluminiową).</p>
+<p style="text-align: justify;">Obecnie buduje się układy, których 
+obwody wejściowe są zabezpieczone przed przebiciem ładunkiem 
+elektrostatycznym. Do takich należą np. układy 4000B (MCY74/64) 
+i&nbsp;oczywiście wszystkie nowsze serie (HC, HCT, AC, ACT). 
+Zabezpieczenia te są jednak skuteczne tylko podczas normalnej 
+eksploatacji układów CMOS, tzn. gdy końcówki zasilania układu są 
+przyłączone do źródła napięcia zasilania. Zatem wyposażenie układów CMOS
+ w&nbsp;obwody zabezpieczenia wejść nie zwalnia nas z&nbsp;obowiązku 
+przestrzegania powyżej wymienionych zasad obchodzenia się 
+z&nbsp;układami CMOS.</p>
+<h4>lnwerter CMOS</h4>
+<p style="text-align: justify;">Podstawową strukturą każdego układu CMOS
+ jest para komplementarna, która jednocześnie stanowi układ realizujący 
+negację sygnału wejściowego, czyli jest funktorem NOT. Bardziej złożone 
+bramki logiczne (NAND, NOR) są kombinacją odpowiednio połączonych ze 
+sobą inwerterów (par komplementarnych). Podstawowe cechy dotyczące 
+działania takiego inwertera są zatem wspólne dla wszystkich serii 
+układów CMOS.</p>
+<p><img src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/Inwerter%2520CMOS.png" alt="Inwerter CMOS" height="189" width="240"></p>
+<p style="text-align: justify;">Rys.&nbsp;15. Schemat zasadniczy inwertera CMOS</p>
+<h5>Pobór mocy</h5>
+<p style="text-align: justify;">Z&nbsp;porównania charakterystyk poboru 
+prądu przez bramkę TTL i&nbsp;bramkę CMOS wynika, że każde przełączenie 
+bramki CMOS wymaga poboru znacznie większej mocy niż w przypadku bramki 
+TTL. Pobór mocy przez układy CMOS jest silnie uzależniony od 
+częstotliwości przełączania bramki. Potoczne przeświadczenie 
+o&nbsp;znikomym zapotrzebowaniu na moc przez układy CMOS, 
+w&nbsp;praktyce znajduje potwierdzenie jedynie przy niewielkich 
+częstotliwościach pracy układu.</p>
+<h5>Parametry wejściowe i&nbsp;wyjściowe. Obciążalność</h5>
+<p style="text-align: justify;">Rezystancja wejściowa układów CMOS jest 
+tak duża, że jej wpływ na pracę układów można pominąć. Typowa wartość 
+prądu wejściowego zawiera się w&nbsp;przedziale 10÷100&nbsp;pA (układy 
+serii 4000B), natomiast wartość <em>I</em><sub>I</sub> &lt; 100&nbsp;nA 
+dla szybkich układów CMOS (serie HC, HCT, AC, ACT). Jego maksymalna 
+(dopuszczalna) wartość wynosi odpowiednio 10&nbsp;mA i&nbsp;20&nbsp;mA.</p>
+<p style="text-align: center;"><strong>Prądy wyjściowe układów CMOS (wartości znamionowe)</strong></p>
+<table cellpadding="5" border="1" align="center">
+<tbody>
+<tr>
+<td colspan="2" rowspan="3" style="text-align: center;">Prąd wyjściowy</td>
+<td colspan="3" style="text-align: center;">Układy 4000B</td>
+<td colspan="3" style="text-align: center;">Układy HC</td>
+<td colspan="3" style="text-align: center;">Układy AC</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">Napięcie zasilania, V</td>
+</tr>
+<tr>
+<td style="text-align: center;">+5</td>
+<td style="text-align: center;">+10</td>
+<td style="text-align: center;">+15</td>
+<td style="text-align: center;">+2</td>
+<td style="text-align: center;">+4,5</td>
+<td style="text-align: center;">+6</td>
+<td style="text-align: center;">+3,0</td>
+<td style="text-align: center;">+4,5</td>
+<td style="text-align: center;">+5,5</td>
+</tr>
+<tr>
+<td>–<em>I</em><sub>OH</sub></td>
+<td style="text-align: center;">mA</td>
+<td style="text-align: center;">1,0</td>
+<td style="text-align: center;">2,6</td>
+<td style="text-align: center;">6,8</td>
+<td style="text-align: center;">2,5</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">24</td>
+</tr>
+<tr>
+<td><em>I</em><sub>OL</sub></td>
+<td style="text-align: center;">mA</td>
+<td style="text-align: center;">1,0</td>
+<td style="text-align: center;">2,6</td>
+<td style="text-align: center;">6,8</td>
+<td style="text-align: center;">4,5</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">24</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Jak widać w&nbsp;tabeli, wartości prądów wyjściowych są wielokrotnie większe niż znamionowa wartość prądu wejściowego. <em><strong>Ze
+ względu na wydajność prądową i&nbsp;pobór prądu w&nbsp;stanach 
+statycznych można wyjście układu CMOS obciążyć praktycznie dowolną 
+liczbą wejść.</strong></em></p>
+<p style="text-align: justify;"><em><strong>Jedynym czynnikiem ograniczającym dopuszczalną obciążalność w&nbsp;układach CMOS jest obciążenie pojemnościowe</strong></em>.
+ Wartość pojemności wejściowej układów CMOS wynosi 5÷10&nbsp;pF. 
+Obciążenie pojemnościowe układu ma istotny wpływ na czasy narastania, 
+opadania i&nbsp;propagacji sygnałów. Wydłużony czas propagacji sprawia, 
+że każde przełączenie bramki wymaga zwiększonego poboru energii ze 
+źródła (przez dłuższy czas oba tranzystory są w&nbsp;stanie przewodzenia
+ i&nbsp;nasycenia). <strong><em>Im większe jest obciążenie 
+pojemnościowe, tym dłuższe są czasy narastania, opadania 
+i&nbsp;propagacji sygnałów oraz tym większa jest moc pobierana ze 
+źródła, a&nbsp;zatem – tym mniejsza dopuszczalna częstotliwość 
+przełączania układów. Na podstawie maksymalnej częstotliwości pracy 
+układu – z&nbsp;jaką chcemy, aby układ pracował – można określić 
+dopuszczalne obciążenie pojemnościowe, czyli liczbę sterowanych układów 
+CMOS.</em></strong></p>
+<h4>Wybrane układy SSI serii 4000B</h4>
+<p style="text-align: justify;">Podstawowe parametry techniczne układów CMOS serii MCY74 produkcji CEMI zestawiono w&nbsp;tabelach powyżej.</p>
+<p style="text-align: justify;">Napięcie zasilania <em>U</em><sub>Z</sub>&nbsp;=<em>&nbsp;U</em><sub>DD</sub>&nbsp;–<em>&nbsp;U</em><sub>SS</sub>
+ tych układów może przyjmować wartości z&nbsp;przedziału 
++2&nbsp;÷&nbsp;+18&nbsp;V (maksymalnie +20&nbsp;V). Napięcie to – 
+w&nbsp;przeciwieństwie do napięcia zasilającego układy TTL – nie musi 
+być stabilizowane. Na ogół punkt dołączenia potencjału niskiego jest 
+uziemiony (<em>U</em><sub>SS</sub>&nbsp;=&nbsp;0&nbsp;V) i&nbsp;napięcie zasilające <em>U</em><sub>Z</sub>&nbsp;=&nbsp;<em>U</em><sub>DD</sub>.</p>
+<p style="text-align: justify;">Dla układów CMOS zgodnych z&nbsp;TTL przyjęto oznaczać napięcie zasilania symbolem <em>U</em><sub>CC</sub>.
+ W&nbsp;tabeli poniżej podano parametry układów MCY74 przy trzech 
+różnych napięciach zasilających: +5&nbsp;V, +10&nbsp;V 
+i&nbsp;+15&nbsp;V. Wartości parametrów przy innych napięciach 
+zasilających można uzyskać metodą aproksymacji.</p>
+<p style="text-align: justify;">Podstawowymi układami SSI w&nbsp;serii 
+4000B (MCY74) są: inwerter, bramka NAND i&nbsp;NOR, bramka trójstanowa 
+oraz bramka transmisyjna.</p>
+<p style="text-align: justify;">Asortyment układowy elementów 
+wytwarzanych w&nbsp;technice CMOS jest porównywalny z&nbsp;asortymentem 
+układowym układów TTL. Uwaga ta dotyczy jednak serii 4000B wytwarzanej 
+przez zachodnie firmy elektroniczne. Polski odpowiednik tych układów, 
+seria MCY74, jest jak dotychczas asortymentowo znacznie uboższa.</p>
+<p style="text-align: justify;">W&nbsp;ramach serii MCY74 były 
+produkowane: inwertery, dwuwejściowe bramki NAND i&nbsp;NOR, bramki 
+z&nbsp;przerzutnikiem Schmitta, także 2-, 3-, 4-wejściowe bramki NAND 
+i&nbsp;NOR, bufory (inwertery), bufory (wzmacniacze logiczne), bramki 
+z&nbsp;otwartym drenem (analogi bramek TTL z&nbsp;otwartym kolektorem), 
+bramki z&nbsp;wyjściem trójstanowym, bramki transmisyjne. Oczywiście 
+asortyment układowy elementów CMOS jest szerszy i&nbsp;obejmuje także 
+układy MSI oraz LSI – zarówno kombinacyjne, jak i&nbsp;sekwencyjne.</p>
+<p style="text-align: center;"><strong>Parametry techniczne układów 4000B (MCY74)</strong></p>
+<table cellpadding="5" border="1" align="center">
+<tbody>
+<tr>
+<td colspan="2" rowspan="2" style="text-align: center;">Parametr</td>
+<td colspan="3" style="text-align: center;">Napięcie zasilania, V</td>
+</tr>
+<tr>
+<td style="text-align: center;">+5</td>
+<td style="text-align: center;">+10</td>
+<td style="text-align: center;">+15</td>
+</tr>
+<tr>
+<td><em>U</em><sub>I</sub></td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">–0,5 ÷ +5,5</td>
+<td style="text-align: center;">–0,5 ÷ +10,5</td>
+<td style="text-align: center;">–0,5 ÷ +15,5</td>
+</tr>
+<tr>
+<td><em>U</em><sub>IL</sub></td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">0 ÷ +1,5</td>
+<td style="text-align: center;">0 ÷ +3</td>
+<td style="text-align: center;">0 ÷ +4</td>
+</tr>
+<tr>
+<td><em>U</em><sub>IH</sub></td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">+3,5 ÷ +5</td>
+<td style="text-align: center;">+7 ÷ +10</td>
+<td style="text-align: center;">+11 ÷ +15</td>
+</tr>
+<tr>
+<td><em>U</em><sub>OH</sub></td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">+4,95 ÷ +5</td>
+<td style="text-align: center;">+9,95 ÷ +10</td>
+<td style="text-align: center;">+14,95 ÷ +15</td>
+</tr>
+<tr>
+<td><em>U</em><sub>OL</sub></td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">0 ÷ +0,05</td>
+<td style="text-align: center;">0 ÷ +0,05</td>
+<td style="text-align: center;">0 ÷ +0,05</td>
+</tr>
+<tr>
+<td><em>t</em><sub>pLH</sub> = <em>t</em><sub>pHL</sub> = <em>t</em><sub>p<br></sub>(bramka)</td>
+<td style="text-align: center;">ns</td>
+<td style="text-align: center;">125<br>(do 250)</td>
+<td style="text-align: center;">60<br>(do 120)</td>
+<td style="text-align: center;">40<br>(do 80)</td>
+</tr>
+<tr>
+<td><em>t</em><sub>pLH</sub> = <em>t</em><sub>pHL</sub> = <em>t</em><sub>p<br></sub>(przerzutnik)</td>
+<td style="text-align: center;">ns</td>
+<td style="text-align: center;">150<br>(do 300)</td>
+<td style="text-align: center;">65<br>(do 130)</td>
+<td style="text-align: center;">45<br>(do 90)</td>
+</tr>
+<tr>
+<td><em>P</em><sub>S<br></sub>(na układ scalony)</td>
+<td style="text-align: center;">mW</td>
+<td style="text-align: center;">dop. 500<br>(stat. 2,5 nW)</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">500</td>
+</tr>
+<tr>
+<td>obciążalność N<br>(bramkami TTL-LS)</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+</tr>
+<tr>
+<td><em>D</em> = <em>t</em><sub>p</sub><em>P</em><sub>S<br></sub>(przy <em>f</em><sub>CL</sub> = 100 kHz)</td>
+<td style="text-align: center;">pJ</td>
+<td style="text-align: center;">0,2</td>
+<td style="text-align: center;">0,2</td>
+<td style="text-align: center;">0,2</td>
+</tr>
+<tr>
+<td>Δ<em>U<br></em>(30% <em>U</em><sub>Z</sub>)</td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">1,5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4,5</td>
+</tr>
+<tr>
+<td>Δ<em>U</em><sub>min</sub></td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2,5</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h5>Bramka NAND CMOS 4011B (MCY74011)</h5>
+<p style="text-align: justify;">Schemat bramki realizującej negację iloczynu sygnałów wejściowych przedstawiono na rys.&nbsp;16.</p>
+<p><img src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/Bramka%2520NAND%2520CMOS.png" alt="Bramka NAND CMOS" height="258" width="320"></p>
+<p style="text-align: justify;">Rys.&nbsp;16. Schemat zasadniczy dwuwejściowej bramki NAND CMOS</p>
+<p style="text-align: justify;">Podstawową strukturą budowy elementów 
+logicznych w&nbsp;technice CMOS pozostaje nadal inwerter, czyli para 
+komplementarna tranzystorów MOSFET. Inwerter tworzy para tranzystorów 
+o&nbsp;połączonych bramkach.</p>
+<p style="text-align: justify;"><strong>Układy CMOS serii 4000B 
+z&nbsp;powodu małej szybkości (duży czas propagacji) są obecnie serią 
+nie produkowaną. Ich istotną wadą jest także niezgodność końcówkowa 
+z&nbsp;układami TTL oraz niewielki prąd wyjściowy. Coraz powszechniej są
+ produkowane i&nbsp;używane tzw. szybkie układy CMOS do których należą 
+serie HC/HCT i&nbsp;AC/ACT.</strong></p>
+<h4>Układy CMOS serii HC/HCT i&nbsp;AC/ACT</h4>
+<p style="text-align: justify;">Podstawowy kierunek ulepszania układów 
+CMOS to zwiększanie szybkości działania. Obecnie produkowane szybkie 
+układy CMOS mają czasy propagacji porównywalne z&nbsp;szybkimi układami 
+TTL. Biorąc jeszcze pod uwagę, że te szybkie układy CMOS mogą sterować 
+dużymi obciążeniami (ich prądy wyjściowe są nawet większe niż 
+w&nbsp;układach TTL), dominacja tych układów nad układami TTL staje się 
+coraz bardziej oczywista.</p>
+<p style="text-align: justify;">Serie HC (ang. <em>High speed CMOS</em>) i&nbsp;AC (ang. <em>Advanced CMOS</em>)
+ są w&nbsp;pełni zgodne końcówkowo, oznaczeniowo i funkcjonalnie 
+z&nbsp;układami TTL. Serie HCT i&nbsp;ACT ponadto są kompatybilne 
+z&nbsp;układami TTL LS (stąd litera T w&nbsp;nazwie serii). 
+Z&nbsp;powyższych uwag wynika więc, że możemy zamienić np. układ 74LS00 
+na układ 74HCT00 (lub 74ACT00), ponieważ są one całkowicie zgodne 
+końcówkowo i&nbsp;funkcjonalnie oraz ich parametry wejściowe 
+i&nbsp;wyjściowe nie są gorsze niż układu 74LS.</p>
+<p style="text-align: justify;">Wprawdzie również układy HC i&nbsp;AC są
+ zgodne końcówkowo, oznaczeniowo i&nbsp;funkcjonalnie z&nbsp;układami 
+TTL, ale taka zamiana nie zawsze będzie dopuszczalna, gdyż ich parametry
+ wejściowe różnią się od parametrów wyjściowych układów TTL. Natomiast 
+parametry wyjściowe szybkich układów CMOS są lepsze niż wymagane 
+parametry sygnałów sterujących bramką TTL i&nbsp;takie połączenie (TTL 
+-› CMOS) jest dozwolone. W&nbsp;celu porównania zestawiono w&nbsp;tabeli
+ poniżej parametry układów CMOS – serii szybkich.</p>
+<p style="text-align: center;"><strong>Parametry techniczne szybkich układów CMOS</strong></p>
+<table cellpadding="5" border="1" align="center">
+<tbody>
+<tr>
+<td colspan="2" style="text-align: center;">Parametr</td>
+<td style="text-align: center;">HC</td>
+<td style="text-align: center;">HCT</td>
+<td style="text-align: center;">AC</td>
+<td style="text-align: center;">ACT</td>
+<td style="text-align: center;">TTL-LS</td>
+</tr>
+<tr>
+<td>Napięcie zasilania</td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">2÷6</td>
+<td style="text-align: center;">5±10%</td>
+<td style="text-align: center;">3÷5,5</td>
+<td style="text-align: center;">5±10%</td>
+<td style="text-align: center;">5±5%</td>
+</tr>
+<tr>
+<td>Prąd wejściowy<br>(przy <em>U</em><sub>I</sub> = 0,4V)</td>
+<td style="text-align: center;">mA</td>
+<td style="text-align: center;">0,001</td>
+<td style="text-align: center;">0,001</td>
+<td style="text-align: center;">0,001</td>
+<td style="text-align: center;">0,001</td>
+<td style="text-align: center;">0,4</td>
+</tr>
+<tr>
+<td>
+<p><em>l</em><sub>OLmax.</sub></p>
+<p><em><em>I</em></em><sub>OHmax.</sub></p>
+</td>
+<td style="text-align: center;">mA</td>
+<td style="text-align: center;">25*</td>
+<td style="text-align: center;">25*</td>
+<td style="text-align: center;">50*</td>
+<td style="text-align: center;">50*</td>
+<td style="text-align: center;">
+<p>8*</p>
+<p>0,4*</p>
+</td>
+</tr>
+<tr>
+<td><em>U</em><sub>IHmin</sub><br><em>U</em><sub>ILmax</sub><br><em>U</em><sub>OHmin</sub><br><em>U</em><sub>OLmax</sub></td>
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">3,5<br>1,5<br>4,5<br>0,26</td>
+<td style="text-align: center;">2,0<br>0,8<br>4,5<br>0,26</td>
+<td style="text-align: center;">3,5<br>1,5<br>4,5<br>0,36</td>
+<td style="text-align: center;">2,0<br>0,8<br>4,5<br>0,36</td>
+<td style="text-align: center;">2,0<br>0,8<br>2,7<br>0,5</td>
+</tr>
+<tr>
+<td colspan="7">* Są to wartości prądu przy napięciu <em>U</em><sub>OL</sub> = 0,5 V oraz <em>U</em><sub>OH</sub> = <em>U</em><sub>CC</sub> – 0,5 V,&nbsp;<em>U</em><sub>CC</sub> = 5 V<br>(przy&nbsp;<em>U</em><sub>CC</sub> &lt; 5 V prądy te są odpowiednio mniejsze)</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p style="text-align: justify;">Szybkie układy CMOS są układami 
+buforowanymi. Ich charakterystyki przejściowe są więc zbliżone do 
+idealnych charakterystyk przełączania. Jednak napięcie przełączania 
+układów HCT i&nbsp;ACT wynosi ok. 1,4&nbsp;V (jak TTL), natomiast 
+układów HC i&nbsp;AC wynosi ok. 2,3&nbsp;V (przy napięciu <em>U</em><sub>CC</sub>&nbsp;=&nbsp;5&nbsp;V). Obie charakterystyki przejściowe pokazano na rys. 17.</p>
+<p><img src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/Charakterystyka%252520przejciowa%252520szybkiej%252520bramki%252520C.png" alt="Charakterystyka przejściowa szybkiej bramki CMOS" height="190" width="228"></p>
+<p style="text-align: justify;">Rys.&nbsp;17. Typowe charakterystyki przejściowe szybkich układów CMOS</p></div></div><div class="navbottom clearfix navimages"><a title="Poprzednie: 3. Technologia TTL" class="bookprev" href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=105"><img src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/nav_prev.svg" class="icon" alt="Poprzednie: 3. Technologia TTL"></a><a title="Następne: 5. Technologia ECL" class="booknext" href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=113"><img src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/nav_next.svg" class="icon" alt="Następne: 5. Technologia ECL"></a></div></div>
+                    
+                    </div>
+                </section>
+                <section data-region="blocks-column" class="hidden-print">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Pomiń Spis treści</a>
+
+<aside id="block-5a036ef032896" class=" block block__fake  card m-b-1" role="complementary" data-block="_fake" aria-labelledby="instance-0-header">
+
+    <div class="card-block">
+
+
+            <h3 id="instance-0-header" class="card-title">Spis treści</h3>
+
+        <div class="card-text content">
+            <div class="book_toc_numbered clearfix"><ul><li class="clearfix"><a title="Klasyfikacja podstawowych układów scalonych" href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=103">1. Klasyfikacja podstawowych układów scalonych</a><ul><li class="clearfix"><a title="Oznaczenia cyfrowych układów scalonych" href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=106">1.1. Oznaczenia cyfrowych układów scalonych</a></li></ul></li><li class="clearfix"><a title="Właściwości i parametry cyfrowych układów scalonych" href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=104">2. Właściwości i parametry cyfrowych układów scalonych</a></li><li class="clearfix"><a title="Technologia TTL" href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=105">3. Technologia TTL</a></li><li class="clearfix"><strong>4. Technologia CMOS</strong></li><li class="clearfix"><a title="Technologia ECL" href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=113">5. Technologia ECL</a></li><li class="clearfix"><a title="Zestawienie poziomów logicznych" href="https://msg.sytes.net:8085/mod/book/view.php?id=15&amp;chapterid=114">6. Zestawienie poziomów logicznych</a></li></ul></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3" data-key="coursehome">
+                <div class="m-l-0">
+                        UKiT
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/user/index.php?id=3" data-key="participants">
+                <div class="m-l-0">
+                        Uczestnicy
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/badges/view.php?type=2&amp;id=3" data-key="badgesview">
+                <div class="m-l-0">
+                        Odznaki
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/admin/tool/lp/coursecompetencies.php?courseid=3" data-key="2">
+                <div class="m-l-0">
+                        Kompetencje
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/grade/report/index.php?id=3" data-key="grades">
+                <div class="m-l-0">
+                        Oceny
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-0" data-key="8">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Główne składowe</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-1" data-key="9">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Program nauczania i zasady oceniania</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action font-weight-bold" href="https://msg.sytes.net:8085/course/view.php?id=3#section-2" data-key="10">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Układy cyfrowe</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-3" data-key="11">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Budowa komputera PC</span>
+                        </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/my/" data-key="myhome">
+                <div class="m-l-0">
+                        Kokpit
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/?redirect=0" data-key="home">
+                <div class="m-l-0">
+                        Strona główna
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/calendar/view.php?view=month" data-key="calendar">
+                <div class="m-l-0">
+                        Kalendarz
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/user/files.php" data-key="5">
+                <div class="m-l-0">
+                        Prywatne pliki
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses">
+                <div class="m-l-0">
+                    Moje kursy
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3" data-key="3">
+                <div class="m-l-1">
+                        UKiT
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=2" data-key="2">
+                <div class="m-l-1">
+                        UTt
+                </div>
+            </a>
+        </nav>
+    </div>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+
+            <p class="helplink"><a href="http://docs.moodle.org/32/pl/mod/book/view"><img class="icon iconhelp icon-pre" role="presentation" alt="" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/docs.svg">Dokumentacja Moodle dla tej strony</a></p>
+
+        <div class="logininfo">Jesteś zalogowany(a) jako <a href="https://msg.sytes.net:8085/user/profile.php?id=3" title="Zobacz profil">Grzegorz Kantowicz</a> (<a href="https://msg.sytes.net:8085/login/logout.php?sesskey=KAJGhPt8hO">Wyloguj</a>)</div>
+        <div class="homelink"><a href="https://msg.sytes.net:8085/course/view.php?id=3">UKiT</a></div>
+        <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                </ul>
+        </nav>
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://msg.sytes.net:8085/lib/requirejs.php/1504993502/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://msg.sytes.net:8085/lib/javascript.php/1504993502/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'https://msg.sytes.net:8085/lib/javascript.php/1504993502/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://msg.sytes.net:8085/lib/javascript.php/1504993502/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="Uk%C5%82ady%20kombinacyjne%20-%20realizacje%20techniczne%20funktor%C3%B3w%20logicznych%20%20Technologia%20CMOS_pliki/require.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/video"], function(videojs) {
+videojs.options.flash.swf = "https://msg.sytes.net:8085/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("pl",{
+ "Play": "Odtwarzaj",
+ "Pause": "Pauza",
+ "Current Time": "Aktualny czas",
+ "Duration Time": "Czas trwania",
+ "Remaining Time": "Pozostały czas",
+ "Stream Type": "Typ strumienia",
+ "LIVE": "NA ŻYWO",
+ "Loaded": "Załadowany",
+ "Progress": "Status",
+ "Fullscreen": "Pełny ekran",
+ "Non-Fullscreen": "Pełny ekran niedostępny",
+ "Mute": "Wyłącz dźwięk",
+ "Unmute": "Włącz dźwięk",
+ "Playback Rate": "Szybkość odtwarzania",
+ "Subtitles": "Napisy",
+ "subtitles off": "Napisy wyłączone",
+ "Captions": "Transkrypcja",
+ "captions off": "Transkrypcja wyłączona",
+ "Chapters": "Rozdziały",
+ "You aborted the media playback": "Odtwarzanie zostało przerwane",
+ "A network error caused the media download to fail part-way.": "Problemy z siecią spowodowały błąd przy pobieraniu materiału wideo.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "Materiał wideo nie może być załadowany, ponieważ wystąpił problem z siecią lub format nie jest obsługiwany",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "Odtwarzanie materiału wideo zostało przerwane z powodu uszkodzonego pliku wideo lub z powodu błędu funkcji, które nie są wspierane przez przeglądarkę.",
+ "No compatible source was found for this media.": "Dla tego materiału wideo nie znaleziono kompatybilnego źródła.",
+ "Play video": "Odtwarzaj wideo",
+ "Close": "Zamknij",
+ "Modal Window": "Okno Modala",
+ "This is a modal window": "To jest okno modala",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "Ten modal możesz zamknąć naciskając przycisk Escape albo wybierając przycisk Zamknij.",
+ ", opens captions settings dialog": ", otwiera okno dialogowe ustawień transkrypcji",
+ ", opens subtitles settings dialog": ", otwiera okno dialogowe napisów",
+ ", selected": ", zaznaczone"
+});
+
+});;
+require(["media_videojs/Youtube"]);
+require(["media_videojs/loader"], function(amd) { amd.setUp(); });;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link5a036ef0403dc11', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=15","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link5a036ef0403dc12', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=15&chapterid=112","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link5a036ef0403dc35', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=15","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link5a036ef0403dc36', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=15&chapterid=112","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(47, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Ostatnia modyfikacja","name":"Nazwa","error":"B\u0142\u0105d","info":"Informacja","yes":"Tak","no":"Nie","morehelp":"Wi\u0119cej pomocy","loadinghelp":"\u0141adowanie ...","cancel":"Anuluj","confirm":"Potwierd\u017a","areyousure":"Czy jeste\u015b pewny?","closebuttontitle":"Zamknij","unknownerror":"Nieznany b\u0142\u0105d"},"repository":{"type":"Typ","size":"Rozmiar","invalidjson":"Nieprawid\u0142owy ci\u0105g jSON","nofilesattached":"Nie za\u0142\u0105czono plik\u00f3w","filepicker":"Wyb\u00f3r plik\u00f3w","logout":"Wyloguj si\u0119","nofilesavailable":"Brak dost\u0119pnych plik\u00f3w","norepositoriesavailable":"Niestety, \u017cadne z istniej\u0105cych repozytori\u00f3w nie mo\u017ce zawiera\u0107 plik\u00f3w w wymaganym formacie.","fileexistsdialogheader":"Plik istnieje","fileexistsdialog_editor":"Plik o wybranej nazwie zosta\u0142 ju\u017c za\u0142\u0105czony do tekstu, kt\u00f3ry edytujesz.","fileexistsdialog_filemanager":"Plik o wybranej nazwie ju\u017c zosta\u0142 do\u0142\u0105czony","renameto":"Zmie\u0144 nazw\u0119 na","referencesexist":"Istnieje {$a} skr\u00f3t\u00f3w, kt\u00f3re wykorzystuj\u0105 ten plik jako \u017ar\u00f3d\u0142o.","select":"Wybierz"},"admin":{"confirmdeletecomments":"Zamierzasz usun\u0105\u0107 komentarze, czy jeste\u015b pewien(a)?","confirmation":"Potwierdzenie"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {setTimeout("fix_column_widths()", 20);
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"pl"});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random5a036ef0403dc38'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5a036ef0403dc38'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+
+</body></html>

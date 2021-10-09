@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="pl" class="yui3-js-enabled" lang="pl"><head><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+    <title>Arytmetyka cyfrowa: Przykładowy system zmiennoprzecinkowy</title>
+    <link rel="shortcut icon" href="https://msg.sytes.net:8085/theme/image.php/boost/theme/1504993502/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, Arytmetyka cyfrowa: Przykładowy system zmiennoprzecinkowy">
+<link rel="stylesheet" type="text/css" href="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/yui_combo.css"><script type="text/javascript" id="www-widgetapi-script" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/www-widgetapi.js" async=""></script><script src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/iframe_api"></script><script charset="utf-8" id="yui_3_17_2_1_1506187081233_8" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/yui_combo_003.php" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1506187081233_18" href="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/yui_combo_002.css"><script charset="utf-8" id="yui_3_17_2_1_1506187081233_19" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/yui_combo_004.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1506187081233_28" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/yui_combo_002.php" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/all.css">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/msg.sytes.net:8085","sesskey":"pSj4X3ad2k","loadingicon":"https:\/\/msg.sytes.net:8085\/theme\/image.php\/boost\/core\/1504993502\/i\/loading_small","themerev":"1504993502","slasharguments":1,"theme":"boost","jsrev":"1504993502","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?m\/1504993502\/","combine":true,"comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","ext":false,"root":"m\/1504993502\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]}}},"gallery":{"name":"gallery","base":"https:\/\/msg.sytes.net:8085\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/msg.sytes.net:8085\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1504993502\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/msg.sytes.net:8085\/lib\/javascript.php\/1504993502\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/msg.sytes.net:8085\/lib\/javascript.php\/1504993502\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.mathjax.org\/mathjax\/2.7-latest\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/first.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryprivate" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/jquery-private.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/jquery-3.js"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style></head>
+
+<body id="page-mod-book-view" class="format-topics  path-mod path-mod-book gecko dir-ltr lang-pl yui-skin-sam yui3-skin-sam msg-sytes-net--8085 pagelayout-incourse course-3 context-45 cmid-13 category-3  jsenabled">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Przejdź do głównej zawartości</a>
+</div><script type="text/javascript" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/yui_combo.php"></script><script type="text/javascript" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true">☰</span><span class="sr-only">Rozszerzać</span></button>
+            </div>
+    
+            <a href="https://msg.sytes.net:8085/" class="navbar-brand 
+                    hidden-sm-down
+                    ">
+                <span class="site-name hidden-sm-down">Zespół Szkół Elektronicznych im. Wojska Polskiego w Bydgoszczy</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <span class="dropdown">
+    <a href="#" class="dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">Grzegorz Kantowicz</span><span class="avatars"><span class="avatar current"><img src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/f2.jpg" alt="Grzegorz Kantowicz" title="Grzegorz Kantowicz" class="userpicture" role="presentation" width="35" height="35"></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+            <a href="https://msg.sytes.net:8085/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/course.svg">
+<span class="menu-action-text" id="actionmenuaction-1">Kokpit</span></a><div class="dropdown-divider"></div><a href="https://msg.sytes.net:8085/user/profile.php?id=3" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/user.svg">
+<span class="menu-action-text" id="actionmenuaction-2">Profil</span></a><a href="https://msg.sytes.net:8085/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/grades.svg">
+<span class="menu-action-text" id="actionmenuaction-3">Stopnie</span></a><a href="https://msg.sytes.net:8085/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/message.svg">
+<span class="menu-action-text" id="actionmenuaction-4">Wiadomości</span></a><a href="https://msg.sytes.net:8085/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/preferences.svg">
+<span class="menu-action-text" id="actionmenuaction-5">Ustawienia</span></a><a href="https://msg.sytes.net:8085/login/logout.php?sesskey=pSj4X3ad2k" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/logout.svg">
+<span class="menu-action-text" id="actionmenuaction-6">Wyloguj</span></a><div class="dropdown-divider"></div><a href="https://msg.sytes.net:8085/course/switchrole.php?id=3&amp;switchrole=-1&amp;returnurl=%2Fmod%2Fbook%2Fview.php%3Fid%3D13%26chapterid%3D95" class="dropdown-item menu-action" role="menuitem" data-title="switchroleto,moodle" aria-labelledby="actionmenuaction-7"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/switchrole.svg">
+<span class="menu-action-text" id="actionmenuaction-7">Zmień rolę na...</span></a>
+        </div>
+</span>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages" id="nav-message-popover-container" data-userid="3" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-59c697be59e1859c697be3cdd424" aria-haspopup="true" aria-label="Show message window with no new messages" tabindex="0">
+                <img class="icon smallicon" alt=" Toggle messages menu " title=" Toggle messages menu " src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/message.svg">
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div id="popover-region-container-59c697be59e1859c697be3cdd424" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Okno powiadomiemia" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Wiadomości</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+                <a href="https://msg.sytes.net:8085/message/index.php?contactsfirst=1">Nowa wiadomość
+                </a>
+        </div>
+        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button" href="#" role="button" title="Oznacz wszystko jako przeczytane" data-action="mark-all-read">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" Oznacz wszystko jako przeczytane " title=" Oznacz wszystko jako przeczytane " src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/markasread.svg"></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/loading.gif"></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Oznacz wszystko jako przeczytane
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://msg.sytes.net:8085/message/edit.php?id=3" title="Preferencje wiadomości">
+                    <img class="icon smallicon" alt=" Preferencje wiadomości " title=" Preferencje wiadomości " src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/settings.svg">
+                </a>
+
+    <div class="hover-tooltip">
+        Preferencje wiadomości
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">Brak wiadomości</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://msg.sytes.net:8085/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Wyświetl wszystko</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="3" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-59c697be5edcd59c697be3cdd425" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <img class="icon smallicon" alt=" Toggle notifications menu " title=" Toggle notifications menu " src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/notifications.svg">
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div id="popover-region-container-59c697be5edcd59c697be3cdd425" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Okno powiadomiemia" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Powiadomienia</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button" href="#" title="Oznacz wszystko jako przeczytane" data-action="mark-all-read" role="button">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" Oznacz wszystko jako przeczytane " title=" Oznacz wszystko jako przeczytane " src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/markasread.svg"></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/loading.gif"></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Oznacz wszystko jako przeczytane
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://msg.sytes.net:8085/message/notificationpreferences.php?userid=3" title="Preferencje powiadomienia">
+                    <img class="icon smallicon" alt=" Preferencje powiadomienia " title=" Preferencje powiadomienia " src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/settings.svg">
+                </a>
+
+    <div class="hover-tooltip">
+        Preferencje powiadomienia
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Nie masz powiadomień</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" Ładowanie " title=" Ładowanie " src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://msg.sytes.net:8085/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Wyświetl wszystko</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- custom_menu -->
+                
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="page-context-header"><div class="page-header-headings"><h1>Urządzenia komputerowe i teletransmisyjne</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/my/">Kokpit</a></li>
+                <li class="breadcrumb-item">Moje kursy</li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/course/view.php?id=3" title="Urządzenia komputerowe i teletransmisyjne">UKiT</a></li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/course/view.php?id=3#section-2">Układy kombinacyjne</a></li>
+                <li class="breadcrumb-item"><a href="https://msg.sytes.net:8085/mod/book/view.php?id=13" title="Książka">Arytmetyka cyfrowa</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button"><div class="singlebutton">
+    <form method="post" action="https://msg.sytes.net:8085/mod/book/view.php">
+            <input name="id" value="13" type="hidden">
+            <input name="chapterid" value="95" type="hidden">
+            <input name="edit" value="1" type="hidden">
+            <input name="sesskey" value="pSj4X3ad2k" type="hidden">
+        <button type="submit" class="btn btn-secondary" id="single_button59c697be3cdd41" title="">Włącz tryb edycji</button>
+    </form>
+</div></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <div id="region-main-settings-menu" class="hidden-print has-blocks">
+                    <div> <div class="action-menu moodle-actionmenu" id="action-menu-3" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-3-menubar" role="menubar">
+
+            <span class="dropdown">
+    <a href="#" class="dropdown-toggle" id="dropdown-3" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/edit.svg">
+</a>
+        <div class="dropdown-menu dropdown-menu-right menu align-tr-br" id="action-menu-3-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-3" role="menu" data-align="tr-br">
+            <div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/course/modedit.php?update=13&amp;return=1" id="action_link59c697be3cdd426" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/navigationitem.svg">
+Edytuj ustawienia</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/assign.php?contextid=45" id="action_link59c697be3cdd427" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/navigationitem.svg">
+Role przypisane lokalnie</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/permissions.php?contextid=45" id="action_link59c697be3cdd428" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/navigationitem.svg">
+Uprawnienia</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/admin/roles/check.php?contextid=45" id="action_link59c697be3cdd429" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/navigationitem.svg">
+Sprawdź uprawnienia
+</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/filter/manage.php?contextid=45" id="action_link59c697be3cdd430" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/navigationitem.svg">
+Filtry</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/report/log/index.php?chooselog=1&amp;id=3&amp;modid=13" id="action_link59c697be3cdd431" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/navigationitem.svg">
+Logi</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/backup/backup.php?id=3&amp;cm=13" id="action_link59c697be3cdd432" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/navigationitem.svg">
+Kopia zapasowa</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/backup/restorefile.php?contextid=45" id="action_link59c697be3cdd433" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/navigationitem.svg">
+Odtwórz</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/importhtml/index.php?id=13" id="action_link59c697be3cdd434" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/navigationitem.svg">
+Import rozdziałów</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/print/index.php?id=13" id="action_link59c697be3cdd435" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/book.svg">
+Drukuj książkę</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/tool/print/index.php?id=13&amp;chapterid=95" id="action_link59c697be3cdd436" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/chapter.svg">
+Drukuj ten rozdział</a>
+
+
+</div><div class="dropdown-item">
+
+    <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=95&amp;edit=1&amp;sesskey=pSj4X3ad2k" id="action_link59c697be3cdd437" class="" role="menuitem"><img class="icon " alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/navigationitem.svg">
+Włącz tryb edycji</a>
+
+
+</div>
+        </div>
+</span>
+
+
+        </div>
+
+</div> </div>
+                </div>
+                <section id="region-main" class="has-blocks">
+                    <div class="card card-block">
+                        <div class="region_main_settings_menu_proxy"></div>
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><h2>Arytmetyka cyfrowa</h2><div class="navtop clearfix navimages"><a title="Poprzednie: 6. Zmiennopozycyjna reprezentacja liczb" class="bookprev" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=89"><img src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/nav_prev.svg" class="icon" alt="Poprzednie: 6. Zmiennopozycyjna reprezentacja liczb"></a><a title="Następne: 7. Prawa i twierdzenia algebry Boole`a" class="booknext" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=86"><img src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/nav_next.svg" class="icon" alt="Następne: 7. Prawa i twierdzenia algebry Boole`a"></a></div><div class="box generalbox book_content p-y-1"><h3>6. Zmiennopozycyjna reprezentacja liczb</h3><h4>6.1. Przykładowy system zmiennoprzecinkowy</h4><div class="no-overflow"><h4>Liczby zmiennoprzecinkowe</h4>
+<p style="text-align: justify;">W&nbsp;tym podrozdziale zajmiemy się 
+konkretną realizacją zapisu zmiennoprzecinkowego w&nbsp;systemie 
+binarnym. Przypomnijmy, wartość liczby zmiennoprzecinkowej obliczamy 
+według wzoru:</p>
+<p style="text-align: justify;">L<sub>(FP)</sub> = m<span style="font-style: normal;"> <span lang="en"><span style="font-family: Arial;">×</span></span> </span>p<sup>c</sup></p>
+<p style="text-align: justify;">gdzie:</p>
+<p style="text-align: justify;">L<sub>(FP)</sub> – wartość liczby zmiennoprzecinkowej<br>m – mantysa<br>p – podstawa<br>c – cecha</p>
+<p style="text-align: justify;">W&nbsp;systemie dwójkowym wszystkie trzy
+ elementy m, p i&nbsp;c będą zapisane dwójkowo za pomocą odpowiednio 
+dobranego systemu kodowania liczb. Podstawa&nbsp;p zawsze będzie 
+równa&nbsp;2, zatem wzór obliczeniowy przyjmie postać:</p>
+<p style="text-align: justify;">L<sub>(FP)</sub> = m<span style="font-style: normal;"> </span>× 2<sup>c<br> </sup></p>
+<p style="text-align: justify;">Jak widać, do określenia formatu 
+zmiennoprzecinkowego pozostaje nam podanie sposobu kodowania mantysy 
+i&nbsp;cechy, ponieważ podstawa p=<span style="font-style: normal;">2</span> będzie zawsze znana.</p>
+<h4>Definicja formatu zmiennoprzecinkowego</h4>
+<p style="text-align: justify;">Na potrzeby tego artykułu zdefiniujemy 
+bardzo prosty dwójkowy system zmiennoprzecinkowy. Pozwoli nam on 
+w&nbsp;zrozumiały sposób przedstawić wszystkie podstawowe właściwości 
+rzeczywistych systemów zmiennoprzecinkowych.</p>
+<p style="text-align: justify;">Słowo kodowe <span>FP</span> będzie zbudowane z&nbsp;8&nbsp;bitów ponumerowanych od 0&nbsp;do&nbsp;7, które podzielimy na dwie części:</p>
+<table style="border-collapse: collapse;" cellpadding="4" border="0">
+<tbody>
+<tr>
+<td colspan="8" align="center">Słowo kodowe FP</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000; padding: 1px 4px;" bgcolor="#C0C0C0" align="center">b<sub>7</sub></td>
+<td style="border: 1px solid #000000; padding: 1px 4px;" bgcolor="#C0C0C0" align="center">b<sub>6</sub></td>
+<td style="border: 1px solid #000000; padding: 1px 4px;" bgcolor="#C0C0C0" align="center">b<sub>5</sub></td>
+<td style="border: 1px solid #000000; padding: 1px 4px;" bgcolor="#C0C0C0" align="center">b<sub>4</sub></td>
+<td style="border: 1px solid #000000; padding: 1px 4px;" bgcolor="#F0F0F0" align="center">b<sub>3</sub></td>
+<td style="border: 1px solid #000000; padding: 1px 4px;" bgcolor="#F0F0F0" align="center">b<sub>2</sub></td>
+<td style="border: 1px solid #000000; padding: 1px 4px;" bgcolor="#F0F0F0" align="center">b<sub>1</sub></td>
+<td style="border: 1px solid #000000; padding: 1px 4px;" bgcolor="#F0F0F0" align="center">b<sub>0</sub></td>
+</tr>
+<tr>
+<td colspan="4" align="center">cecha</td>
+<td colspan="4" align="center">mantysa</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Cecha zawarta będzie w&nbsp;bitach od b<sub>4</sub> do b<sub><span style="font-style: normal;">7</span></sub>. Ustalmy, iż cecha jest liczbą całkowitą ze znakiem w&nbsp;<a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=92">kodzie U2</a> <span>(Uwaga – ten sposób kodowania przyjęliśmy dla prostoty – rzeczywiste systemy zmiennoprzecinkowe stosują tutaj </span><a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=93">kodowanie z&nbsp;nadmiarem</a><span>)</span>. Wartość cechy obliczamy wg wzoru:</p>
+<p style="text-align: justify;">c = b<sub>7</sub> × (–2<sup>3</sup>) + b<sub>6</sub> × 2<sup>2</sup> + b<sub>5</sub> × 2<sup>1</sup> + b<sub>4</sub> × 2<sup>0</sup> = (–8) × b<sub>7</sub> + 4 × b<sub>6</sub> + 2 × b<sub>5</sub> + b<sub>4</sub></p>
+<p align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">W&nbsp;słówku kodowym 10111101<sub>(FP)</sub> cecha ma wartość 1011<sub>(U2)</sub> = –8 + 2 + 1 = –5<sub>(10)</sub>.</p>
+<p style="text-align: justify;">Mantysa zawarta jest w&nbsp;bitach od b<sub>0</sub> do b<sub>3</sub>. Ustalamy, iż mantysa jest 4-bitową <a href="http://eduinf.waw.pl/inf/alg/006_bin/0018.php#staloprzecinkowy">liczbą stałoprzecinkową w&nbsp;kodzie U2</a> <span>(rzeczywiste systemy stosują kodowanie mantysy w&nbsp;</span><a href="http://eduinf.waw.pl/inf/alg/006_bin/0016.php">stałoprzecinkowym kodzie ZM</a><span>). </span>Pozycję przecinka umieszczamy pomiędzy bitami b<sub>1</sub> i&nbsp;b<sub>2</sub> <span>(jest
+ to tylko taka nasza umowa, w&nbsp;rzeczywistości przecinek nie jest 
+umieszczany w&nbsp;zapisie liczby, ale my wiemy, gdzie on powinien być 
+i&nbsp;o&nbsp;to właśnie chodzi!)</span>. Zatem wartość mantysy obliczamy według wzoru:</p>
+<p style="text-align: justify;">m = b<sub>3</sub>b<sub>2 </sub><b>,</b> b<sub>1</sub>b<sub>0(U2)</sub> = b<sub>3</sub> × (–2<sup>1</sup>) + b<sub>2</sub> × 2<sup>0</sup> + b<span style="font-style: normal;"><sub>1</sub></span> × 2<sup>-1</sup> + b<sub>0</sub> × 2<sup>-2</sup> = –2b<sub>3</sub> + b<sub>2</sub> + <sup>1</sup>/<sub>2</sub>b<sub>1</sub> + <sup>1</sup>/<sub>4</sub>b<sub>2</sub></p>
+<p align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">W&nbsp;słówku kodowym 10111101<sub>(FP)</sub> mantysa ma wartość</p>
+<p style="text-align: justify;">11,01<sub>(U2)</sub> = –2 + 1 + <sup>1</sup>/<sub>4</sub> = –<sup>3</sup>/<sub>4(10)</sub>.</p>
+<h4>Obliczanie wartości liczby zmiennoprzecinkowej</h4>
+<p style="text-align: justify;">Znając sposób kodowania cechy 
+i&nbsp;mantysy możemy już obliczyć wartość dowolnej liczby zapisanej 
+w&nbsp;tym systemie zmiennoprzecinkowym. W&nbsp;tym celu należy ze słowa
+ kodu wydobyć bity cechy i&nbsp;mantysy. Na podstawie podanych definicji
+ z&nbsp;wydobytych bitów uzyskujemy wartości cechy i&nbsp;mantysy, 
+a&nbsp;następnie obliczamy wartość liczby zmiennoprzecinkowej zgodnie ze
+ wzorem</p>
+<p style="text-align: justify;">L<span style="font-style: normal;"><sub>(FP)</sub></span> = m<span style="font-style: normal;"></span> × <span style="font-style: normal;">2</span><sup>c</sup></p>
+<p align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Obliczyć wartość liczby zmiennoprzecinkowej 00010100<sub>(FP)</sub>.</p>
+<table style="border-collapse: collapse;" cellpadding="4" border="0">
+<tbody>
+<tr>
+<td>c = 0001<sub>(U2)<br></sub>0001<sub>(U2)</sub> = 1<sub>(10)</sub></td>
+<td></td>
+<td style="border-left: 1px solid #000000; border-top-width: 1px; border-bottom-width: 1px;"></td>
+<td>m = 01,00<sub>(U2)<br></sub>01,00<sub>(U2)</sub> = 1<sub>(10)</sub></td>
+</tr>
+<tr>
+<td colspan="4">
+<p style="text-align: center;" align="center">L<sub>(FP)</sub> = m<span style="font-style: normal;"></span> × 2<sup>c</sup> = 1 × 2<sup>1</sup> = 1 × 2 = 2<br>00010100<sub>(FP)</sub> = 2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p align="center"></p>
+<p align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Obliczyć wartość liczby zmiennoprzecinkowej 11010111<sub>(FP)</sub>.</p>
+<table style="border-collapse: collapse;" cellpadding="4" border="0">
+<tbody>
+<tr>
+<td>c = 1101<sub>(U2)<br></sub>1101<sub>(U2)</sub> = –8 + 4 + 1 =–3</td>
+<td></td>
+<td style="border-left: 1px solid #000000;"></td>
+<td>m = 01,11<sub>(U2)<br></sub>01,11<sub>(U2)</sub> = 1 + <sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>4</sub> = 1<sup>3</sup>/<sub>4</sub></td>
+</tr>
+<tr>
+<td colspan="4">
+<p style="text-align: center;" align="center">L<sub>(FP)</sub> = m × 2<sup>c</sup> = 1<sup>3</sup>/<sub>4</sub> × 2<sup>-3</sup> = <sup>7</sup>/<sub>4</sub> × <sup>1</sup>/<sub>8</sub> = <sup>7</sup>/<sub>32</sub><br>11010111<sub>(FP)</sub> = <sup>7</sup>/<sub>32</sub></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p align="justify"><b>Przykład:</b></p>
+<p style="text-align: justify;">Obliczyć wartość liczby zmiennoprzecinkowej 11111001<sub>(FP)</sub>.</p>
+<table style="border-collapse: collapse;" cellpadding="4" border="0">
+<tbody>
+<tr>
+<td>c = 1111<sub>(U2)<br></sub>1111<sub>(U2)</sub> = –8 + 4 + 2 + 1 = –1<sub>(10)</sub></td>
+<td></td>
+<td style="border-left: 1px solid #000000;"></td>
+<td>m = 10,01<sub>(U2)<br></sub>10,01<sub>(U2)</sub> = –2 + <sup>1</sup>/<sub>4</sub> = –1<sup>3</sup>/<sub>4</sub></td>
+</tr>
+<tr>
+<td colspan="4">
+<p style="text-align: center;" align="center">L<span style="font-style: normal;"><sub>(FP)</sub></span> = m × 2<sup>c</sup> = –1<sup>3</sup>/<sub>4</sub> × 2<sup>-1</sup> = –<sup>7</sup>/<sub>4</sub> × <sup>1</sup>/<sub>2</sub> = –<sup>7</sup>/<sub>8</sub><br>11111001<sub>(FP)</sub> = –<sup>7</sup>/<sub>8</sub></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p align="center"></p>
+<p style="text-align: justify;">Z&nbsp;podanych powyżej przykładów 
+widzimy jasno, iż nasz system pozwala kodować liczby ułamkowe zarówno 
+dodatnie jak i&nbsp;ujemne.</p>
+<h4>Zakres liczb zmiennoprzecinkowych</h4>
+<p style="text-align: justify;">Wzór L<span style="font-style: normal;"><sub>(FP)</sub></span> = m × <span style="font-style: normal;">2</span><sup>c</sup> przyjmuje wartość maksymalną dla maksymalnej cechy i&nbsp;maksymalnej mantysy. Cecha przyjmie wartość maksymalną dla kodu:</p>
+<p style="text-align: justify;">0111<sub>(U2)</sub> = 7<sub>(10)</sub></p>
+<p style="text-align: justify;">Mantysa największą wartość przyjmie dla kodu:</p>
+<p style="text-align: justify;">01,11<sub>(U2)</sub> = 1<sup>3</sup>/<sub>4</sub> = <sup>7</sup>/<sub><span style="font-style: normal;">4</span></sub></p>
+<p style="text-align: justify;">Zatem max<sub>(FP)</sub> = <sup>7</sup>/<sub>4</sub> × 2<sup>7</sup> = <sup>7</sup>/<sub>4</sub> × 128 = 7 × 32 = 224</p>
+<p style="text-align: justify;">Wartość najmniejszą uzyskamy dla 
+maksymalnej cechy i&nbsp;minimalnej mantysy. Cechę maksymalną 
+policzyliśmy już powyżej. Minimalną mantysę reprezentuje kod:</p>
+<p style="text-align: justify;">10,00<sub>(U2)</sub> = –2</p>
+<p style="text-align: justify;">Zatem min<sub>(FP)</sub> = –2 × 2<sup>7</sup> = –2 × 128 = –256</p>
+<p style="text-align: justify;">Stąd wszystkie liczby reprezentowane przez nasz kod zawierają się w&nbsp;przedziale:</p>
+<p style="text-align: justify;">Z<sub>(FP)</sub> = –256 ... 224</p>
+<h4>Precyzja liczb zmiennoprzecinkowych</h4>
+<p style="text-align: justify;">W&nbsp;poniższej tabeli zebraliśmy 
+wszystkie możliwe wartości, które może reprezentować nasz kod 
+zmiennoprzecinkowy. Po lewej stronie mamy wszystkie możliwe cechy. 
+U&nbsp;góry mamy wszystkie możliwe mantysy. Wartość liczby dla danej 
+cechy i&nbsp;mantysy otrzymujemy na przecięciu wiersza cechy 
+z&nbsp;kolumną mantysy.</p>
+<table style="border-collapse: collapse; width: 100%;" cellpadding="4" border="0">
+<tbody>
+<tr><th></th><th></th><th colspan="16" style="border: 1px solid #000000;" bgcolor="#333333"><span style="color: #ffffff;">mantysa</span></th></tr>
+<tr><th></th><th></th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>0000</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>0001</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>0010</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>0011</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>0100</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>0101</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>0110</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>0111</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>1000</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>1001</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>1010</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>1011</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>1100</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>1101</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>1110</th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC" align="right"><span lang="en"> </span>1111</th></tr>
+<tr><th rowspan="16" style="border: 1px solid #000000;" bgcolor="#333333"><span style="color: #ffffff;">c<br>e<br>c<br>h<br>a</span></th><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">0000</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">1</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">1<sup>1</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">1<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">1<sup>3</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-2</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-1<sup>3</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-1<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-1<sup>1</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-1</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>4</sub></span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">0001</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">1</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">1<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">2</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">2<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">3</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">3<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-4</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-3<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-3</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-2<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-2</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-1<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-1</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>2</sub></span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">0010</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">1</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">2</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">3</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">4</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">5</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">6</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">7</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-8</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-7</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-6</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-5</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-4</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-3</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-2</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-1</span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">0011</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">2</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">4</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">6</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">8</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">10</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">12</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">14</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-16</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-14</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-12</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-10</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-8</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-6</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-4</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-2</span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">0100</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">4</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">8</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">12</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">16</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">20</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">24</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">28</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-32</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-28</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-24</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-20</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-16</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-12</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-8</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-4</span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">0101</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">8</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">16</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">24</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">32</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">40</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">48</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">56</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-64</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-56</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-48</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-40</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-32</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-24</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-16</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-8</span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">0110</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">16</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">32</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">48</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">64</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">80</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">96</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">112</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-128</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-112</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-96</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-80</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-64</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-48</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-32</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-16</span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">0111</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">32</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">64</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">96</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">128</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">160</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">192</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">224</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-256</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-224</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-196</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-180</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-128</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-96</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-64</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-32</span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">1000</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>1024</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>1024</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>5</sup>/<sub>1024</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>7</sup>/<sub>1024</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>7</sup>/<sub>1024</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>5</sup>/<sub>1024</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>1024</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>1024</sub></span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">1001</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>5</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>7</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>7</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>5</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>512</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>512</sub></span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">1010</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>5</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>7</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>7</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>5</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>256</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>256</sub></span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">1011</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>5</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>7</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>7</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>5</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>128</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>128</sub></span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">1100</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>5</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>7</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>7</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>5</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>64</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>64</sub></span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">1101</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>5</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>7</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>7</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>5</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>32</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>32</sub></span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">1110</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>5</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>7</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>7</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>5</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>16</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>16</sub></span></td>
+</tr>
+<tr><th style="border: 1px solid #000000;" bgcolor="#CCCCCC">1111</th>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">0</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>5</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>3</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;"><sup>7</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#F0F0F0" align="right"><span style="color: #ff0000;">-1</span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>7</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>5</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>2</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>3</sup>/<sub>8</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>4</sub></span></td>
+<td style="border: 1px solid #000000;" bgcolor="#FFFFFF" align="right"><span style="color: #0000ff;">-<sup>1</sup>/<sub>8</sub></span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Zwróć uwagę, iż pewne liczby występują wielokrotnie <span>(0, 1, 2, 4)</span>, a&nbsp;pewnych liczb tutaj nie ma <span>(9, 11, 13, 15)</span>. A&nbsp;przecież leżą one w&nbsp;wyliczonym wcześniej zakresie od –256 do 224. Dlaczego więc ich brakuje?</p>
+<p align="justify"><b>Przykład:</b></p>
+<p align="justify">Aby to zrozumieć, spróbujmy zakodować liczbę 9 
+w&nbsp;naszym systemie zmiennoprzecinkowym. W&nbsp;tym celu musimy 
+wyznaczyć cechę i&nbsp;mantysę. Cecha musi się zawierać w&nbsp;zakresie 
+od –8 do&nbsp;7, a&nbsp;mantysa w&nbsp;zakresie od –2 do&nbsp;1<sup>3</sup>/<sub>4</sub>.
+ Początkowo przyjmiemy mantysę równą&nbsp;9, a&nbsp;cechę równą&nbsp;0. 
+Następnie mantysę sprowadzimy do pożądanego zakresu dzieląc ją 
+przez&nbsp;2. Aby liczba zachowała po takim podziale swoją wartość, 
+cecha musi być zwiększona o&nbsp;1:</p>
+<p style="text-align: justify;">9 = 9 × 2<sup>0</sup> = 4<sup>1</sup>/<sub>2</sub> × <span style="font-style: normal;">2<sup>1</sup> = 2<sup>1</sup>/<sub>4</sub></span> × 2<sup>2</sup> = 1<sup>1</sup>/<sub>8</sub> × 2<sup>3</sup></p>
+<p align="justify">Otrzymaliśmy c = <span style="font-style: normal;">3</span> oraz m = <span style="font-style: normal;">1<sup>1</sup>/</span><sub><span style="font-style: normal;">8</span></sub>. Przeliczamy otrzymane wartości na <a href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=92">kod&nbsp;U2</a>:</p>
+<p style="text-align: justify;">3<sub>(10)</sub> = 0011<sub>(U2)</sub></p>
+<p style="text-align: justify;">1<sup>1</sup>/<sub>8</sub> = 01,001<sub>(U2)</sub>.</p>
+<p align="justify">Zwróć uwagę, iż mantysa jest o&nbsp;1&nbsp;bit za 
+długa – ma 5&nbsp;bitów, a&nbsp;w&nbsp;naszej liczbie 
+zmiennoprzecinkowej możemy zapamiętać tylko 4&nbsp;bity mantysy. Życie 
+jest okrutne, skoro nasz format wymaga 4 bitów, musimy odrzucić ostatni 
+bit mantysy.</p>
+<p align="justify">Zatem do kodu powędruje wartość <span style="font-style: normal;">01,00</span><sub><span style="font-style: normal;">(U2)</span></sub> zamiast wyliczonej <span style="font-style: normal;">01,001<sub>(U2)</sub>.</span> Otrzymamy kod <span style="font-style: normal;">00110100</span><sub><span style="font-style: normal;">(FP)</span></sub>. Szukamy w naszej tabelce i&nbsp;znajdujemy:</p>
+<p style="text-align: justify;">00110100<sub>(FP)</sub> = 8</p>
+<p align="justify">Zatem z&nbsp;wartości 9 zrobiło się nam 8. Dlaczego? 
+Po prostu wystąpiło zjawisko zwane utratą precyzji lub błędem 
+zaokrąglenia. Liczba 9 wymaga większej precyzji niż oferuje nasz system 
+i&nbsp;nie może w&nbsp;nim zostać przedstawiona dokładnie – zostanie 
+zaokrąglona do&nbsp;8.</p>
+<div align="center">
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">UWAGA:</span></h4>
+<p style="text-align: justify;">Jeśli myślisz, że jest to tylko cecha 
+naszego niedoskonałego systemu zmiennoprzecinkowego, to jesteś 
+w&nbsp;grubym błędzie. Zjawisko utraty precyzji występuje w&nbsp;nawet 
+najdroższym procesorze i&nbsp;na razie nie można nic na to poradzić. 
+Pewnych liczb po prostu nie da się przedstawić dokładnie. Oczywiście 
+w&nbsp;rzeczywistym systemie zmiennoprzecinkowym mantysa zbudowana jest 
+z&nbsp;dużo większej ilości bitów, zatem jej rozdzielczość jest 
+o&nbsp;wiele większa od naszej.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Zapamiętaj:</span></h4>
+<p style="text-align: justify;">Liczba da się przedstawić dokładnie 
+w&nbsp;danym systemie zmiennoprzecinkowym, jeśli leży w&nbsp;zakresie 
+dozwolonych wartości oraz liczba jej bitów znaczących jest mniejsza lub 
+równa ilości bitów mantysy bez bitu znakowego.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Dla liczb dodatnich ilość bitów 
+znaczących uzyskamy usuwając wszystkie początkowe i&nbsp;końcowe zera. 
+To, co pozostanie, jest właśnie bitami znaczącymi.</p>
+<p style="text-align: justify;"><b>Przykład:</b></p>
+<p style="text-align: justify;">Kod 00<span style="color: #ff0000;"><b>1011</b></span>00 ma 4&nbsp;bity znaczące 1011.</p>
+<p style="text-align: justify;">Kod 000<span style="color: #ff0000;"><b>101</b></span>00 ma 3&nbsp;bity znaczące 101.</p>
+<p style="text-align: justify;">Dla liczb ujemnych usuwamy początkowe jedynki i&nbsp;końcowe zera.</p>
+<p style="text-align: justify;"><b>Przykład:</b></p>
+<p style="text-align: justify;">Kod 111<span style="color: #ff0000;"><b>01</b></span>000 ma 2&nbsp;bity znaczące 01.</p>
+<p style="text-align: justify;">Kod 1111<span style="color: #ff0000;"><b>001</b></span>0 ma 3&nbsp;bity znaczące 001.</p>
+<p style="text-align: justify;">Po tych ustaleniach już łatwo możemy 
+określić, czy liczba da się zapisać w&nbsp;danym systemie 
+zmiennoprzecinkowym. W&nbsp;tym celu wystarczy przeliczyć ją na system 
+dwójkowy i&nbsp;obliczyć ilość bitów znaczących. Jeśli mantysa może 
+przechować te bity, to liczba będzie przedstawiona dokładnie. Jeśli nie,
+ mamy utratę precyzji zapisu – liczba będzie zapamiętana 
+z&nbsp;zaokrągleniem.</p>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Zapamiętaj:</span></h4>
+<p style="text-align: justify;">Liczby zmiennoprzecinkowe przechowują 
+wartości przybliżone – pewnych liczb nie da się zapisać w&nbsp;systemie 
+zmiennoprzecinkowym. Typowym przykładem są ułamki dziesiętne typu <sup>1</sup>/<sub>10</sub>, <sup>2</sup>/<sub>10</sub>,<sup>3</sup>/<sub>10</sub>.
+ Takie ułamki posiadają nieskończone rozwinięcia w&nbsp;systemie 
+dwójkowym, zatem wymagają mantys o&nbsp;nieskończonej ilości bitów, co 
+nie jest możliwe do zrealizowania.</p>
+<p style="text-align: justify;">Ilość bitów mantysy określa precyzję 
+zapisu. Im jest większa, tym dokładniej można przedstawiać liczby 
+rzeczywiste – błędy zaokrągleń są mniejsze.</p>
+<p style="text-align: justify;">Ilość bitów cechy określa dopuszczalny zakres reprezentowanych liczb.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<h4 style="text-align: justify;">Arytmetyka liczb zmiennoprzecinkowych</h4>
+<h5 style="text-align: justify;">Dodawanie i&nbsp;odejmowanie</h5>
+<p style="text-align: justify;">Wbrew pozorom zasady arytmetyki 
+zmiennoprzecinkowej nie są wcale trudne – jak zwykle diabeł tkwi 
+w&nbsp;szczegółach. Mamy dane dwie liczby zmiennoprzecinkowe:</p>
+<p style="text-align: justify;"><img src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Awrs%3D%22http%3A%2F%2Fwww.wiris.com%2Fxml%2Fcvs-extension%22%20height%3D%2266%22%20width%3D%2278%22%20wrs%3Abaseline%3D%2232%22%3E%3C%21--MathML%3A%20%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3Cmspace%20linebreak%3D%22newline%22%2F%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3C%2Fmath%3E--%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%40font-face%7Bfont-family%3A%27math17f39f8317fbdb1988ef4c628eb%27%3Bsrc%3Aurl%28data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7iBBMAAADMAAAATmNtYXDErB0vAAABHAAAADRjdnQgDVUNBwAAAVAAAAA6Z2x5ZguHXwYAAAGMAAAAsmhlYWQO8yGDAAACQAAAADZoaGVhCGsXRwAAAngAAAAkaG10eEpVRccAAAKcAAAACGxvY2EAHNQvAAACpAAAAAxtYXhwBTwFPgAAArAAAAAgbmFtZaBxlY4AAALQAAABn3Bvc3QB9wD6AAAEcAAAACBwcmVwa1uragAABJAAAAAUAAADSwGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg1UADev96AAAD6ACWAAAAAAACAAEAAQAAABQAAwABAAAAFAAEACAAAAAEAAQAAQAAAD3%2F%2FwAAAD3%2F%2F%2F%2FEAAEAAAAAAAABVAMsAIABAABWACoCWAIeAQ4BLAIsAFoBgAKAAKAA1ACAAAAAAAAAACsAVQCAAKsA1QEAASsABwAAAAIAVQAAAwADqwADAAcAADMRIRElIREhVQKr%2FasCAP4AA6v8VVUDAAACAIAA6wLVAhUAAwAHAGUYAbAIELAG1LAGELAF1LAIELAB1LABELAA1LAGELAHPLAFELAEPLABELACPLAAELADPACwCBCwBtSwBhCwB9SwBxCwAdSwARCwAtSwBhCwBTywBxCwBDywARCwADywAhCwAzwxMBMhNSEdASE1gAJV%2FasCVQHAVdVVVQAAAAEAAAABAADPM7jAXw889QADBAD%2F%2F%2F%2F%2F1a3u3P%2F%2F%2F%2F%2FVre7cAAD%2FIASAA6sAAAAKAAIAAQAAAAAAAQAAA%2Bj%2FagAAF3AAAP%2B2BIAAAQAAAAAAAAAAAAAAAAAAAAIDUgBVA1YAgAAAAAAAAAAoAAAAsgABAAAAAgBeAAUAAAAAAAIAgAQAAAAAAAQAAN4AAAAAAAAAFQECAAAAAAAAAAEAEgAAAAAAAAAAAAIADgASAAAAAAAAAAMAMAAgAAAAAAAAAAQAEgBQAAAAAAAAAAUAFgBiAAAAAAAAAAYACQB4AAAAAAAAAAgAHACBAAEAAAAAAAEAEgAAAAEAAAAAAAIADgASAAEAAAAAAAMAMAAgAAEAAAAAAAQAEgBQAAEAAAAAAAUAFgBiAAEAAAAAAAYACQB4AAEAAAAAAAgAHACBAAMAAQQJAAEAEgAAAAMAAQQJAAIADgASAAMAAQQJAAMAMAAgAAMAAQQJAAQAEgBQAAMAAQQJAAUAFgBiAAMAAQQJAAYACQB4AAMAAQQJAAgAHACBAE0AYQB0AGgAIABGAG8AbgB0AFIAZQBnAHUAbABhAHIATQBhAHQAaABzACAARgBvAHIAIABNAG8AcgBlACAATQBhAHQAaAAgAEYAbwBuAHQATQBhAHQAaAAgAEYAbwBuAHQAVgBlAHIAcwBpAG8AbgAgADEALgAwTWF0aF9Gb250AE0AYQB0AGgAcwAgAEYAbwByACAATQBvAHIAZQAAAwAAAAAAAAH0APoAAAAAAAAAAAAAAAAAAAAAAAAAALkHEQAAjYUYALIAAAAVFBOxAAE%2F%29format%28%27truetype%27%29%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%224.5%22%20y%3D%2222%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2213.5%22%20y%3D%2227%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math17f39f8317fbdb1988ef4c628eb%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2225.5%22%20y%3D%2222%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2240.5%22%20y%3D%2222%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2251.5%22%20y%3D%2227%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2259.5%22%20y%3D%2222%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2267.5%22%20y%3D%2211%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%2274.5%22%20y%3D%2215%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%224.5%22%20y%3D%2257%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2213.5%22%20y%3D%2262%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math17f39f8317fbdb1988ef4c628eb%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2225.5%22%20y%3D%2257%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2240.5%22%20y%3D%2257%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2251.5%22%20y%3D%2262%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2259.5%22%20y%3D%2257%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2267.5%22%20y%3D%2246%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%2274.5%22%20y%3D%2250%22%3E2%3C%2Ftext%3E%3C%2Fsvg%3E" class="Wirisformula" alt="L subscript 1 equals m subscript 1 2 to the power of c subscript 1 end exponent
+L subscript 2 equals m subscript 2 2 to the power of c subscript 2 end exponent" style="vertical-align:-34px" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»L«/mi»«mn»1«/mn»«/msub»«mo»=«/mo»«msub»«mi»m«/mi»«mn»1«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«/msup»«mspace linebreak=¨newline¨/»«msub»«mi»L«/mi»«mn»2«/mn»«/msub»«mo»=«/mo»«msub»«mi»m«/mi»«mn»2«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/msup»«/math»" width="78" height="66"></p>
+<p style="text-align: justify;">gdzie</p>
+<p style="text-align: justify;">L<sub>1</sub>, L<sub>2</sub> – wartości liczb<br>m<sub>1</sub>, m<sub>2</sub> – mantysy<br>c<sub>1</sub>, c<sub>2</sub> – cechy</p>
+<p style="text-align: justify;">Suma lub różnica tych dwóch liczb wynosi:</p>
+<p style="text-align: justify;"><img src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Awrs%3D%22http%3A%2F%2Fwww.wiris.com%2Fxml%2Fcvs-extension%22%20height%3D%22204%22%20width%3D%22234%22%20wrs%3Abaseline%3D%22101%22%3E%3C%21--MathML%3A%20%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%26%23xB1%3B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3Cmo%3E%26%23xB1%3B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3Cmspace%20linebreak%3D%22newline%22%2F%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%26%23xB1%3B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3Cmfrac%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3C%2Fmfrac%3E%3Cmo%3E%26%23xB1%3B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3Cmfrac%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3C%2Fmfrac%3E%3Cmspace%20linebreak%3D%22newline%22%2F%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%26%23xB1%3B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmfrac%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3C%2Fmfrac%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmrow%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%2B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmrow%3E%3C%2Fmsup%3E%3Cmo%3E%26%23xB1%3B%3C%2Fmo%3E%3Cmfrac%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3C%2Fmfrac%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmrow%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%2B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmrow%3E%3C%2Fmsup%3E%3Cmspace%20linebreak%3D%22newline%22%2F%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%26%23xB1%3B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmfenced%3E%3Cmrow%3E%3Cmfrac%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3C%2Fmfrac%3E%3Cmo%3E%26%23xB1%3B%3C%2Fmo%3E%3Cmfrac%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3C%2Fmfrac%3E%3C%2Fmrow%3E%3C%2Fmfenced%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmrow%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%2B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmrow%3E%3C%2Fmsup%3E%3C%2Fmath%3E--%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%40font-face%7Bfont-family%3A%27math1e76f52ba81e0128dd36b3b3891%27%3Bsrc%3Aurl%28data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7iBBMAAADMAAAATmNtYXDErB0vAAABHAAAAERjdnQgDVUNBwAAAWAAAAA6Z2x5ZguHXwYAAAGcAAABx2hlYWQO8yGDAAADZAAAADZoaGVhCGsXRwAAA5wAAAAkaG10eEpVRccAAAPAAAAAEGxvY2EAHNQvAAAD0AAAABRtYXhwBTwFPgAAA%2BQAAAAgbmFtZaBxlY4AAAQEAAABn3Bvc3QB9wD6AAAFpAAAACBwcmVwa1uragAABcQAAAAUAAADSwGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg1UADev96AAAD6ACWAAAAAAACAAEAAQAAABQAAwABAAAAFAAEADAAAAAIAAgAAgAAACsAPQCx%2F%2F8AAAArAD0Asf%2F%2F%2F9b%2Fxf9SAAEAAAAAAAAAAAAAAVQDLACAAQAAVgAqAlgCHgEOASwCLABaAYACgACgANQAgAAAAAAAAAArAFUAgACrANUBAAErAAcAAAACAFUAAAMAA6sAAwAHAAAzESERJSERIVUCq%2F2rAgD%2BAAOr%2FFVVAwAAAQCAAFUC1QKrAAsASQEYsgwBARQTELEAA%2FaxAQT1sAo8sQMF9bAIPLEFBPWwBjyxDQPmALEAABMQsQEG5LEBARMQsAU8sQME5bELBfWwBzyxCQTlMTATIREzESEVIREjESGAAQBVAQD%2FAFX%2FAAGrAQD%2FAFb%2FAAEAAAIAgADrAtUCFQADAAcAZRgBsAgQsAbUsAYQsAXUsAgQsAHUsAEQsADUsAYQsAc8sAUQsAQ8sAEQsAI8sAAQsAM8ALAIELAG1LAGELAH1LAHELAB1LABELAC1LAGELAFPLAHELAEPLABELAAPLACELADPDEwEyE1IR0BITWAAlX9qwJVAcBV1VVVAAIAgP%2F%2FAoACqwALAA8AZRgBsBAQsA%2FUsA8QsAA8sAAQsAHUsAEQsATUsAQQsAXUsAEQsAo8sAQQsAc8sAUQsA48ALAQELAP1LAPELAM1LAMELAJ1LAJELAK1LAKELAB1LABELAC1LABELAEPLAKELAHPDAxEzM1MxUzFSMVIycHESEVIYDWVdXVVQHVAgD%2BAAHV1tZW1NUB%2FtVVAAABAAAAAQAAzzO4wF8PPPUAAwQA%2F%2F%2F%2F%2F9Wt7tz%2F%2F%2F%2F%2F1a3u3AAA%2FyAEgAOrAAAACgACAAEAAAAAAAEAAAPo%2F2oAABdwAAD%2FtgSAAAEAAAAAAAAAAAAAAAAAAAAEA1IAVQNWAIADVgCAAwAAgAAAAAAAAAAoAAAAoQAAASsAAAHHAAEAAAAEAF4ABQAAAAAAAgCABAAAAAAABAAA3gAAAAAAAAAVAQIAAAAAAAAAAQASAAAAAAAAAAAAAgAOABIAAAAAAAAAAwAwACAAAAAAAAAABAASAFAAAAAAAAAABQAWAGIAAAAAAAAABgAJAHgAAAAAAAAACAAcAIEAAQAAAAAAAQASAAAAAQAAAAAAAgAOABIAAQAAAAAAAwAwACAAAQAAAAAABAASAFAAAQAAAAAABQAWAGIAAQAAAAAABgAJAHgAAQAAAAAACAAcAIEAAwABBAkAAQASAAAAAwABBAkAAgAOABIAAwABBAkAAwAwACAAAwABBAkABAASAFAAAwABBAkABQAWAGIAAwABBAkABgAJAHgAAwABBAkACAAcAIEATQBhAHQAaAAgAEYAbwBuAHQAUgBlAGcAdQBsAGEAcgBNAGEAdABoAHMAIABGAG8AcgAgAE0AbwByAGUAIABNAGEAdABoACAARgBvAG4AdABNAGEAdABoACAARgBvAG4AdABWAGUAcgBzAGkAbwBuACAAMQAuADBNYXRoX0ZvbnQATQBhAHQAaABzACAARgBvAHIAIABNAG8AcgBlAAADAAAAAAAAAfQA%2BgAAAAAAAAAAAAAAAAAAAAAAAAAAuQcRAACNhRgAsgAAABUUE7EAAT8%3D%29format%28%27truetype%27%29%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%40font-face%7Bfont-family%3A%27brack_sm2882ad605b1e27be87c7468%27%3Bsrc%3Aurl%28data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7PH4UAAADMAAAATmNtYXA3kjw6AAABHAAAADxjdnQgAQYDiAAAAVgAAAASZ2x5ZkyYQ7YAAAFsAAAAkWhlYWQLyR8fAAACAAAAADZoaGVhAq0XCAAAAjgAAAAkaG10eDEjA%2FUAAAJcAAAADGxvY2EAAEKZAAACaAAAABBtYXhwBJsEcQAAAngAAAAgbmFtZW7QvZAAAAKYAAAB5XBvc3QArQBVAAAEgAAAACBwcmVwu5WEAAAABKAAAAAHAAACDAGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg9AMD%2FP%2F8AAABVAABAAAAAAACAAEAAQAAABQAAwABAAAAFAAEACgAAAAGAAQAAQACI5wjn%2F%2F%2FAAAjnCOf%2F%2F%2FcZdxjAAEAAAAAAAAAAAFUAFQBAAArAIwAgACoAAcAAAACAAAAAADVAQEAAwAHAAAxMxEjFyM1M9XVq4CAAQHWqwABAAAAAABVAVgAAwAfGAGwAy%2BwADyxAgL1sAE8ALEDAD%2BwAjx8sQAG9bABPBEzESNVVQFY%2FqgAAQDXAAABLAFUAAMAIBgBsAUvsAE8sAI8sQAC9bADPACwAy%2BwAjyxAAH1sAE8EzMRI9dVVQFU%2FqwAAAAAAQAAAAEAAIsesexfDzz1AAMEAP%2F%2F%2F%2F%2FVre5k%2F%2F%2F%2F%2F9Wt7mT%2FgP%2F%2FAdYBWAAAAAoAAgABAAAAAAABAAABVP%2F%2FAAAXcP%2BA%2F4AB1gABAAAAAAAAAAAAAAAAAAAAAwDVAAABLAAAASwA1wAAAAAAAAAhAAAAWAAAAJEAAQAAAAMACgACAAAAAAACAIAEAAAAAAAEAABlAAAAAAAAABUBAgAAAAAAAAABACYAAAAAAAAAAAACAA4AJgAAAAAAAAADAEQANAAAAAAAAAAEACYAeAAAAAAAAAAFABYAngAAAAAAAAAGABMAtAAAAAAAAAAIABwAxwABAAAAAAABACYAAAABAAAAAAACAA4AJgABAAAAAAADAEQANAABAAAAAAAEACYAeAABAAAAAAAFABYAngABAAAAAAAGABMAtAABAAAAAAAIABwAxwADAAEECQABACYAAAADAAEECQACAA4AJgADAAEECQADAEQANAADAAEECQAEACYAeAADAAEECQAFABYAngADAAEECQAGABMAtAADAAEECQAIABwAxwBCAHIAYQBjAGsAZQB0AHMAIABzAG0AYQBsAGwAIABzAGkAegBlAFIAZQBnAHUAbABhAHIATQBhAHQAaABzACAARgBvAHIAIABNAG8AcgBlACAAQgByAGEAYwBrAGUAdABzACAAcwBtAGEAbABsACAAcwBpAHoAZQBCAHIAYQBjAGsAZQB0AHMAIABzAG0AYQBsAGwAIABzAGkAegBlAFYAZQByAHMAaQBvAG4AIAAyAC4AMEJyYWNrZXRzX3NtYWxsX3NpemUATQBhAHQAaABzACAARgBvAHIAIABNAG8AcgBlAAAAAAMAAAAAAAAAqgBVAAAAAAAAAAAAAAAAAAAAAAAAAAC5B%2F8AAo2FAA%3D%3D%29format%28%27truetype%27%29%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%40font-face%7Bfont-family%3A%27bracketse552f5417ff4680c6b50499%27%3Bsrc%3Aurl%28data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7RIisAAADMAAAATmNtYXBi7uzYAAABHAAAAExjdnQgBAkDLgAAAWgAAAASZ2x5Zo64f%2BkAAAF8AAABSWhlYWQLniGcAAACyAAAADZoaGVhBK4XLAAAAwAAAAAkaG10eCWq%2F90AAAMkAAAAFGxvY2EAABknAAADOAAAABhtYXhwBJIESAAAA1AAAAAgbmFtZRAA8I4AAANwAAAB3nBvc3QBwwDgAAAFUAAAACBwcmVwupWEAAAABXAAAAAHAAACggGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg9AMEAAAAAAADgAAAAAAAAAACAAEAAQAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACI5sjnSOeI6D%2F%2FwAAI5sjnSOeI6D%2F%2F9xm3GXcZdxkAAEAAAAAAAAAAAAAAAABVABWAQAALACoA4AAMgAHAAAAAgAAACoA1QNVAAMABwAANTMRIxMjETPV1auAgCoDK%2F0AAtUAAQAAAAABgAOAAAUAJBgBsAAvsAPFsQEC%2FbADELEEBP0AsQAAP7ABPLEEBj%2BwAzwwMTEzEAEjAFUBKyv%2BqwH8AYT%2BqgABAAAAAAGAA4AABQAmGAGwAC6wA8WxBQL9sAMQsQIE%2FQB8sQAGPxiwBTyxAwb2sAI8MDEREgEzABMBAVQr%2FtMCA4D91v6qAYQB%2FAAB%2F6wAAAEsA4AABQAnGAGwAC%2BwBzywA8WxAQL9sAMQsQQE%2FQCxAAA%2FsAE8sQQGP7ADPDAxISMSATMAASxVAf7UKwFVAfwBhP6rAAH%2FrAAAASwDgAAFACkYAbABL7AHPLAExbEAAv2wBBCxAwT9AHyxAQY%2FsAA8GLEEAD%2BwAzwwMRMzEAEjANdV%2FqsrASsDgP3V%2FqsBhgAAAAABAAAAAQAAeuTcpl8PPPUAAwQA%2F%2F%2F%2F%2F9Wt7o7%2F%2F%2F%2F%2F1a3ujv%2BsAAABgAOAAAAACgACAAEAAAAAAAEAAAOAAAAAABdw%2F6z%2FrAGAAAEAAAAAAAAAAAAAAAAAAAAFANUAAAEsAAABLAAAASz%2FrAEs%2F6wAAAAAAAAAJAAAAGgAAACzAAAA%2FQAAAUkAAQAAAAUACAACAAAAAAACAIAEAAAAAAAEAAA%2BAAAAAAAAABUBAgAAAAAAAAABACQAAAAAAAAAAAACAA4AJAAAAAAAAAADAEIAMgAAAAAAAAAEACQAdAAAAAAAAAAFABYAmAAAAAAAAAAGABIArgAAAAAAAAAIABwAwAABAAAAAAABACQAAAABAAAAAAACAA4AJAABAAAAAAADAEIAMgABAAAAAAAEACQAdAABAAAAAAAFABYAmAABAAAAAAAGABIArgABAAAAAAAIABwAwAADAAEECQABACQAAAADAAEECQACAA4AJAADAAEECQADAEIAMgADAAEECQAEACQAdAADAAEECQAFABYAmAADAAEECQAGABIArgADAAEECQAIABwAwABCAHIAYQBjAGsAZQB0AHMAIABmAHUAbABsACAAcwBpAHoAZQBSAGUAZwB1AGwAYQByAE0AYQB0AGgAcwAgAEYAbwByACAATQBvAHIAZQAgAEIAcgBhAGMAawBlAHQAcwAgAGYAdQBsAGwAIABzAGkAegBlAEIAcgBhAGMAawBlAHQAcwAgAGYAdQBsAGwAIABzAGkAegBlAFYAZQByAHMAaQBvAG4AIAAyAC4AMEJyYWNrZXRzX2Z1bGxfc2l6ZQBNAGEAdABoAHMAIABGAG8AcgAgAE0AbwByAGUAAAADAAAAAAAAAcAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAuQf%2FAAGNhQA%3D%29format%28%27truetype%27%29%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%224.5%22%20y%3D%2222%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2213.5%22%20y%3D%2227%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2224.5%22%20y%3D%2222%22%3E%26%23xB1%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2235.5%22%20y%3D%2222%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2244.5%22%20y%3D%2227%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2256.5%22%20y%3D%2222%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2271.5%22%20y%3D%2222%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2282.5%22%20y%3D%2227%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2290.5%22%20y%3D%2222%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2298.5%22%20y%3D%2211%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22105.5%22%20y%3D%2215%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22115.5%22%20y%3D%2222%22%3E%26%23xB1%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22128.5%22%20y%3D%2222%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22139.5%22%20y%3D%2227%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22147.5%22%20y%3D%2222%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22155.5%22%20y%3D%2211%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22162.5%22%20y%3D%2215%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%224.5%22%20y%3D%2268%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2213.5%22%20y%3D%2273%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2224.5%22%20y%3D%2268%22%3E%26%23xB1%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2235.5%22%20y%3D%2268%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2244.5%22%20y%3D%2273%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2256.5%22%20y%3D%2268%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2271.5%22%20y%3D%2268%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2282.5%22%20y%3D%2273%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2290.5%22%20y%3D%2268%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2298.5%22%20y%3D%2257%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22105.5%22%20y%3D%2261%22%3E1%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%22110.5%22%20x2%3D%22135.5%22%20y1%3D%2262.5%22%20y2%3D%2262.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22116.5%22%20y%3D%2257%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22124.5%22%20y%3D%2246%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22131.5%22%20y%3D%2250%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22116.5%22%20y%3D%2286%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22124.5%22%20y%3D%2275%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22131.5%22%20y%3D%2279%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22145.5%22%20y%3D%2268%22%3E%26%23xB1%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22158.5%22%20y%3D%2268%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22169.5%22%20y%3D%2273%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22177.5%22%20y%3D%2268%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22185.5%22%20y%3D%2257%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22192.5%22%20y%3D%2261%22%3E2%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%22197.5%22%20x2%3D%22222.5%22%20y1%3D%2262.5%22%20y2%3D%2262.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22203.5%22%20y%3D%2257%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22211.5%22%20y%3D%2246%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22218.5%22%20y%3D%2250%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22203.5%22%20y%3D%2286%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22211.5%22%20y%3D%2275%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22218.5%22%20y%3D%2279%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%224.5%22%20y%3D%22125%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2213.5%22%20y%3D%22130%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2224.5%22%20y%3D%22125%22%3E%26%23xB1%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2235.5%22%20y%3D%22125%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2244.5%22%20y%3D%22130%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2256.5%22%20y%3D%22125%22%3E%3D%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%2267.5%22%20x2%3D%2292.5%22%20y1%3D%22119.5%22%20y2%3D%22119.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2276.5%22%20y%3D%22109%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2287.5%22%20y%3D%22114%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2273.5%22%20y%3D%22143%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2281.5%22%20y%3D%22132%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%2288.5%22%20y%3D%22136%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2299.5%22%20y%3D%22125%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22107.5%22%20y%3D%22114%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22114.5%22%20y%3D%22118%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22123.5%22%20y%3D%22114%22%3E%2B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22132.5%22%20y%3D%22114%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22139.5%22%20y%3D%22118%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22149.5%22%20y%3D%22125%22%3E%26%23xB1%3B%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%22158.5%22%20x2%3D%22183.5%22%20y1%3D%22119.5%22%20y2%3D%22119.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22167.5%22%20y%3D%22109%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22178.5%22%20y%3D%22114%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22164.5%22%20y%3D%22143%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22172.5%22%20y%3D%22132%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22179.5%22%20y%3D%22136%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22190.5%22%20y%3D%22125%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22198.5%22%20y%3D%22114%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22205.5%22%20y%3D%22118%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22214.5%22%20y%3D%22114%22%3E%2B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22223.5%22%20y%3D%22114%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22230.5%22%20y%3D%22118%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%224.5%22%20y%3D%22182%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2213.5%22%20y%3D%22187%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2224.5%22%20y%3D%22182%22%3E%26%23xB1%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2235.5%22%20y%3D%22182%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2244.5%22%20y%3D%22187%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2256.5%22%20y%3D%22182%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2266.5%22%20y%3D%22168%22%3E%26%23x239B%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2266.5%22%20y%3D%22173%22%3E%26%23x239C%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2266.5%22%20y%3D%22178%22%3E%26%23x239C%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2266.5%22%20y%3D%22183%22%3E%26%23x239C%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2266.5%22%20y%3D%22188%22%3E%26%23x239C%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%2266.5%22%20y%3D%22202%22%3E%26%23x239D%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%22168%22%3E%26%23x239E%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%22173%22%3E%26%23x239F%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%22178%22%3E%26%23x239F%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%22183%22%3E%26%23x239F%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%22188%22%3E%26%23x239F%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%22202%22%3E%26%23x23A0%3B%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%2274.5%22%20x2%3D%2299.5%22%20y1%3D%22176.5%22%20y2%3D%22176.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2283.5%22%20y%3D%22166%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2294.5%22%20y%3D%22171%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2280.5%22%20y%3D%22200%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2288.5%22%20y%3D%22189%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%2295.5%22%20y%3D%22193%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22109.5%22%20y%3D%22182%22%3E%26%23xB1%3B%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%22118.5%22%20x2%3D%22143.5%22%20y1%3D%22176.5%22%20y2%3D%22176.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22127.5%22%20y%3D%22166%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22138.5%22%20y%3D%22171%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22124.5%22%20y%3D%22200%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22132.5%22%20y%3D%22189%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22139.5%22%20y%3D%22193%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22157.5%22%20y%3D%22182%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22165.5%22%20y%3D%22171%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22172.5%22%20y%3D%22175%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math1e76f52ba81e0128dd36b3b3891%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22181.5%22%20y%3D%22171%22%3E%2B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22190.5%22%20y%3D%22171%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22197.5%22%20y%3D%22175%22%3E2%3C%2Ftext%3E%3C%2Fsvg%3E" class="Wirisformula" alt="L subscript 1 plus-or-minus L subscript 2 equals m subscript 1 2 to the power of c subscript 1 end exponent plus-or-minus m subscript 2 2 to the power of c subscript 2 end exponent
+L subscript 1 plus-or-minus L subscript 2 equals m subscript 1 2 to the power of c subscript 1 end exponent 2 to the power of c subscript 2 end exponent over 2 to the power of c subscript 2 end exponent plus-or-minus m subscript 2 2 to the power of c subscript 2 end exponent 2 to the power of c subscript 1 end exponent over 2 to the power of c subscript 1 end exponent
+L subscript 1 plus-or-minus L subscript 2 equals m subscript 1 over 2 to the power of c subscript 2 end exponent 2 to the power of c subscript 1 plus c subscript 2 end exponent plus-or-minus m subscript 2 over 2 to the power of c subscript 1 end exponent 2 to the power of c subscript 1 plus c subscript 2 end exponent
+L subscript 1 plus-or-minus L subscript 2 equals open parentheses m subscript 1 over 2 to the power of c subscript 2 end exponent plus-or-minus m subscript 2 over 2 to the power of c subscript 1 end exponent close parentheses 2 to the power of c subscript 1 plus c subscript 2 end exponent" style="vertical-align:-103px" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»L«/mi»«mn»1«/mn»«/msub»«mo»§#177;«/mo»«msub»«mi»L«/mi»«mn»2«/mn»«/msub»«mo»=«/mo»«msub»«mi»m«/mi»«mn»1«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«/msup»«mo»§#177;«/mo»«msub»«mi»m«/mi»«mn»2«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/msup»«mspace linebreak=¨newline¨/»«msub»«mi»L«/mi»«mn»1«/mn»«/msub»«mo»§#177;«/mo»«msub»«mi»L«/mi»«mn»2«/mn»«/msub»«mo»=«/mo»«msub»«mi»m«/mi»«mn»1«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«/msup»«mfrac»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/msup»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/msup»«/mfrac»«mo»§#177;«/mo»«msub»«mi»m«/mi»«mn»2«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/msup»«mfrac»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«/msup»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«/msup»«/mfrac»«mspace linebreak=¨newline¨/»«msub»«mi»L«/mi»«mn»1«/mn»«/msub»«mo»§#177;«/mo»«msub»«mi»L«/mi»«mn»2«/mn»«/msub»«mo»=«/mo»«mfrac»«msub»«mi»m«/mi»«mn»1«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/msup»«/mfrac»«msup»«mn»2«/mn»«mrow»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«mo»+«/mo»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/mrow»«/msup»«mo»§#177;«/mo»«mfrac»«msub»«mi»m«/mi»«mn»2«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«/msup»«/mfrac»«msup»«mn»2«/mn»«mrow»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«mo»+«/mo»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/mrow»«/msup»«mspace linebreak=¨newline¨/»«msub»«mi»L«/mi»«mn»1«/mn»«/msub»«mo»§#177;«/mo»«msub»«mi»L«/mi»«mn»2«/mn»«/msub»«mo»=«/mo»«mfenced»«mrow»«mfrac»«msub»«mi»m«/mi»«mn»1«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/msup»«/mfrac»«mo»§#177;«/mo»«mfrac»«msub»«mi»m«/mi»«mn»2«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«/msup»«/mfrac»«/mrow»«/mfenced»«msup»«mn»2«/mn»«mrow»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«mo»+«/mo»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/mrow»«/msup»«/math»" width="234" height="204"></p>
+<p style="text-align: justify;">Z&nbsp;wyliczeń tych wynika, iż mantysa sumy <span>(lub różnicy)</span> jest sumą <span>(lub różnicą) </span>mantys liczb wyjściowych po sprowadzeniu ich do wspólnej cechy <span>(operacja ta nosi nazwę wyrównania cech liczb zmiennoprzecinkowych)</span>. Cecha sumy <span>(lub różnicy)</span> jest równa sumie cech dodawanych <span>(lub odejmowanych)</span>
+ liczb. Po wykonaniu operacji arytmetycznej mantysa wyniku jest 
+sprowadzana do postaci znormalizowanej i&nbsp;zapamiętywana 
+w&nbsp;kodzie liczby zmiennoprzecinkowej.</p>
+<p style="text-align: justify;">W&nbsp;systemie dwójkowym operacja 
+dzielenia przez&nbsp;2 jest równoważna przesunięciu wszystkich bitów 
+zapisu liczby o&nbsp;jedną pozycję w&nbsp;prawo <span>(tak jak w&nbsp;systemie dziesiętnym podział przez&nbsp;10)</span>. Z&nbsp;kolei mnożenie przez&nbsp;2 odpowiada przesunięciu wszystkich cyfr o&nbsp;jedną pozycję w&nbsp;lewo.</p>
+<p style="text-align: justify;">Dzielenie lub mnożenie przez potęgi liczby&nbsp;2 jest zatem przesuwaniem bitów o&nbsp;odpowiednią ilość pozycji <span>(równą wykładnikowi potęgi liczby&nbsp;2)</span> w&nbsp;prawo <span>(dzielenie)</span> lub w&nbsp;lewo <span>(mnożenie)</span>. Obie operacje są bardzo proste i&nbsp;nie wymagają wykonywania żadnych działań arytmetycznych <span>(w&nbsp;procesorze realizują je układy zwane rejestrami przesuwnymi – ang.<em> shift registers</em>)</span>.</p>
+<p style="text-align: justify;"><b>Przykład:</b></p>
+<p style="text-align: justify;">Obliczyć 11110100<sub>(FP)</sub> + 11100110<sub>(FP)</sub>.</p>
+<p style="text-align: justify;">Z&nbsp;zapisu zmiennoprzecinkowego wydobywamy cechy i&nbsp;mantysy obu liczb:</p>
+<p style="text-align: justify;">c<sub>1</sub> = 1111<sub>(U2)</sub> = –1; m<sub>1</sub> = 01,00<sub>(U2)<br></sub>c<sub>2</sub> = 1110<sub>(U2)</sub> = –2; m<sub>2</sub> = 01,10<sub>(U2)</sub></p>
+<p style="text-align: justify;">Pierwszą mantysę musimy podzielić przez 2<sup>-2</sup>, co odpowiada mnożeniu przez 2<sup>2</sup>. Zatem wszystkie jej bity przesuwamy o&nbsp;2 pozycje w&nbsp;lewo:</p>
+<p style="text-align: justify;">m<sub>1</sub> = 0100,00<sub>(U2)</sub></p>
+<p style="text-align: justify;">Drugą mantysę musimy podzielić przez 2<sup>-1</sup>, co odpowiada mnożeniu przez 2<sup>1</sup>. Wszystkie jej bity przesuwamy o&nbsp;1 pozycję w&nbsp;lewo:</p>
+<p style="text-align: justify;">m<sub>2</sub> = 011,00<sub>(U2)</sub></p>
+<p style="text-align: justify;">Obliczamy mantysę sumy:</p>
+<div>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td></td>
+<td align="right">0100,00</td>
+</tr>
+<tr>
+<td>+</td>
+<td align="right">0011,00</td>
+</tr>
+<tr>
+<td></td>
+<td align="right">0111,00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: center;">m<sub>1</sub> + m<sub>2</sub> = 0111,00</p>
+<p style="text-align: justify;">Obliczamy cechę sumy:</p>
+<table cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td></td>
+<td align="right">1111</td>
+</tr>
+<tr>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;">+<span style="font-style: normal;"> </span></td>
+<td style="border-width: 1px; border-bottom: 1px solid #000000;" align="right">1110</td>
+</tr>
+<tr>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;"></td>
+<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;" align="right">1101</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Mantysę sumy sprowadzamy do postaci znormalizowanej:</p>
+<p style="text-align: justify;">c = 1101<sub>(U2)</sub> ; m = 0111,00<sub>(U2)</sub> – za duża, przesuwamy o&nbsp;1 bit w&nbsp;prawo i&nbsp;zwiększamy cechę o&nbsp;1<br>c = 1110<sub>(U2)</sub> ; m = 0011,10<sub>(U2)</sub> – za duża, powtarzamy przesuw i&nbsp;zwiększanie cechy<br>c = 1111<sub>(U2)</sub> ; m = 0001,11<sub>(U2)</sub> – mantysa w&nbsp;zakresie, koniec operacji</p>
+<p style="text-align: justify;">Otrzymaną cechę i&nbsp;mantysą łączymy w&nbsp;jeden kod i&nbsp;otrzymujemy wynik operacji dodawania:</p>
+<p style="text-align: justify;">11110100<sub>(FP)</sub> + 11100110<sub>(FP)</sub> = 11110111<sub>(FP)</sub>.</p>
+<p style="text-align: justify;">Sprawdźmy, czy wynik jest prawidłowy. W&nbsp;tym celu posługując się <a>tabelką</a> wyznaczamy wartości poszczególnych liczb zmiennoprzecinkowych:</p>
+<p style="text-align: justify;">11110100<sub>(FP)</sub> = <sup>1</sup>/<sub>2</sub><br>11100110<sub>(FP)</sub> = <sup>3</sup>/<sub>8</sub><br>11110111<sub>(FP)</sub> = <sup>7</sup>/<sub><span style="font-style: normal;">8</span></sub> <sup><span style="font-style: normal;">1</span></sup>/<sub>2</sub> + <sup>3</sup>/<sub>8</sub> = <sup>4</sup>/<sub>8</sub> + <sup>3</sup>/<sub>8</sub> = <sup>7</sup>/<sub><span style="font-style: normal;">8</span></sub> – wynik prawidłowy.</p>
+<p style="text-align: justify;"><b>Przykład:</b></p>
+<p style="text-align: justify;">A&nbsp;teraz spróbujmy zsumować liczbę dużą i&nbsp;małą: 01000110<sub>(FP)</sub> + 00010110<sub>(FP)</sub> (24 + 3):</p>
+<p style="text-align: justify;">Wydobywamy cechy i&nbsp;mantysy:</p>
+<p style="text-align: justify;">c<sub>1</sub> = 0100<sub>(U2)</sub> = 4; m<sub>1</sub> = 01,10<sub>(U2)<br></sub>c<sub>2</sub> = 0001<sub>(U2)</sub> = 1; m<span style="font-style: normal;"><sub>2</sub> = 01,10</span><sub>(U2)</sub></p>
+<p style="text-align: justify;">Pierwszą mantysę przesuwamy o&nbsp;1 bit w&nbsp;prawo, a&nbsp;drugą o&nbsp;4&nbsp;bity w&nbsp;prawo:</p>
+<p style="text-align: justify;">m<sub>1</sub> = 00,11000<sub>(U2)<br></sub>m<sub>2</sub> = 00,00011<sub>(U2)</sub></p>
+<p style="text-align: justify;">Sumujemy cechy i&nbsp;mantysy:</p>
+<p style="text-align: justify;">m<span style="font-style: normal;"><sub>1</sub></span> + m<span style="font-style: normal;"><sub>2</sub></span> = 00,11011<sub>(U2)</sub> ; c<sub>1</sub> + c<sub>2</sub> = 0101<sub>(U2)</sub></p>
+<p style="text-align: justify;">Normalizujemy mantysę wyniku:</p>
+<p style="text-align: justify;">c = 0101<sub>(U2)</sub> ; m = 00,11011<sub>(U2)<br></sub>c = 0100<sub>(U2)</sub> ; m = 01,10110<sub>(U2)</sub></p>
+<p style="text-align: justify;">Łączymy otrzymaną cechę i&nbsp;mantysę w&nbsp;jeden kod zmiennoprzecinkowy otrzymując wynik dodawania:</p>
+<p style="text-align: justify;">01000110<sub>(FP)</sub> + 00010110<sub>(FP)</sub> = 01000110<sub>(FP)</sub> = 24<sub>(10)</sub>.</p>
+<p style="text-align: justify;">Zwróć uwagę, iż suma jest równa 
+pierwszej z&nbsp;sumowanych liczb. Zatem dodanie drugiej liczby nie 
+wpłynęło na wynik sumowania. Nastąpiła utrata precyzji. Wynika stąd 
+bardzo ważny wniosek:</p>
+<table style="border-collapse: collapse;" cellspacing="0" cellpadding="4" border="1">
+<tbody>
+<tr>
+<td>
+<h4><span style="color: #ff0000;">Uwaga, pułapka:</span></h4>
+W&nbsp;systemie zmiennoprzecinkowym sumowanie liczby dużej z&nbsp;liczbą
+ małą może być niedokładne z&nbsp;uwagi na utratę precyzji. Dlatego 
+sumując ciąg liczb zawsze rozpoczynajmy sumowanie od wartości 
+najmniejszych do największych.</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p>
+<h5 style="text-align: left;">Dzielenie i&nbsp;mnożenie</h5>
+<p style="text-align: justify;">Teraz wyprowadzimy reguły mnożenia i&nbsp;dzielenia liczb zmiennoprzecinkowych. Mamy dane dwie liczby:</p>
+<p style="text-align: justify;"><img src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Awrs%3D%22http%3A%2F%2Fwww.wiris.com%2Fxml%2Fcvs-extension%22%20height%3D%2266%22%20width%3D%2278%22%20wrs%3Abaseline%3D%2232%22%3E%3C%21--MathML%3A%20%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3Cmspace%20linebreak%3D%22newline%22%2F%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3C%2Fmath%3E--%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%40font-face%7Bfont-family%3A%27math17f39f8317fbdb1988ef4c628eb%27%3Bsrc%3Aurl%28data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7iBBMAAADMAAAATmNtYXDErB0vAAABHAAAADRjdnQgDVUNBwAAAVAAAAA6Z2x5ZguHXwYAAAGMAAAAsmhlYWQO8yGDAAACQAAAADZoaGVhCGsXRwAAAngAAAAkaG10eEpVRccAAAKcAAAACGxvY2EAHNQvAAACpAAAAAxtYXhwBTwFPgAAArAAAAAgbmFtZaBxlY4AAALQAAABn3Bvc3QB9wD6AAAEcAAAACBwcmVwa1uragAABJAAAAAUAAADSwGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg1UADev96AAAD6ACWAAAAAAACAAEAAQAAABQAAwABAAAAFAAEACAAAAAEAAQAAQAAAD3%2F%2FwAAAD3%2F%2F%2F%2FEAAEAAAAAAAABVAMsAIABAABWACoCWAIeAQ4BLAIsAFoBgAKAAKAA1ACAAAAAAAAAACsAVQCAAKsA1QEAASsABwAAAAIAVQAAAwADqwADAAcAADMRIRElIREhVQKr%2FasCAP4AA6v8VVUDAAACAIAA6wLVAhUAAwAHAGUYAbAIELAG1LAGELAF1LAIELAB1LABELAA1LAGELAHPLAFELAEPLABELACPLAAELADPACwCBCwBtSwBhCwB9SwBxCwAdSwARCwAtSwBhCwBTywBxCwBDywARCwADywAhCwAzwxMBMhNSEdASE1gAJV%2FasCVQHAVdVVVQAAAAEAAAABAADPM7jAXw889QADBAD%2F%2F%2F%2F%2F1a3u3P%2F%2F%2F%2F%2FVre7cAAD%2FIASAA6sAAAAKAAIAAQAAAAAAAQAAA%2Bj%2FagAAF3AAAP%2B2BIAAAQAAAAAAAAAAAAAAAAAAAAIDUgBVA1YAgAAAAAAAAAAoAAAAsgABAAAAAgBeAAUAAAAAAAIAgAQAAAAAAAQAAN4AAAAAAAAAFQECAAAAAAAAAAEAEgAAAAAAAAAAAAIADgASAAAAAAAAAAMAMAAgAAAAAAAAAAQAEgBQAAAAAAAAAAUAFgBiAAAAAAAAAAYACQB4AAAAAAAAAAgAHACBAAEAAAAAAAEAEgAAAAEAAAAAAAIADgASAAEAAAAAAAMAMAAgAAEAAAAAAAQAEgBQAAEAAAAAAAUAFgBiAAEAAAAAAAYACQB4AAEAAAAAAAgAHACBAAMAAQQJAAEAEgAAAAMAAQQJAAIADgASAAMAAQQJAAMAMAAgAAMAAQQJAAQAEgBQAAMAAQQJAAUAFgBiAAMAAQQJAAYACQB4AAMAAQQJAAgAHACBAE0AYQB0AGgAIABGAG8AbgB0AFIAZQBnAHUAbABhAHIATQBhAHQAaABzACAARgBvAHIAIABNAG8AcgBlACAATQBhAHQAaAAgAEYAbwBuAHQATQBhAHQAaAAgAEYAbwBuAHQAVgBlAHIAcwBpAG8AbgAgADEALgAwTWF0aF9Gb250AE0AYQB0AGgAcwAgAEYAbwByACAATQBvAHIAZQAAAwAAAAAAAAH0APoAAAAAAAAAAAAAAAAAAAAAAAAAALkHEQAAjYUYALIAAAAVFBOxAAE%2F%29format%28%27truetype%27%29%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%224.5%22%20y%3D%2222%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2213.5%22%20y%3D%2227%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math17f39f8317fbdb1988ef4c628eb%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2225.5%22%20y%3D%2222%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2240.5%22%20y%3D%2222%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2251.5%22%20y%3D%2227%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2259.5%22%20y%3D%2222%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2267.5%22%20y%3D%2211%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%2274.5%22%20y%3D%2215%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%224.5%22%20y%3D%2257%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2213.5%22%20y%3D%2262%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math17f39f8317fbdb1988ef4c628eb%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2225.5%22%20y%3D%2257%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2240.5%22%20y%3D%2257%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2251.5%22%20y%3D%2262%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2259.5%22%20y%3D%2257%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2267.5%22%20y%3D%2246%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%2274.5%22%20y%3D%2250%22%3E2%3C%2Ftext%3E%3C%2Fsvg%3E" class="Wirisformula" alt="L subscript 1 equals m subscript 1 2 to the power of c subscript 1 end exponent
+L subscript 2 equals m subscript 2 2 to the power of c subscript 2 end exponent" style="vertical-align:-34px" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»L«/mi»«mn»1«/mn»«/msub»«mo»=«/mo»«msub»«mi»m«/mi»«mn»1«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«/msup»«mspace linebreak=¨newline¨/»«msub»«mi»L«/mi»«mn»2«/mn»«/msub»«mo»=«/mo»«msub»«mi»m«/mi»«mn»2«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/msup»«/math»" width="78" height="66"></p>
+<p style="text-align: justify;">gdzie</p>
+<p style="text-align: justify;">L<span style="font-style: normal;"><sub>1</sub></span>, L<sub><span style="font-style: normal;">2</span></sub> – wartości liczb<br>m<span style="font-style: normal;"><sub>1</sub></span>, m<sub><span style="font-style: normal;">2</span></sub> – mantysy<br>c<span style="font-style: normal;"><sub>1</sub></span>, c<sub><span style="font-style: normal;">2</span></sub> – cechy</p>
+<p style="text-align: justify;">Wykonując proste przekształcenia algebraiczne otrzymujemy wzory na iloczyn i&nbsp;iloraz tych dwóch liczb:</p>
+<p style="text-align: justify;"><img src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Awrs%3D%22http%3A%2F%2Fwww.wiris.com%2Fxml%2Fcvs-extension%22%20height%3D%22101%22%20width%3D%22301%22%20wrs%3Abaseline%3D%2250%22%3E%3C%21--MathML%3A%20%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%26%23xD7%3B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3Cmo%3E%26%23xD7%3B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmfenced%3E%3Cmrow%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%26%23xD7%3B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmrow%3E%3C%2Fmfenced%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmrow%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E%2B%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmrow%3E%3C%2Fmsup%3E%3Cmspace%20linebreak%3D%22newline%22%2F%3E%3Cmfrac%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsub%3E%3Cmi%3EL%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmfrac%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmfrac%3E%3Cmrow%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3C%2Fmrow%3E%3Cmrow%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmsup%3E%3C%2Fmrow%3E%3C%2Fmfrac%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmfenced%3E%3Cmfrac%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmsub%3E%3Cmi%3Em%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmfrac%3E%3C%2Fmfenced%3E%3Cmsup%3E%3Cmn%3E2%3C%2Fmn%3E%3Cmrow%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsub%3E%3Cmo%3E-%3C%2Fmo%3E%3Cmsub%3E%3Cmi%3Ec%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsub%3E%3C%2Fmrow%3E%3C%2Fmsup%3E%3C%2Fmath%3E--%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%40font-face%7Bfont-family%3A%27math16ad4c5df92230191e4e28addc1%27%3Bsrc%3Aurl%28data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7iBBMAAADMAAAATmNtYXDErB0vAAABHAAAAExjdnQgDVUNBwAAAWgAAAA6Z2x5ZguHXwYAAAGkAAAB5GhlYWQO8yGDAAADiAAAADZoaGVhCGsXRwAAA8AAAAAkaG10eEpVRccAAAPkAAAAFGxvY2EAHNQvAAAD%2BAAAABhtYXhwBTwFPgAABBAAAAAgbmFtZaBxlY4AAAQwAAABn3Bvc3QB9wD6AAAF0AAAACBwcmVwa1uragAABfAAAAAUAAADSwGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg1UADev96AAAD6ACWAAAAAAACAAEAAQAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACACsAPQDXIhL%2F%2FwAAACsAPQDXIhL%2F%2F%2F%2FW%2F8X%2FLN3yAAEAAAAAAAAAAAAAAAABVAMsAIABAABWACoCWAIeAQ4BLAIsAFoBgAKAAKAA1ACAAAAAAAAAACsAVQCAAKsA1QEAASsABwAAAAIAVQAAAwADqwADAAcAADMRIRElIREhVQKr%2FasCAP4AA6v8VVUDAAABAIAAVQLVAqsACwBJARiyDAEBFBMQsQAD9rEBBPWwCjyxAwX1sAg8sQUE9bAGPLENA%2BYAsQAAExCxAQbksQEBExCwBTyxAwTlsQsF9bAHPLEJBOUxMBMhETMRIRUhESMRIYABAFUBAP8AVf8AAasBAP8AVv8AAQAAAgCAAOsC1QIVAAMABwBlGAGwCBCwBtSwBhCwBdSwCBCwAdSwARCwANSwBhCwBzywBRCwBDywARCwAjywABCwAzwAsAgQsAbUsAYQsAfUsAcQsAHUsAEQsALUsAYQsAU8sAcQsAQ8sAEQsAA8sAIQsAM8MTATITUhHQEhNYACVf2rAlUBwFXVVVUAAgCAAFUC1QKAAAMABwBGGLABFACxAAATELEACeSxAAETELAEPLEGCPSwAjwwAbEIARMQsQAD9rAHPLEBBfWwBjyyBQcAEPSwAjyxCQPmsQQF9bADPBMzASMRMwEjgFUCAFVV%2FgBVAoD91QIr%2FdUAAQCAAVUC1QGrAAMAMBgBsAQQsQAD9rADPLECB%2FWwATyxBQPmALEAABMQsQAG5bEAARMQsAE8sQMF9bACPBMhFSGAAlX9qwGrVgABAAAAAQAAzzO4wF8PPPUAAwQA%2F%2F%2F%2F%2F9Wt7tz%2F%2F%2F%2F%2F1a3u3AAA%2FyAEgAOrAAAACgACAAEAAAAAAAEAAAPo%2F2oAABdwAAD%2FtgSAAAEAAAAAAAAAAAAAAAAAAAAFA1IAVQNWAIADVgCAA1YAgANWAIAAAAAAAAAAKAAAAKEAAAErAAABmgAAAeQAAQAAAAUAXgAFAAAAAAACAIAEAAAAAAAEAADeAAAAAAAAABUBAgAAAAAAAAABABIAAAAAAAAAAAACAA4AEgAAAAAAAAADADAAIAAAAAAAAAAEABIAUAAAAAAAAAAFABYAYgAAAAAAAAAGAAkAeAAAAAAAAAAIABwAgQABAAAAAAABABIAAAABAAAAAAACAA4AEgABAAAAAAADADAAIAABAAAAAAAEABIAUAABAAAAAAAFABYAYgABAAAAAAAGAAkAeAABAAAAAAAIABwAgQADAAEECQABABIAAAADAAEECQACAA4AEgADAAEECQADADAAIAADAAEECQAEABIAUAADAAEECQAFABYAYgADAAEECQAGAAkAeAADAAEECQAIABwAgQBNAGEAdABoACAARgBvAG4AdABSAGUAZwB1AGwAYQByAE0AYQB0AGgAcwAgAEYAbwByACAATQBvAHIAZQAgAE0AYQB0AGgAIABGAG8AbgB0AE0AYQB0AGgAIABGAG8AbgB0AFYAZQByAHMAaQBvAG4AIAAxAC4AME1hdGhfRm9udABNAGEAdABoAHMAIABGAG8AcgAgAE0AbwByAGUAAAMAAAAAAAAB9AD6AAAAAAAAAAAAAAAAAAAAAAAAAAC5BxEAAI2FGACyAAAAFRQTsQABPw%3D%3D%29format%28%27truetype%27%29%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%40font-face%7Bfont-family%3A%27brack_sm2882ad605b1e27be87c7468%27%3Bsrc%3Aurl%28data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7PH4UAAADMAAAATmNtYXA3kjw6AAABHAAAADxjdnQgAQYDiAAAAVgAAAASZ2x5ZkyYQ7YAAAFsAAAAkWhlYWQLyR8fAAACAAAAADZoaGVhAq0XCAAAAjgAAAAkaG10eDEjA%2FUAAAJcAAAADGxvY2EAAEKZAAACaAAAABBtYXhwBJsEcQAAAngAAAAgbmFtZW7QvZAAAAKYAAAB5XBvc3QArQBVAAAEgAAAACBwcmVwu5WEAAAABKAAAAAHAAACDAGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg9AMD%2FP%2F8AAABVAABAAAAAAACAAEAAQAAABQAAwABAAAAFAAEACgAAAAGAAQAAQACI5wjn%2F%2F%2FAAAjnCOf%2F%2F%2FcZdxjAAEAAAAAAAAAAAFUAFQBAAArAIwAgACoAAcAAAACAAAAAADVAQEAAwAHAAAxMxEjFyM1M9XVq4CAAQHWqwABAAAAAABVAVgAAwAfGAGwAy%2BwADyxAgL1sAE8ALEDAD%2BwAjx8sQAG9bABPBEzESNVVQFY%2FqgAAQDXAAABLAFUAAMAIBgBsAUvsAE8sAI8sQAC9bADPACwAy%2BwAjyxAAH1sAE8EzMRI9dVVQFU%2FqwAAAAAAQAAAAEAAIsesexfDzz1AAMEAP%2F%2F%2F%2F%2FVre5k%2F%2F%2F%2F%2F9Wt7mT%2FgP%2F%2FAdYBWAAAAAoAAgABAAAAAAABAAABVP%2F%2FAAAXcP%2BA%2F4AB1gABAAAAAAAAAAAAAAAAAAAAAwDVAAABLAAAASwA1wAAAAAAAAAhAAAAWAAAAJEAAQAAAAMACgACAAAAAAACAIAEAAAAAAAEAABlAAAAAAAAABUBAgAAAAAAAAABACYAAAAAAAAAAAACAA4AJgAAAAAAAAADAEQANAAAAAAAAAAEACYAeAAAAAAAAAAFABYAngAAAAAAAAAGABMAtAAAAAAAAAAIABwAxwABAAAAAAABACYAAAABAAAAAAACAA4AJgABAAAAAAADAEQANAABAAAAAAAEACYAeAABAAAAAAAFABYAngABAAAAAAAGABMAtAABAAAAAAAIABwAxwADAAEECQABACYAAAADAAEECQACAA4AJgADAAEECQADAEQANAADAAEECQAEACYAeAADAAEECQAFABYAngADAAEECQAGABMAtAADAAEECQAIABwAxwBCAHIAYQBjAGsAZQB0AHMAIABzAG0AYQBsAGwAIABzAGkAegBlAFIAZQBnAHUAbABhAHIATQBhAHQAaABzACAARgBvAHIAIABNAG8AcgBlACAAQgByAGEAYwBrAGUAdABzACAAcwBtAGEAbABsACAAcwBpAHoAZQBCAHIAYQBjAGsAZQB0AHMAIABzAG0AYQBsAGwAIABzAGkAegBlAFYAZQByAHMAaQBvAG4AIAAyAC4AMEJyYWNrZXRzX3NtYWxsX3NpemUATQBhAHQAaABzACAARgBvAHIAIABNAG8AcgBlAAAAAAMAAAAAAAAAqgBVAAAAAAAAAAAAAAAAAAAAAAAAAAC5B%2F8AAo2FAA%3D%3D%29format%28%27truetype%27%29%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%40font-face%7Bfont-family%3A%27round_brackets22549f92a457f2409%27%3Bsrc%3Aurl%28data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMjxkLiAAAADMAAAATmNtYXDf7xCrAAABHAAAADxjdnQgBAkDLgAAAVgAAAASZ2x5Zr5a4R4AAAFsAAABKWhlYWQO9ymoAAACmAAAADZoaGVhDVUVZQAAAtAAAAAkaG10eCFnAAIAAAL0AAAADGxvY2EAAARdAAADAAAAABBtYXhwBIgEWQAAAxAAAAAgbmFtZXHO2TgAAAMwAAACOXBvc3QEagIzAAAFbAAAACBwcmVwupWEAAAABYwAAAAHAAAGrgGQAAUAAAgACAAAAAAACAAIAAAAAAAAAQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAo8AMGe%2F57AAAIzgIPAAAAAAACAAEAAQAAABQAAwABAAAAFAAEACgAAAAGAAQAAQACACgAKf%2F%2FAAAAKAAp%2F%2F%2F%2F2f%2FZAAEAAAAAAAAAAAFUAFYBAAAsAKgDgAAyAAcAAAACAAAAKgDVA1UAAwAHAAA1MxEjEyMRM9XVq4CAKgMr%2FQAC1QABAAD%2BYAJQCGAACQBNGAGwChCwA9SwAxCwAtSwChCwBdSwBRCwANSwAxCwBzywAhCwCDwAsAoQsAPUsAMQsAfUsAoQsAXUsAoQsADUsAMQsAI8sAcQsAg8MTATAgEzABMQASMABAQBwJD%2BPAQBwJD%2BRANg%2FHD%2BkAFwA5ADoAFg%2FqAAAQAA%2FmACUAhgAAkATRgBsAoQsAPUsAMQsALUsAoQsAXUsAUQsADUsAMQsAc8sAIQsAg8ALAKELAD1LADELAH1LAKELAF1LAKELAA1LADELACPLAHELAIPDEwARIBIwADEAEzAAJMBP5AkAHEBP5AkAG8A2D8cP6QAXADkAOgAWD%2BoAAAAAABAAAAAQAALiwXwl8PPPUAAwgA%2F%2F%2F%2F%2F9Wt7vT%2F%2F%2F%2F%2F1a3u9AAA%2FmAEhAhgAAAACgACAAEAAAAAAAEAAAjO%2FfEAABdwAAD%2F%2FgSEAAEAAAAAAAAAAAAAAAAAAAADANUAAAJQAAACUAAAAAAAAAAAACQAAACmAAABKQABAAAAAwAKAAIAAAAAAAIAgAQAAAAAAAQAAE0AAAAAAAAAFQECAAAAAAAAAAEAPgAAAAAAAAAAAAIADgA%2BAAAAAAAAAAMAXABMAAAAAAAAAAQAPgCoAAAAAAAAAAUAFgDmAAAAAAAAAAYAHwD8AAAAAAAAAAgAHAEbAAEAAAAAAAEAPgAAAAEAAAAAAAIADgA%2BAAEAAAAAAAMAXABMAAEAAAAAAAQAPgCoAAEAAAAAAAUAFgDmAAEAAAAAAAYAHwD8AAEAAAAAAAgAHAEbAAMAAQQJAAEAPgAAAAMAAQQJAAIADgA%2BAAMAAQQJAAMAXABMAAMAAQQJAAQAPgCoAAMAAQQJAAUAFgDmAAMAAQQJAAYAHwD8AAMAAQQJAAgAHAEbAFIAbwB1AG4AZAAgAGIAcgBhAGMAawBlAHQAcwAgAHcAaQB0AGgAIABhAHMAYwBlAG4AdAAgADIAMgA1ADQAUgBlAGcAdQBsAGEAcgBNAGEAdABoAHMAIABGAG8AcgAgAE0AbwByAGUAIABSAG8AdQBuAGQAIABiAHIAYQBjAGsAZQB0AHMAIAB3AGkAdABoACAAYQBzAGMAZQBuAHQAIAAyADIANQA0AFIAbwB1AG4AZAAgAGIAcgBhAGMAawBlAHQAcwAgAHcAaQB0AGgAIABhAHMAYwBlAG4AdAAgADIAMgA1ADQAVgBlAHIAcwBpAG8AbgAgADIALgAwUm91bmRfYnJhY2tldHNfd2l0aF9hc2NlbnRfMjI1NABNAGEAdABoAHMAIABGAG8AcgAgAE0AbwByAGUAAAAAAwAAAAAAAARnAjMAAAAAAAAAAAAAAAAAAAAAAAAAALkH%2FwABjYUA%29format%28%27truetype%27%29%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%40font-face%7Bfont-family%3A%27bracketse552f5417ff4680c6b50499%27%3Bsrc%3Aurl%28data%3Afont%2Ftruetype%3Bcharset%3Dutf-8%3Bbase64%2CAAEAAAAMAIAAAwBAT1MvMi7RIisAAADMAAAATmNtYXBi7uzYAAABHAAAAExjdnQgBAkDLgAAAWgAAAASZ2x5Zo64f%2BkAAAF8AAABSWhlYWQLniGcAAACyAAAADZoaGVhBK4XLAAAAwAAAAAkaG10eCWq%2F90AAAMkAAAAFGxvY2EAABknAAADOAAAABhtYXhwBJIESAAAA1AAAAAgbmFtZRAA8I4AAANwAAAB3nBvc3QBwwDgAAAFUAAAACBwcmVwupWEAAAABXAAAAAHAAACggGQAAUAAAQABAAAAAAABAAEAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAAAAAg9AMEAAAAAAADgAAAAAAAAAACAAEAAQAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACI5sjnSOeI6D%2F%2FwAAI5sjnSOeI6D%2F%2F9xm3GXcZdxkAAEAAAAAAAAAAAAAAAABVABWAQAALACoA4AAMgAHAAAAAgAAACoA1QNVAAMABwAANTMRIxMjETPV1auAgCoDK%2F0AAtUAAQAAAAABgAOAAAUAJBgBsAAvsAPFsQEC%2FbADELEEBP0AsQAAP7ABPLEEBj%2BwAzwwMTEzEAEjAFUBKyv%2BqwH8AYT%2BqgABAAAAAAGAA4AABQAmGAGwAC6wA8WxBQL9sAMQsQIE%2FQB8sQAGPxiwBTyxAwb2sAI8MDEREgEzABMBAVQr%2FtMCA4D91v6qAYQB%2FAAB%2F6wAAAEsA4AABQAnGAGwAC%2BwBzywA8WxAQL9sAMQsQQE%2FQCxAAA%2FsAE8sQQGP7ADPDAxISMSATMAASxVAf7UKwFVAfwBhP6rAAH%2FrAAAASwDgAAFACkYAbABL7AHPLAExbEAAv2wBBCxAwT9AHyxAQY%2FsAA8GLEEAD%2BwAzwwMRMzEAEjANdV%2FqsrASsDgP3V%2FqsBhgAAAAABAAAAAQAAeuTcpl8PPPUAAwQA%2F%2F%2F%2F%2F9Wt7o7%2F%2F%2F%2F%2F1a3ujv%2BsAAABgAOAAAAACgACAAEAAAAAAAEAAAOAAAAAABdw%2F6z%2FrAGAAAEAAAAAAAAAAAAAAAAAAAAFANUAAAEsAAABLAAAASz%2FrAEs%2F6wAAAAAAAAAJAAAAGgAAACzAAAA%2FQAAAUkAAQAAAAUACAACAAAAAAACAIAEAAAAAAAEAAA%2BAAAAAAAAABUBAgAAAAAAAAABACQAAAAAAAAAAAACAA4AJAAAAAAAAAADAEIAMgAAAAAAAAAEACQAdAAAAAAAAAAFABYAmAAAAAAAAAAGABIArgAAAAAAAAAIABwAwAABAAAAAAABACQAAAABAAAAAAACAA4AJAABAAAAAAADAEIAMgABAAAAAAAEACQAdAABAAAAAAAFABYAmAABAAAAAAAGABIArgABAAAAAAAIABwAwAADAAEECQABACQAAAADAAEECQACAA4AJAADAAEECQADAEIAMgADAAEECQAEACQAdAADAAEECQAFABYAmAADAAEECQAGABIArgADAAEECQAIABwAwABCAHIAYQBjAGsAZQB0AHMAIABmAHUAbABsACAAcwBpAHoAZQBSAGUAZwB1AGwAYQByAE0AYQB0AGgAcwAgAEYAbwByACAATQBvAHIAZQAgAEIAcgBhAGMAawBlAHQAcwAgAGYAdQBsAGwAIABzAGkAegBlAEIAcgBhAGMAawBlAHQAcwAgAGYAdQBsAGwAIABzAGkAegBlAFYAZQByAHMAaQBvAG4AIAAyAC4AMEJyYWNrZXRzX2Z1bGxfc2l6ZQBNAGEAdABoAHMAIABGAG8AcgAgAE0AbwByAGUAAAADAAAAAAAAAcAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAuQf%2FAAGNhQA%3D%29format%28%27truetype%27%29%3Bfont-weight%3Anormal%3Bfont-style%3Anormal%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%224.5%22%20y%3D%2223%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2213.5%22%20y%3D%2228%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math16ad4c5df92230191e4e28addc1%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2224.5%22%20y%3D%2223%22%3E%26%23xD7%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2236.5%22%20y%3D%2223%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2245.5%22%20y%3D%2228%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math16ad4c5df92230191e4e28addc1%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2257.5%22%20y%3D%2223%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2272.5%22%20y%3D%2223%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2283.5%22%20y%3D%2228%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2291.5%22%20y%3D%2223%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2299.5%22%20y%3D%2212%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22106.5%22%20y%3D%2216%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math16ad4c5df92230191e4e28addc1%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22116.5%22%20y%3D%2223%22%3E%26%23xD7%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22130.5%22%20y%3D%2223%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22141.5%22%20y%3D%2228%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22149.5%22%20y%3D%2223%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22157.5%22%20y%3D%2212%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22164.5%22%20y%3D%2216%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math16ad4c5df92230191e4e28addc1%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22175.5%22%20y%3D%2223%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22round_brackets22549f92a457f2409%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22187.5%22%20y%3D%2223%22%3E%28%3C%2Ftext%3E%3Ctext%20font-family%3D%22round_brackets22549f92a457f2409%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22249.5%22%20y%3D%2223%22%3E%29%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22196.5%22%20y%3D%2223%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22207.5%22%20y%3D%2228%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math16ad4c5df92230191e4e28addc1%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22218.5%22%20y%3D%2223%22%3E%26%23xD7%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22232.5%22%20y%3D%2223%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22243.5%22%20y%3D%2228%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22257.5%22%20y%3D%2223%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22265.5%22%20y%3D%2212%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22272.5%22%20y%3D%2216%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math16ad4c5df92230191e4e28addc1%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22281.5%22%20y%3D%2212%22%3E%2B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22290.5%22%20y%3D%2212%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22297.5%22%20y%3D%2216%22%3E2%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%222.5%22%20x2%3D%2222.5%22%20y1%3D%2268.5%22%20y2%3D%2268.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%228.5%22%20y%3D%2258%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2217.5%22%20y%3D%2263%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%228.5%22%20y%3D%2285%22%3EL%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2217.5%22%20y%3D%2290%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math16ad4c5df92230191e4e28addc1%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2233.5%22%20y%3D%2274%22%3E%3D%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%2244.5%22%20x2%3D%2290.5%22%20y1%3D%2268.5%22%20y2%3D%2268.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2252.5%22%20y%3D%2258%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2263.5%22%20y%3D%2263%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2271.5%22%20y%3D%2258%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2279.5%22%20y%3D%2247%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%2286.5%22%20y%3D%2251%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2252.5%22%20y%3D%2292%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%2263.5%22%20y%3D%2297%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%2271.5%22%20y%3D%2292%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%2279.5%22%20y%3D%2281%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%2286.5%22%20y%3D%2285%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22math16ad4c5df92230191e4e28addc1%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22101.5%22%20y%3D%2274%22%3E%3D%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22111.5%22%20y%3D%2258%22%3E%26%23x239B%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22111.5%22%20y%3D%2263%22%3E%26%23x239C%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22111.5%22%20y%3D%2268%22%3E%26%23x239C%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22111.5%22%20y%3D%2273%22%3E%26%23x239C%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22111.5%22%20y%3D%2278%22%3E%26%23x239C%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22111.5%22%20y%3D%2292%22%3E%26%23x239D%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%2258%22%3E%26%23x239E%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%2263%22%3E%26%23x239F%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%2268%22%3E%26%23x239F%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%2273%22%3E%26%23x239F%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22brack_sm2882ad605b1e27be87c7468%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%2278%22%3E%26%23x239F%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22bracketse552f5417ff4680c6b50499%22%20font-size%3D%2216%22%20text-anchor%3D%22start%22%20x%3D%22147.5%22%20y%3D%2292%22%3E%26%23x23A0%3B%3C%2Ftext%3E%3Cline%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%221%22%20x1%3D%22119.5%22%20x2%3D%22143.5%22%20y1%3D%2268.5%22%20y2%3D%2268.5%22%2F%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22127.5%22%20y%3D%2258%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22138.5%22%20y%3D%2263%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22127.5%22%20y%3D%2285%22%3Em%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22138.5%22%20y%3D%2290%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20text-anchor%3D%22middle%22%20x%3D%22157.5%22%20y%3D%2274%22%3E2%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22165.5%22%20y%3D%2263%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22172.5%22%20y%3D%2267%22%3E1%3C%2Ftext%3E%3Ctext%20font-family%3D%22math16ad4c5df92230191e4e28addc1%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20x%3D%22181.5%22%20y%3D%2263%22%3E%26%23x2212%3B%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20font-style%3D%22italic%22%20text-anchor%3D%22middle%22%20x%3D%22190.5%22%20y%3D%2263%22%3Ec%3C%2Ftext%3E%3Ctext%20font-family%3D%22Arial%22%20font-size%3D%2210%22%20text-anchor%3D%22middle%22%20x%3D%22197.5%22%20y%3D%2267%22%3E2%3C%2Ftext%3E%3C%2Fsvg%3E" class="Wirisformula" alt="L subscript 1 cross times L subscript 2 equals m subscript 1 2 to the power of c subscript 1 end exponent cross times m subscript 2 2 to the power of c subscript 2 end exponent equals open parentheses m subscript 1 cross times m subscript 2 close parentheses 2 to the power of c subscript 1 plus c subscript 2 end exponent
+L subscript 1 over L subscript 2 equals fraction numerator m subscript 1 2 to the power of c subscript 1 end exponent over denominator m subscript 2 2 to the power of c subscript 2 end exponent end fraction equals open parentheses m subscript 1 over m subscript 2 close parentheses 2 to the power of c subscript 1 minus c subscript 2 end exponent" style="vertical-align:-51px" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»L«/mi»«mn»1«/mn»«/msub»«mo»§#215;«/mo»«msub»«mi»L«/mi»«mn»2«/mn»«/msub»«mo»=«/mo»«msub»«mi»m«/mi»«mn»1«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«/msup»«mo»§#215;«/mo»«msub»«mi»m«/mi»«mn»2«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/msup»«mo»=«/mo»«mfenced»«mrow»«msub»«mi»m«/mi»«mn»1«/mn»«/msub»«mo»§#215;«/mo»«msub»«mi»m«/mi»«mn»2«/mn»«/msub»«/mrow»«/mfenced»«msup»«mn»2«/mn»«mrow»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«mo»+«/mo»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/mrow»«/msup»«mspace linebreak=¨newline¨/»«mfrac»«msub»«mi»L«/mi»«mn»1«/mn»«/msub»«msub»«mi»L«/mi»«mn»2«/mn»«/msub»«/mfrac»«mo»=«/mo»«mfrac»«mrow»«msub»«mi»m«/mi»«mn»1«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«/msup»«/mrow»«mrow»«msub»«mi»m«/mi»«mn»2«/mn»«/msub»«msup»«mn»2«/mn»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/msup»«/mrow»«/mfrac»«mo»=«/mo»«mfenced»«mfrac»«msub»«mi»m«/mi»«mn»1«/mn»«/msub»«msub»«mi»m«/mi»«mn»2«/mn»«/msub»«/mfrac»«/mfenced»«msup»«mn»2«/mn»«mrow»«msub»«mi»c«/mi»«mn»1«/mn»«/msub»«mo»-«/mo»«msub»«mi»c«/mi»«mn»2«/mn»«/msub»«/mrow»«/msup»«/math»" width="301" height="101"></p>
+<p style="text-align: justify;">Wynika z&nbsp;nich, iż mantysa iloczynu 
+jest iloczynem mantys, cecha iloczynu jest sumą cech. Mantysa ilorazu 
+jest ilorazem mantys, a&nbsp;cecha ilorazu jest różnicą cech. Po 
+wykonaniu operacji arytmetycznej mantysę wynikową normalizujemy 
+i&nbsp;łączymy z&nbsp;cechą otrzymując gotowy kod zmiennoprzecinkowy. Co
+ ciekawe, operacje mnożenia i&nbsp;dzielenia są koncepcyjnie prostsze 
+w&nbsp;systemie zmiennoprzecinkowym od operacji dodawania 
+i&nbsp;odejmowania.</p>
+<p style="text-align: justify;">Sprawdzenie poprawności tych wzorów pozostawiam ambitnym czytelnikom jako zadanie domowe.</p>
+</div></div></div><div class="navbottom clearfix navimages"><a title="Poprzednie: 6. Zmiennopozycyjna reprezentacja liczb" class="bookprev" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=89"><img src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/nav_prev.svg" class="icon" alt="Poprzednie: 6. Zmiennopozycyjna reprezentacja liczb"></a><a title="Następne: 7. Prawa i twierdzenia algebry Boole`a" class="booknext" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=86"><img src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/nav_next.svg" class="icon" alt="Następne: 7. Prawa i twierdzenia algebry Boole`a"></a></div></div>
+                    
+                    </div>
+                </section>
+                <section data-region="blocks-column" class="hidden-print">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Pomiń Spis treści</a>
+
+<aside id="block-59c697be2f356" class=" block block__fake  card m-b-1" role="complementary" data-block="_fake" aria-labelledby="instance-0-header">
+
+    <div class="card-block">
+
+
+            <h3 id="instance-0-header" class="card-title">Spis treści</h3>
+
+        <div class="card-text content">
+            <div class="book_toc_numbered clearfix"><ul><li class="clearfix"><a title="Wprowadzenie do układów cyfrowych" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=80">1. Wprowadzenie do układów cyfrowych</a></li><li class="clearfix"><a title="Systemy pozycyjne" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=81">2. Systemy pozycyjne</a><ul><li class="clearfix"><a title="Dwójkowy" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=85">2.1. Dwójkowy</a></li><li class="clearfix"><a title="Ósemkowy i szesnastkowy" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=84">2.2. Ósemkowy i szesnastkowy</a></li></ul></li><li class="clearfix"><a title="Działania algebraiczne na liczbach dwójkowych" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=82">3. Działania algebraiczne na liczbach dwójkowych</a></li><li class="clearfix"><a title="Kody liczbowe" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=87">4. Kody liczbowe</a></li><li class="clearfix"><a title="Stałopozycyjna reprezentacja liczb" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=88">5. Stałopozycyjna reprezentacja liczb</a><ul><li class="clearfix"><a title="Zapis ZM" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=90">5.1. Zapis ZM</a></li><li class="clearfix"><a title="System U1" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=91">5.2. System U1</a></li><li class="clearfix"><a title="System U2" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=92">5.3. System U2</a></li><li class="clearfix"><a title="System z nadmiarem (BIAS)" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=93">5.4. System z nadmiarem (BIAS)</a></li><li class="clearfix"><a title="Podsumowanie" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=94">5.5. Podsumowanie</a></li></ul></li><li class="clearfix"><a title="Zmiennopozycyjna reprezentacja liczb" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=89">6. Zmiennopozycyjna reprezentacja liczb</a><ul><li class="clearfix"><strong>6.1. Przykładowy system zmiennoprzecinkowy</strong></li></ul></li><li class="clearfix"><a title="Prawa i twierdzenia algebry Boole`a" href="https://msg.sytes.net:8085/mod/book/view.php?id=13&amp;chapterid=86">7. Prawa i twierdzenia algebry Boole`a</a></li></ul></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3" data-key="coursehome">
+                <div class="m-l-0">
+                        UKiT
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/user/index.php?id=3" data-key="participants">
+                <div class="m-l-0">
+                        Uczestnicy
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/badges/view.php?type=2&amp;id=3" data-key="badgesview">
+                <div class="m-l-0">
+                        Odznaki
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/admin/tool/lp/coursecompetencies.php?courseid=3" data-key="2">
+                <div class="m-l-0">
+                        Kompetencje
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/grade/report/index.php?id=3" data-key="grades">
+                <div class="m-l-0">
+                        Oceny
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-0" data-key="8">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Główne składowe</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-1" data-key="9">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Program nauczania i zasady oceniania</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action font-weight-bold" href="https://msg.sytes.net:8085/course/view.php?id=3#section-2" data-key="10">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Układy kombinacyjne</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-3" data-key="11">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Temat 3</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3#section-4" data-key="12">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/folder.svg">
+                            </span>
+                            <span class="media-body">Temat 4</span>
+                        </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/my/" data-key="myhome">
+                <div class="m-l-0">
+                        Kokpit
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/?redirect=0" data-key="home">
+                <div class="m-l-0">
+                        Strona główna
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/calendar/view.php?view=month" data-key="calendar">
+                <div class="m-l-0">
+                        Kalendarz
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/user/files.php" data-key="5">
+                <div class="m-l-0">
+                        Prywatne pliki
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses">
+                <div class="m-l-0">
+                    Moje kursy
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=3" data-key="3">
+                <div class="m-l-1">
+                        UKiT
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://msg.sytes.net:8085/course/view.php?id=2" data-key="2">
+                <div class="m-l-1">
+                        UTt
+                </div>
+            </a>
+        </nav>
+    </div>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+
+            <p class="helplink"><a href="http://docs.moodle.org/32/pl/mod/book/view"><img class="icon iconhelp icon-pre" role="presentation" alt="" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/docs.svg">Dokumentacja Moodle dla tej strony</a></p>
+
+        <div class="logininfo">Jesteś zalogowany(a) jako <a href="https://msg.sytes.net:8085/user/profile.php?id=3" title="Zobacz profil">Grzegorz Kantowicz</a> (<a href="https://msg.sytes.net:8085/login/logout.php?sesskey=pSj4X3ad2k">Wyloguj</a>)</div>
+        <div class="homelink"><a href="https://msg.sytes.net:8085/course/view.php?id=3">UKiT</a></div>
+        <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                </ul>
+        </nav>
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://msg.sytes.net:8085/lib/requirejs.php/1504993502/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://msg.sytes.net:8085/lib/javascript.php/1504993502/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'https://msg.sytes.net:8085/lib/javascript.php/1504993502/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://msg.sytes.net:8085/lib/javascript.php/1504993502/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="Arytmetyka%20cyfrowa%20%20Przyk%C5%82adowy%20system%20zmiennoprzecinkowy_pliki/require.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/video"], function(videojs) {
+videojs.options.flash.swf = "https://msg.sytes.net:8085/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("pl",{
+ "Play": "Odtwarzaj",
+ "Pause": "Pauza",
+ "Current Time": "Aktualny czas",
+ "Duration Time": "Czas trwania",
+ "Remaining Time": "Pozostały czas",
+ "Stream Type": "Typ strumienia",
+ "LIVE": "NA ŻYWO",
+ "Loaded": "Załadowany",
+ "Progress": "Status",
+ "Fullscreen": "Pełny ekran",
+ "Non-Fullscreen": "Pełny ekran niedostępny",
+ "Mute": "Wyłącz dźwięk",
+ "Unmute": "Włącz dźwięk",
+ "Playback Rate": "Szybkość odtwarzania",
+ "Subtitles": "Napisy",
+ "subtitles off": "Napisy wyłączone",
+ "Captions": "Transkrypcja",
+ "captions off": "Transkrypcja wyłączona",
+ "Chapters": "Rozdziały",
+ "You aborted the media playback": "Odtwarzanie zostało przerwane",
+ "A network error caused the media download to fail part-way.": "Problemy z siecią spowodowały błąd przy pobieraniu materiału wideo.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "Materiał wideo nie może być załadowany, ponieważ wystąpił problem z siecią lub format nie jest obsługiwany",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "Odtwarzanie materiału wideo zostało przerwane z powodu uszkodzonego pliku wideo lub z powodu błędu funkcji, które nie są wspierane przez przeglądarkę.",
+ "No compatible source was found for this media.": "Dla tego materiału wideo nie znaleziono kompatybilnego źródła.",
+ "Play video": "Odtwarzaj wideo",
+ "Close": "Zamknij",
+ "Modal Window": "Okno Modala",
+ "This is a modal window": "To jest okno modala",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "Ten modal możesz zamknąć naciskając przycisk Escape albo wybierając przycisk Zamknij.",
+ ", opens captions settings dialog": ", otwiera okno dialogowe ustawień transkrypcji",
+ ", opens subtitles settings dialog": ", otwiera okno dialogowe napisów",
+ ", selected": ", zaznaczone"
+});
+
+});;
+require(["media_videojs/Youtube"]);
+require(["media_videojs/loader"], function(amd) { amd.setUp(); });;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link59c697be3cdd411', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=13","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link59c697be3cdd412', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=13&chapterid=95","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link59c697be3cdd435', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=13","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', openpopup, '#action_link59c697be3cdd436', null, {"url":"https:\/\/msg.sytes.net:8085\/mod\/book\/tool\/print\/index.php?id=13&chapterid=95","name":"popup","options":"height=400,width=500,top=0,left=0,menubar=0,location=0,scrollbars,resizable,toolbar,status,directories=0,fullscreen=0,dependent"});
+    });
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(45, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Ostatnia modyfikacja","name":"Nazwa","error":"B\u0142\u0105d","info":"Informacja","yes":"Tak","no":"Nie","morehelp":"Wi\u0119cej pomocy","loadinghelp":"\u0141adowanie ...","cancel":"Anuluj","confirm":"Potwierd\u017a","areyousure":"Czy jeste\u015b pewny?","closebuttontitle":"Zamknij","unknownerror":"Nieznany b\u0142\u0105d"},"repository":{"type":"Typ","size":"Rozmiar","invalidjson":"Nieprawid\u0142owy ci\u0105g jSON","nofilesattached":"Nie za\u0142\u0105czono plik\u00f3w","filepicker":"Wyb\u00f3r plik\u00f3w","logout":"Wyloguj si\u0119","nofilesavailable":"Brak dost\u0119pnych plik\u00f3w","norepositoriesavailable":"Niestety, \u017cadne z istniej\u0105cych repozytori\u00f3w nie mo\u017ce zawiera\u0107 plik\u00f3w w wymaganym formacie.","fileexistsdialogheader":"Plik istnieje","fileexistsdialog_editor":"Plik o wybranej nazwie zosta\u0142 ju\u017c za\u0142\u0105czony do tekstu, kt\u00f3ry edytujesz.","fileexistsdialog_filemanager":"Plik o wybranej nazwie ju\u017c zosta\u0142 do\u0142\u0105czony","renameto":"Zmie\u0144 nazw\u0119 na","referencesexist":"Istnieje {$a} skr\u00f3t\u00f3w, kt\u00f3re wykorzystuj\u0105 ten plik jako \u017ar\u00f3d\u0142o.","select":"Wybierz"},"admin":{"confirmdeletecomments":"Zamierzasz usun\u0105\u0107 komentarze, czy jeste\u015b pewien(a)?","confirmation":"Potwierdzenie"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {setTimeout("fix_column_widths()", 20);
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"pl"});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random59c697be3cdd438'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random59c697be3cdd438'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+
+</body></html>
